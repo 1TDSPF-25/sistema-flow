@@ -1,0 +1,76 @@
+{
+    "produtos": [
+        {
+            "id": 1,
+            "nome": "Mouse Gamer",
+            "preco": 120
+        },
+        {
+            "id": 2,
+            "nome": "Teclado Mecânico",
+            "preco": 350
+        },
+        {
+            "id": 3,
+            "nome": "Teclado Mecânico",
+            "preco": 234.90
+        },
+        {
+            "id": 4,
+            "nome": "Mouse Óptico",
+            "preco": 110.87
+        },
+        {
+            "id": 5,
+            "nome": "Monitor 24'",
+            "preco": 899.00
+        },
+        {
+            "id": 6,
+            "nome": "Headset Gamer",
+            "preco": 320.50
+        },
+        {
+            "id": 7,
+            "nome": "Webcam Full HD",
+            "preco": 210.75
+        },
+        {
+            "id": 8,
+            "nome": "Notebook 15.6''",
+            "preco": 3499.90
+        },
+        {
+            "id": 9,
+            "nome": "Impressora Multifuncional",
+            "preco": 670.30
+        },
+        {
+            "id": 10,
+            "nome": "HD Externo 1TB",
+            "preco": 450.00
+        },
+        {
+            "id": 11,
+            "nome": "Pen Drive 64GB",
+            "preco": 89.90
+        },
+        {
+            "id": 12,
+            "nome": "Cadeira Gamer",
+            "preco": 1250.00
+        }
+    ],
+    "usuarios": [
+        {
+            "id": 1,
+            "nome": "João",
+            "idade": 25
+        },
+        {
+            "id": 2,
+            "nome": "Maria",
+            "idade": 30
+        }
+    ]
+}
