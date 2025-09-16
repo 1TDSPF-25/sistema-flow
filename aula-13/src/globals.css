@@ -3,3 +3,34 @@
 :root{
     scroll-behavior: smooth;
 }
+
+.container{
+    @apply w-[100vw] h-[100vh] flex flex-col justify-between;
+
+    & header{
+        @apply bg-[#322e2e] text-white h-[20vh] w-[100vw];
+
+        & a:hover{
+            @apply bg-amber-300;
+        }
+    }
+
+    & main{
+        @apply bg-[#732828] text-white h-[60vh] w-[100vw] overflow-auto;
+    }
+
+    & footer{
+        @apply bg-[#322e2e] text-white h-[20vh] w-[100vw];
+    }
+
+}
+
+.tblProduto{
+    @apply bg-blue-900 border-2 w-[80%] mx-auto border-collapse;
+
+    & th,td{
+        @apply border-2 p-5; 
+    }
+
+
+}

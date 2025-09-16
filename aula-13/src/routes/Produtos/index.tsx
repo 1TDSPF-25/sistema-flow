@@ -22,8 +22,8 @@ export default function Produtos() {
     <main>
         <h1>Produtos</h1> 
         
-        <table border={1}>
-          <thead>
+        <table className="tblProduto">
+          <thead >
             <tr>
               <th>ID</th>
               <th>NOME</th>
