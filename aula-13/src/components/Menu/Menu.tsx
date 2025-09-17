@@ -6,6 +6,7 @@ export default function Menu(){
         <nav>
             <Link to="/">Home </Link>| 
             <Link to="/produtos"> Produtos</Link>
+            <Link to="/consulta-cep"> consultar cep</Link>
         </nav>
     );
 }
