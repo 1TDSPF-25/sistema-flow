@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 export default function ConsultaCep() {
 
-    
+    const navigate = useNavigate();
 
     const [logradouro, setLogradouro] = useState<TipoCep>();
 
@@ -14,56 +14,71 @@ export default function ConsultaCep() {
   ) => {
     try {
         e.preventDefault();
+
+        //trata o cep tirando o traço:
+        console.log("CEP COM TRAÇo:"+cepParam);
+        cepParam = cepParam.replace("-","");
+        console.log("CEP SEM TRAÇo:"+cepParam);
+
         const response = await fetch(`https://viacep.com.br/ws/${cepParam}/json/`);
 
-        const data: TipoCep = await response.json();
-        setLogradouro(data);
-
+        if(response.status === 200){
+            const data: TipoCep = await response.json();
+            setLogradouro(data);
+        }else{
+            throw new Error("Ocorreu um erro ao tentar buscar esse CEP, tente novamente!");
+        }
     } catch (error) {
-        console.error(error);
-
+        alert(error);
+        navigate("/error");
     }
   };
 
   const [cepProcurado, setCepProcurado] = useState<string>("");
 
+  const mascaraCep = (e:React.ChangeEvent<HTMLInputElement>)=>{
+  const digits = e.currentTarget.value.replace(/\D/g, '').slice(0, 8); // máximo 8 dígitos
+  const formatted =
+    digits.length > 5
+      ? `${digits.slice(0, 5)}-${digits.slice(5)}`
+      : digits;
+    setCepProcurado(formatted);
+  }
+
   return (
     <main>
-      <h1>Consulta CEP</h1>
+      <h1>Consultar CEP</h1>
 
       <div>
-        <form onSubmit={(e) => fetchData(cepProcurado, e)}>
-          <fieldset>
-            <legend>Pesquis de CEP</legend>
-            <div>
-              <label htmlFor="idCep">CEP buscado:</label>
+        <form onSubmit={(e) => fetchData(cepProcurado, e)} className="flex border-1 w-[50%] h-[50vh] mx-auto my-auto px-5 text-black rounded-2xl bg-white">
+          
+            <div className="flex flex-col justify-around w-full">
+              <label htmlFor="idCep" className="block font-bold">CEP buscado:</label>
               <input
                 type="text"
                 name="cep"
-                maxLength={8}
+                maxLength={9}
                 required={true}
                 placeholder="Digite o cep a pesquisar:"
                 value={cepProcurado}
-                onChange={(e) => setCepProcurado(e.target.value)}
+                onChange={mascaraCep}
+                className="border-1 p-2 rounded-[5px] inline-block w-[80%] outline-1 outline-gray-700 placeholder:text-blue-800"
               />
+              <button type="submit" className="inline-block w-[40%] mx-auto bg-blue-700 text-white rounded-[5px] h-[12vh]">Pesquisar</button>
             </div>
-            <div>
-              <button type="submit">Pesquisar</button>
-            </div>
-          </fieldset>
         </form>
       </div>
       <div>
-        {logradouro ? (
+        {logradouro ? 
           <div>
             <p>Bairro : {logradouro.bairro}</p>
             <p>Cep : {logradouro.cep}</p>
             <p>Rua : {logradouro.logradouro}</p>
             <p>Local : {logradouro.localidade}</p>
           </div>
-        ) : (
-          <p>Localidade não encontrada.</p>
-        )}
+         : 
+           logradouro ? <p>Localidade não encontrada.</p> : <span></span>
+        }
       </div>
     </main>
   );
