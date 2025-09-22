@@ -17,7 +17,7 @@ export default function Produtos() {
     
     fetchData();
   },[]);
- 
+
   return (
     <main>
         <h1>Produtos</h1> 
