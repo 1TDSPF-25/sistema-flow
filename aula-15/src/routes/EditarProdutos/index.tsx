@@ -1,5 +1,7 @@
 import { useEffect } from "react";
+import { useForm } from "react-hook-form";
 import { useParams } from "react-router-dom";
+import type { TipoProduto } from "../../types/tipoProduto";
 
 export default function EditarProdutos(){
     useEffect(() => {
@@ -9,7 +11,7 @@ export default function EditarProdutos(){
     //Recuperar o ID do produto utilizando o hook useParams.
     const { id } = useParams<string>();
 
-    
+    const { reset,register } = useForm<TipoProduto>();
    
     useEffect(() => {
       
@@ -19,8 +21,10 @@ export default function EditarProdutos(){
                 if(!response.ok){
                     throw new Error("Erro ao buscar o produto");
                 }
-                const data = await response.json();
-                
+                const data:TipoProduto = await response.json();
+
+                reset(data);
+
             } catch (error:any) {
                 console.error(error.message);
             }
@@ -28,14 +32,14 @@ export default function EditarProdutos(){
          
         fetchProduto();
 
-    }, []);
+    }, [id, reset]);
     
 
     return(
         <main>
             <h1>Editar os produtos</h1>
    <div>
-        <form className="mx-auto max-w-md space-y-4 rounded-xl border border-gray-200 bg-white p-6 shadow">
+        <form className="mx-auto max-w-md space-y-4 rounded-xl border border-gray-200 bg-white p-6 shadow text-gray-700">
           <h2 className="text-lg font-semibold">Cadastro de Produto</h2>
            
           <div>
@@ -43,6 +47,7 @@ export default function EditarProdutos(){
             <input
               id="nome"
               type="text"
+              {...register("nome")}
                className="mt-1 w-full rounded-lg border border-gray-300 px-3 py-2 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200"
               placeholder="Ex.: Teclado Mecânico"
             />
@@ -53,6 +58,8 @@ export default function EditarProdutos(){
             <input
               id="preco"      
               type="number"
+                step="0.01"
+                {...register("preco",{valueAsNumber:true})}
               className="mt-1 w-full rounded-lg border border-gray-300 px-3 py-2 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200"
               placeholder="0.00"
             />
