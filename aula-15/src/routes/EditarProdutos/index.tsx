@@ -1,20 +1,10 @@
-import { useForm } from "react-hook-form";
-import { useParams } from "react-router-dom";
+import { useEffect } from "react";
 
 export default function EditarProdutos(){
-
-    //Receber o ID do produto que será editado.
-    const { id } = useParams<string>();
-
-    //Utilizar o useForm do react-hook-form
-    const {register, handleSubmit, formState, reset,setValue,getValues, watch} = useForm<TipoProduto>({
-        defaultValues:{
-            id:0,
-            nome:"",
-            preco:0
-        },//Valores iniciais do formulário
-        mode:"onChange" //Valida enquanto o usuário digita
-    });
+    useEffect(() => {
+        document.title = "Editar Produtos";
+    }, []);
+    
 
     return(
         <main>

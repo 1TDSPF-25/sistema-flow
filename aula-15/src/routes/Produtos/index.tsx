@@ -4,6 +4,9 @@ import { Link } from "react-router-dom";
 import { CiEdit } from "react-icons/ci";
 
 export default function Produtos() {
+      useEffect(() => {
+        document.title = "Produtos";
+    }, []);
 
   const [produtos, setProdutos] = useState<TipoProduto[]>([]);
 
