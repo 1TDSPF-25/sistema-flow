@@ -61,7 +61,7 @@ export default function EditarProdutos(){
         <main>
             <h1>Editar os produtos</h1>
    <div>
-        <form className="mx-auto max-w-md space-y-4 rounded-xl border border-gray-200 bg-white p-6 shadow text-gray-700">
+        <form onSubmit={handleSubmit(onSubmit)} className="mx-auto max-w-md space-y-4 rounded-xl border border-gray-200 bg-white p-6 shadow text-gray-700">
           <h2 className="text-lg font-semibold">Cadastro de Produto</h2>
            
           <div>
