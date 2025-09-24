@@ -1,14 +1,71 @@
 import { useEffect } from "react";
+import { useParams } from "react-router-dom";
 
 export default function EditarProdutos(){
     useEffect(() => {
         document.title = "Editar Produtos";
     }, []);
     
+    //Recuperar o ID do produto utilizando o hook useParams.
+    const { id } = useParams<string>();
+
+    
+   
+    useEffect(() => {
+      
+        const fetchProduto = async () => {
+            try {
+                const response = await fetch(`http://localhost:3001/produtos/${id}`);
+                if(!response.ok){
+                    throw new Error("Erro ao buscar o produto");
+                }
+                const data = await response.json();
+                
+            } catch (error:any) {
+                console.error(error.message);
+            }
+        }
+         
+        fetchProduto();
+
+    }, []);
+    
 
     return(
         <main>
             <h1>Editar os produtos</h1>
+   <div>
+        <form className="mx-auto max-w-md space-y-4 rounded-xl border border-gray-200 bg-white p-6 shadow">
+          <h2 className="text-lg font-semibold">Cadastro de Produto</h2>
+           
+          <div>
+            <label htmlFor="nome" className="block text-sm font-medium text-gray-700">Nome</label>
+            <input
+              id="nome"
+              type="text"
+               className="mt-1 w-full rounded-lg border border-gray-300 px-3 py-2 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200"
+              placeholder="Ex.: Teclado Mecânico"
+            />
+          </div>
+
+          <div>
+            <label htmlFor="preco" className="block text-sm font-medium text-gray-700">Preço (R$)</label>
+            <input
+              id="preco"      
+              type="number"
+              className="mt-1 w-full rounded-lg border border-gray-300 px-3 py-2 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200"
+              placeholder="0.00"
+            />
+          </div>
+
+          <div className="flex justify-end gap-2 pt-2">
+            <button type="submit" className="rounded-lg bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700 focus:ring-2 focus:ring-blue-300">
+              Editar
+            </button>
+          </div>
+        </form>
+      </div>
+
         </main>
     );
 }
@@ -29,59 +86,3 @@ export default function EditarProdutos(){
 
 
 
-
-
-
-
-
-// import { useEffect, useState } from "react";
-// import { useParams } from "react-router-dom";
-// import type { TipoProduto } from "../../types/tipoProduto";
-// import Card from "../../components/Card/Card";
-
-// export default function EditarProdutos(){
-
-//     //Recuperar o produto utilizando os rooks useParams,useState e useEffect.
-//     // Faça uma requisição do tipo GET para a API local utilizando o fetch. Crie uma função assincrona para esta operação.
-//     //Em caso de dúvidas olhe o que foi feito em Produtos.
-
-//     //Criando uma forma de recuperar o ID do usuário que foi enviado através do click(Request/Requisição)
-    
-//       const { id } = useParams<string>();
-
-//       //Criando useState para guardar o objeto que será apresentado na tela.
-//       const [produto, setProduto] = useState<TipoProduto>();
-    
-      
-//       //Criar um useEffect para controlar os efeitos colaterais e realizar apenas uma chamada para a API externa.
-//      useEffect(()=>{
-        
-//         (async ()=>{
-//             //Realizando uma chamada do tipo GET para a API
-//             //Esta chamada pode demorar, pode travar a aplicação, por isso utilizamos await após o =
-//             const response = await fetch("http://localhost:3001/produtos");
-            
-//             //Necessário realizar um PARSE de STRING/JSOn para objeto/literal. Utilizamos as funções json() para isso. Mas pode demorar e travar a aplicação, então também usamos o await nesta instrução.
-//             const data:TipoProduto[] = await response.json();
-            
-//             //Agora com a lista recuperada, utilizamos o id para pesquisar o produto selecionado pelo usuário na tabela.
-//             //Em seguida colocamos esse produto em uma nova variavel e depois colocamos no useState.
-
-//             const produtoEncontrado:TipoProduto | undefined = data.find( p => p.id.toString() === id);
-
-//             //Produto encontrado, colocamos ele no useState
-//             setProduto(produtoEncontrado);
-
-//         })();
-
-//      },[]);
-
-//     return(
-//         <main>
-//             <h1>Editar os produtos</h1>
-
-//                 { produto ? <Card nomeProps={produto.nome} precoProps={produto.preco} idProps={produto.id}/> : <p>Produto não encontrado!!</p>}
-
-//         </main>
-//     );
-// }
