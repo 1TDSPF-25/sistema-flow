@@ -1,17 +1,19 @@
 import { useEffect } from "react";
 import { useForm } from "react-hook-form";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import type { TipoProduto } from "../../types/tipoProduto";
 
 export default function EditarProdutos(){
     useEffect(() => {
         document.title = "Editar Produtos";
     }, []);
+
+    const navigate = useNavigate();
     
     //Recuperar o ID do produto utilizando o hook useParams.
     const { id } = useParams<string>();
 
-    const { reset,register } = useForm<TipoProduto>();
+    const { reset,register,handleSubmit } = useForm<TipoProduto>();
    
     useEffect(() => {
       
@@ -34,6 +36,26 @@ export default function EditarProdutos(){
 
     }, [id, reset]);
     
+    const onSubmit =  async (data:TipoProduto) => {
+        try {
+
+             (
+                async () => {
+                    await fetch(`http://localhost:3001/produtos/${id}`,{
+                        method: "PUT",
+                        headers: {
+                            "Content-Type": "application/json"
+                        },
+                        body: JSON.stringify(data)
+                    });
+                    alert("Produto editado com sucesso!");
+                    navigate("/produtos");
+                })();
+
+        } catch (error) {
+            console.error(error);
+        }
+    };
 
     return(
         <main>
