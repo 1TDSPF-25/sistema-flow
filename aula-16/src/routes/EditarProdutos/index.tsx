@@ -15,7 +15,9 @@ export default function EditarProdutos(){
     //Recuperar o ID do produto utilizando o hook useParams.
     const { id } = useParams<string>();
 
-    const { reset,register,handleSubmit } = useForm<TipoProduto>();
+    const { reset,register,handleSubmit, formState:{errors} } = useForm<TipoProduto>({
+      mode:"onChange"
+    });
    
     useEffect(() => {
       
@@ -27,10 +29,14 @@ export default function EditarProdutos(){
                 }
                 const data:TipoProduto = await response.json();
 
-                reset(data);
+                reset({
+                  id: data.id ?? 0,
+                  nome: data.nome ?? "",
+                  preco: data.preco ?? 0
+                });
 
-            } catch (error:any) {
-                console.error(error.message);
+            } catch (error) {
+                console.error(error);
             }
         }
          
@@ -71,10 +77,16 @@ export default function EditarProdutos(){
             <input
               id="nome"
               type="text"
-              {...register("nome")}
+              {...register("nome",{required:true, minLength:3,maxLength:200})}
                className="mt-1 w-full rounded-lg border border-gray-300 px-3 py-2 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200"
               placeholder="Ex.: Teclado Mecânico"
-            />
+              aria-invalid={!!errors.nome} aria-describedby={errors.nome ? "erro-nome" : undefined} />
+
+              {
+                errors.nome ? <span id="erro-nome" className="text-red-600 bg-red-300 border-2 border-red-600 rounded-sm block text-center">Digite um nome válido!</span> : ""
+
+              }
+
           </div>
 
           <div>
@@ -83,10 +95,15 @@ export default function EditarProdutos(){
               id="preco"      
               type="number"
                 step="0.01"
-                {...register("preco",{valueAsNumber:true})}
+                {...register("preco",{required:true,valueAsNumber:true,min:0.01})}
               className="mt-1 w-full rounded-lg border border-gray-300 px-3 py-2 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200"
               placeholder="0.00"
-            />
+            aria-invalid={!!errors.preco} aria-describedby={errors.preco ? "erro-preco" : undefined} />
+
+              {
+                errors.preco ? <span id="erro-preco" className="text-red-600 bg-red-300 border-2 border-red-600 rounded-sm block text-center">Digite um valor válido!</span> : ""
+
+              }
           </div>
 
           <div className="flex justify-end gap-2 pt-2">

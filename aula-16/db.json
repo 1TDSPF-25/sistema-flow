@@ -2,17 +2,17 @@
   "produtos": [
     {
       "id": "1",
-      "nome": "Mouse Gamer",
-      "preco": 120
+      "nome": "Mouse Gamer Turbo",
+      "preco": 255.78
     },
     {
       "id": "2",
-      "nome": "Teclado Mecânico",
-      "preco": 350
+      "nome": "Teclado Mecânico Red",
+      "preco": 178.69
     },
     {
       "id": "3",
-      "nome": "Teclado Techanico",
+      "nome": "Teclado Mecânico",
       "preco": 234.9
     },
     {
