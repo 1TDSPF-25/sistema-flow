@@ -3,7 +3,12 @@ import { useForm } from "react-hook-form";
 import { useNavigate, useParams } from "react-router-dom";
 import type { TipoProduto } from "../../types/tipoProduto";
 
+<<<<<<< HEAD
 const URL_API_PRODUTOS = import.meta.env.VITE_API_URL_BASE_PRODUTOS;
+=======
+
+const URL_API_PRODUTOS = import.meta.env.VITE_API_BASE_PRODUTOS; 
+>>>>>>> 8dcee0655c1db4d4a79a6f48bf252b97416f8034
 
 export default function EditarProdutos(){
     useEffect(() => {
@@ -23,6 +28,10 @@ export default function EditarProdutos(){
       
         const fetchProduto = async () => {
             try {
+<<<<<<< HEAD
+=======
+                const response = await fetch(`http://localhost:3001/produtos/${id}`);
+>>>>>>> 8dcee0655c1db4d4a79a6f48bf252b97416f8034
                 const response = await fetch(`${URL_API_PRODUTOS}/${id}`);
                 if(!response.ok){
                     throw new Error("Erro ao buscar o produto");
