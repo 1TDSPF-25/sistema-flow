@@ -1,14 +1,14 @@
 #Lista de Tarefas FEATURES
 TAREFAS DO GIT FLOW - Front End Design Engineering
 
-- HOTFIX/Corrigir problema grave de carregamento./Bosak, Ferrete, Brisola
+- [x] HOTFIX/Corrigir problema grave de carregamento./Bosak, Ferrete, Brisola
 - FEATURE / Criar cards de notícias na HOME / Enzo, Pietro, Lucas
 - FEATURE / Melhorar a estilização do Formulário, dando ênfase na reponsividade / João-C, Furlaneto,Ryan, Raul
 - FEATURE / Melhorar o rodapé, com informações dinâmicas sobre o tempo e a bolsa de valores / Guilherme, Pedro, Gabriel
 - FEATURE / Atualizar o cabeçalho com um campo de pesquisa sobre produtos eletrônicos-coloque o resultado na home/HenriqueM,HenriqueC,PedroS,Kauan
 - FEATURE/Melhorar a estilização da Tabela e aplicar um campo de filtro, onde se possa pesquisar direto nela o produto/LucaR,Clayton,Sola,PedroP
 #Lista de Tarefas FEATURES
-
+- FEATURE / Criar uma api de usuários com um ENDPOINT de nome usuarios, com os campos [id:string,nome:string,nomeUser:string,email:string,avatar:string]. utilize o json-server para isso. / Bosak, Ferrete, Brisola 
 
 
 
