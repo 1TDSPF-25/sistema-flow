@@ -29,18 +29,34 @@ export default function Home() {
   }, [produtos]);
 
   return (
-    <main>
-      <h2>Resultado da pesquisa</h2>
+    <main className="min-h-screen bg-gray-50 px-6 py-10">
+      <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">
+        Resultado da pesquisa
+      </h2>
+
       {resultado.length > 0 ? (
-        <ul>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {resultado.map((p) => (
-            <li key={p.id}>
-              {p.nome} — R$ {p.preco}
-            </li>
+            <div
+              key={p.id}
+              className="bg-white rounded-2xl shadow-lg p-6 flex flex-col justify-between hover:shadow-xl transition-shadow duration-200"
+            >
+              {/* Nome do produto */}
+              <h3 className="text-lg font-semibold text-gray-800 mb-2 truncate">
+                {p.nome}
+              </h3>
+
+              {/* Preço */}
+              <span className="text-green-500 font-bold text-lg">
+                R$ {Number(p.preco).toFixed(2)}
+              </span>
+            </div>
           ))}
-        </ul>
+        </div>
       ) : (
-        <p>Nenhum resultado encontrado.</p>
+        <p className="text-center text-gray-400 mt-10">
+          Nenhum resultado encontrado.
+        </p>
       )}
     </main>
   );
