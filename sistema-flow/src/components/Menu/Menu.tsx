@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function Menu() {
   return (
-    <nav className="bg-blue-900 w-full m-0">
+    <nav className="bg-blue-900 w-full">
       <ul className="flex flex-col md:flex-row gap-2 md:gap-6 text-white font-medium items-center">
         <li>
           <Link

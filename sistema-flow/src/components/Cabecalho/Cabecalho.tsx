@@ -12,7 +12,7 @@ export default function Cabecalho() {
   };
 
   return (
-    <header className="bg-blue-900 text-gray-100 shadow-md sticky top-0 z-50">
+    <header className="bg-blue-900 text-gray-100 shadow-md border border-blue-900">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 px-6 py-4 relative">
         <h1 className="text-2xl font-bold tracking-tight">Minha Loja</h1>
 
@@ -27,11 +27,7 @@ export default function Cabecalho() {
 
           <button
             onClick={handleSearch}
-<<<<<<< HEAD
-            className="bg-blue-500 text-neutral-800 px-4 py-2 flex items-center gap-2 hover:bg-blue-300 transition font-medium"
-=======
-            className="bg-blue-700 text-white px-4 py-2 hover:bg-amber-300 transition font-medium flex items-center gap-2"
->>>>>>> 292ca6db4c01d0b7a9d30f5b9664d6d827cf10fb
+            className="bg-blue-500 text-neutral-800 px-4 py-2 hover:bg-blue-300 transition font-medium flex items-center gap-2"
           >
             <CiSearch size={20} />
             <span className="hidden sm:inline">Buscar</span>
