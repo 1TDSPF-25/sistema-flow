@@ -9,10 +9,7 @@ TAREFAS DO GIT FLOW - Front End Design Engineering
 - FEATURE/Melhorar a estilização da Tabela e aplicar um campo de filtro, onde se possa pesquisar direto nela o produto/LucaR,Clayton,Sola,PedroP
 #Lista de Tarefas FEATURES
 - FEATURE / Criar uma api de usuários com um ENDPOINT de nome usuarios, com os campos [id:string,nome:string,nomeUser:string,email:string,avatar:string]. utilize o json-server para isso. / Bosak, Ferrete, Brisola 
-
-
-
-
+- FEATURE / Criar um componente de Login completo, incluindo rotas e registro destas. / João Bueno - Furlaneto - João Caetano
 
 # -- API REST, Verbos HTTP e Consumo com React
 
