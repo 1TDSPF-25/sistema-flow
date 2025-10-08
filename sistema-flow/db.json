@@ -63,14 +63,12 @@
   ],
   "usuarios": [
     {
-      "id": "1",
-      "nome": "João",
-      "idade": 25
-    },
-    {
-      "id": "2",
-      "nome": "Maria",
-      "idade": 30
-    }
+    "id": "012",
+    "nome": "Alexandre",
+    "nomeUser": "Ale",
+    "email": "ale@fiap.com.br",
+    "avatar": "/avatar.ale.png"
+  }
   ]
 }
+
