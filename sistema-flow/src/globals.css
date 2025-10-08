@@ -20,7 +20,7 @@
     }
 
     & footer{
-        @apply bg-[#322e2e] text-white h-[20vh] w-[100vw];
+        @apply  text-white h-[20vh] w-[100vw];
     }
 
 }
