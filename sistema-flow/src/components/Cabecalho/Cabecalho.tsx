@@ -27,7 +27,7 @@ export default function Cabecalho() {
           />
           <button
             onClick={handleSearch}
-            className="bg-blue-700 text-neutral-800 px-4 py-2 flex items-center gap-2 hover:bg-amber-300 transition font-medium"
+            className="bg-blue-500 text-neutral-800 px-4 py-2 flex items-center gap-2 hover:bg-blue-300 transition font-medium"
           >
             <CiSearch size={20} />
             <span className="hidden sm:inline">Buscar</span>
