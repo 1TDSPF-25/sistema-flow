@@ -16,11 +16,11 @@
     }
 
     & main{
-        @apply bg-[#e7e4e4] text-white h-[60vh] w-[100vw] overflow-auto;
+        @apply bg-[#e7e4e4] text-white h-[70vh] w-[100vw] overflow-auto;
     }
 
     & footer{
-        @apply  text-white h-[20vh] w-[100vw];
+        @apply  text-white h-[10vh] w-[100vw];
     }
 
 }

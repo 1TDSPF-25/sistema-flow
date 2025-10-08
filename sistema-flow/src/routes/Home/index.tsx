@@ -29,7 +29,7 @@ export default function Home() {
   }, [produtos]);
 
   return (
-    <main className="flex flex-col min-h-screen bg-gray-50 items-center justify-center">
+    <main className="flex flex-col h-[100vh] bg-gray-50 items-center justify-center">
       <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">
         Resultado da pesquisa
       </h2>
