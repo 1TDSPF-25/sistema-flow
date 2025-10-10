@@ -65,37 +65,42 @@
     {
     "id": "012",
     "nome": "Alexandre",
-    "nomeUser": "ale",
+    "nomeUser": "ale1",
     "email": "ale@fiap.com.br",
-    "avatar": "/avatar.ale.png"
+    "avatar": "/avatar.ale.png",
+    "senha": "senhaale1"
   },
   {
     "id": "014",
     "nome": "Carlos",
-    "nomeUser": "cadu",
+    "nomeUser": "cadu1",
     "email": "carlos@fiap.com.br",
-    "avatar": "/avatar.carlos.png"
+    "avatar": "/avatar.carlos.png",
+    "senha": "senhacadu1"
   },
   {
     "id": "015",
     "nome": "Daniela",
-    "nomeUser": "dani",
+    "nomeUser": "dani1",
     "email": "dani@fiap.com.br",
-    "avatar": "/avatar.dani.png"
+    "avatar": "/avatar.dani.png",
+    "senha": "senhadani1"
   },
   {
     "id": "016",
     "nome": "Eduardo",
-    "nomeUser": "edu",
+    "nomeUser": "edu1",
     "email": "eduardo@fiap.com.br",
-    "avatar": "/avatar.edu.png"
+    "avatar": "/avatar.edu.png",
+    "senha": "senhaedu1"
   },
    {
     "id": "017",
     "nome": "Fernanda",
-    "nomeUser": "fe",
+    "nomeUser": "fe1",
     "email": "fernanda@fiap.com.br",
-    "avatar": "/avatar.fe.png"
+    "avatar": "/avatar.fe.png",
+    "senha": "senhafe1"
   }
   ]
 }
