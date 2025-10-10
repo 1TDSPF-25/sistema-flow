@@ -22,3 +22,7 @@ export async function login ({nomeUser, senha}:{nomeUser:string, senha:string}) 
     return {autenticado: false, erro: "Erro ao buscar dados no servidor"};
   }
 }
+export function logout () {
+  localStorage.removeItem('auth_token');
+  localStorage.removeItem('usuario');
+}
