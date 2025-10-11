@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import type { TipoProduto } from "../../types/tipoProduto";
+import CardNoticia from "../../components/CardNoticia/CardNoticia";
 
 export default function Home() {
   const [produtos, setProdutos] = useState<TipoProduto[]>([]);
@@ -30,6 +31,7 @@ export default function Home() {
 
   return (
     <main>
+      
       <h2>Resultado da pesquisa</h2>
       {resultado.length > 0 ? (
         <ul>
@@ -42,6 +44,7 @@ export default function Home() {
       ) : (
         <p>Nenhum resultado encontrado.</p>
       )}
+      <CardNoticia/>
     </main>
   );
 }
