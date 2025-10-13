@@ -8,29 +8,24 @@
     @apply w-[100vw] h-[100vh] flex flex-col justify-between;
 
     & header{
-        @apply bg-[#322e2e] text-white h-[20vh] w-[100vw];
+        @apply  text-white h-[10p] w-[100vw];
 
         & a:hover{
-            @apply bg-amber-300;
+            @apply bg-blue-400 p-2 rounded;
         }
     }
 
     & main{
+<<<<<<< HEAD
+        @apply bg-[#e7e4e4] text-white h-[100vh] w-[100vw] overflow-auto;
+=======
         @apply bg-[#8ce4fa] text-black h-[60vh] w-[100vw] overflow-auto;
+>>>>>>> a39c0eb3c95141f1ec7aa89f9a97392bdb7763f6
     }
 
     & footer{
-        @apply bg-[#322e2e] text-white h-[20vh] w-[100vw];
+        @apply  text-white h-[5p] w-[100vw];
     }
 
 }
 
-.tblProduto{
-    @apply bg-blue-900 border-2 w-[80%] mx-auto border-collapse;
-
-    & th,td{
-        @apply border-2 p-5; 
-    }
-
-
-}

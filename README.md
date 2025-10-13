@@ -39,12 +39,22 @@ TAREFAS DO GIT FLOW - Front End Design Engineering
 
 - BUGFIX / Adicionar tratamento de erro a barra de pesquisa no cabeçalho / HenriqueM,HenriqueC,PedroS,Kauan 
 
+<<<<<<< HEAD
 - FEATURE / Atualizar textos da página para itens de farmácia (exemplo: trocar produtos tech por remédios na página produtos) / Guilherme Sola, Clayton feito<span style="color=red">DEADLINE: 9h37</span>
+=======
+- FEATURE / Atualizar textos da página para itens de farmácia (exemplo: trocar produtos tech por remédios na página produtos) / LucasR,Clayton,Sola,PedroP <span style="color=red">DEADLINE: 9h37</span>
+>>>>>>> 9b5038ffd6e74e95e391e3727278465a7cfc7a47
 
 - FEATURE / Atualizar página Produtos para exibir botão de comprar que adiciona o produto em uma lista de carrinho de compras no db json relacionada ao usuario logado/ Nikolas Brisola <span style="color=red">DEADLINE: próxima aula</span>
 
 - FEATURE / Adicionar página de carrinho de compras que resgata quais produtos o usuário logado clicou em comprar <span style="color=red">DEADLINE: próxima aula</span>
 
+<<<<<<< HEAD
+=======
+- FEATURE / Limpar consultar CEP, remover rotaLimitada de dentro do createBrowserRouter em main.tsx e outras coisas desnecessárias do código/ LucasR,Clayton,Sola,PedroP <span style="color=red">DEADLINE: 9h42</span>
+
+- FEATURE / Atualizar e consumir validação de login / Felipe Ferrete <span style="color=red">DEADLINE: proxima aula</span>
+>>>>>>> 9b5038ffd6e74e95e391e3727278465a7cfc7a47
 </ul>
 
 ### TIMES
