@@ -21,6 +21,7 @@ TAREFAS DO GIT FLOW - Front End Design Engineering
 - [x] FEATURE / Limpar consultar CEP, remover rotaLimitada de dentro do createBrowserRouter em main.tsx e outras coisas desnecessárias do código
 - [x] FEATURE / Atualizar textos da página para itens de farmácia (exemplo: trocar produtos tech por remédios na página produtos)
 - [x] BUGFIX / Adicionar tratamento de erro a barra de pesquisa no cabeçalho
+- [x] FEATURE / Melhorar o rodapé, com informações dinâmicas sobre o tempo e a bolsa de valores
 </ul>
 <ul style="color:red">
   <li> ... </li>
@@ -35,10 +36,6 @@ TAREFAS DO GIT FLOW - Front End Design Engineering
 ---
 ## EM DESENVOLVIMENTO:
 <ul style="color:yellow">
-
-
-- FEATURE / Melhorar o rodapé, com informações dinâmicas sobre o tempo e a bolsa de valores / Guilherme, Pedro, Gabriel <span style="color=red">DEADLINE: próxima aula</span>
-
 - FEATURE / Atualizar página Produtos para exibir botão de comprar que adiciona o produto em uma lista de carrinho de compras no db json relacionada ao usuario logado/ Nikolas Brisola <span style="color=red">DEADLINE: próxima aula</span>
 
 - FEATURE / Adicionar página de carrinho de compras que resgata quais produtos o usuário logado clicou em comprar / Nikolas Brisola <span style="color=red">DEADLINE: próxima aula</span>
@@ -49,15 +46,15 @@ TAREFAS DO GIT FLOW - Front End Design Engineering
 
 - FEATURE / Atualizar exibição de produtos, de vez tabela fazer em forma de card / Nicolly, Cléo, Samyr <span style="color=red">DEADLINE: próxima aula</span>
 
-- FEATURE / Remodelação estilização de card noticias na home / João C, João B <span style="color=red">DEADLINE: próxima aula</span>
+- FEATURE / Remodelação estilização de card noticias na home / João Caetano, João Bueno <span style="color=red">DEADLINE: próxima aula</span>
 
-- FEATURE / Adição de opção para remover produto na página editar produtos / Enzo, Pietro, Lucas <span style="color=red">DEADLINE: próxima aula</span>
+- FEATURE / Adição de opção para remover produto na página editar produtos / Enzo, Pietro, Lucas Ryuji<span style="color=red">DEADLINE: próxima aula</span>
 
-- FEATURE / Adicionar página de finalizar compra, com opção de adicionar dados de pagamento / HenriqueM,HenriqueC,PedroS,Kauan <span style="color=red">DEADLINE: próxima aula</span>
+- FEATURE / Adicionar página de finalizar compra, com opção de adicionar dados de pagamento / Henrique Martins,Henrique Cesar, Pedro Sakai, Kauan <span style="color=red">DEADLINE: próxima aula</span>
 
-- BUGFIX / Corrigir tipagem de erro no rodapé, corrigir useEffect na home e outros erros caso encontrar / Guilherme, Pedro, Gabriel <span style="color=red">DEADLINE: próxima aula</span>
+- BUGFIX / Corrigir tipagem de erro no rodapé, corrigir useEffect na home e outros erros caso encontrar / Guilherme Macedo, Pedro Henrique, Gabriel Hayashi <span style="color=red">DEADLINE: próxima aula</span>
 
-- FEATURE / Remodelar estilização do rodapé / PedroP, Sola, Clayton, LucasR <span style="color=red">DEADLINE: próxima aula</span>
+- FEATURE / Remodelar estilização do rodapé / Pedro Pequini, Guilherme Sola, Clayton, Lucas Rafael <span style="color=red">DEADLINE: próxima aula</span>
 </ul>
 
 ### TIMES
