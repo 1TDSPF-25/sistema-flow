@@ -7,8 +7,6 @@ export default function Home() {
   const [resultado, setResultado] = useState<TipoProduto[]>([]);
   const [erroApi, setErroApi] = useState<string | null>(null);
 
-
-  
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -30,17 +28,14 @@ export default function Home() {
     fetchData();
   }, []);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const response = await fetch("http://localhost:3001/produtos");
-      const data: TipoProduto[] = await response.json();
-      setProdutos(data);
-    };
-    fetchData();
-  }, []);
-
   const atualizarPesquisa = () => {
+    if (erroApi) return;
+
     const termo = localStorage.getItem("termoPesquisa") || "";
+    if (!termo) {
+      setResultado([]);
+      return;
+    }
     const termoNormalizado = termo.toLowerCase();
     const filtrados = produtos.filter((p) =>
       p.nome.toLowerCase().includes(termoNormalizado)
@@ -49,16 +44,19 @@ export default function Home() {
   };
 
   useEffect(() => {
+    atualizarPesquisa(); 
     window.addEventListener("storage", atualizarPesquisa);
     return () => window.removeEventListener("storage", atualizarPesquisa);
   }, [produtos]);
 
-
   return (
     <main>
-      
       <h2>Resultado da pesquisa</h2>
-      {resultado.length > 0 ? (
+      {erroApi ? (
+        <p>
+          {erroApi}
+        </p>
+      ) : resultado.length > 0 ? (
         <ul>
           {resultado.map((p) => (
             <li key={p.id}>
@@ -69,7 +67,8 @@ export default function Home() {
       ) : (
         <p>Nenhum resultado encontrado.</p>
       )}
-      <CardNoticia/>
+
+      <CardNoticia />
     </main>
   );
 }
