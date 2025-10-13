@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-export default function Rodape(){
-
-    return(
-        <footer>
-            <p>&copy; Todos os direitos reservados - 2025. App</p>
-        </footer>
-    );
-}
-=======
 import React, { useState, useEffect } from 'react';
 
 
@@ -116,4 +106,3 @@ const FinanceData: React.FC = () => {
 };
 
 export default FinanceData;
->>>>>>> 21295116d9b36f19c0b500ba8c0ab173512c68c5
