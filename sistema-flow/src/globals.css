@@ -16,7 +16,11 @@
     }
 
     & main{
+<<<<<<< HEAD
         @apply bg-[#e7e4e4] text-white h-[100vh] w-[100vw] overflow-auto;
+=======
+        @apply bg-[#8ce4fa] text-black h-[60vh] w-[100vw] overflow-auto;
+>>>>>>> a39c0eb3c95141f1ec7aa89f9a97392bdb7763f6
     }
 
     & footer{
