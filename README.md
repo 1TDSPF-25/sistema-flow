@@ -1,8 +1,28 @@
 #Lista de Tarefas FEATURES 
 ## <span style='color: red;'>DEADLINE destas Tarefas : Próxima aula</span> sentence
 TAREFAS DO GIT FLOW - Front End Design Engineering
+## RESPONSABILIDADE:
+### MENTORIA: PROF.ALEXANDRE
+### TEC LEADER: GUSTAVO BOSAK
+### HOMOLOGAÇÃO: FELIPE FURLANETTO
+
 ```
-- [x] HOTFIX/Corrigir problema grave de carregamento./Bosak, Ferrete, Brisola
+---
+## IMPLEMENTADOS:
+<ul style="color:green">
+- [x] HOTFIX/Corrigir problema grave de carregamento./
+     <li> ... </li>
+</ul>
+
+---
+## EM HOMOLOGAÇÃO:
+<ul style="color:orange">
+     <li> ... </li>
+</ul>
+
+---
+## EM DESENVOLVIMENTO:
+<ul style="color:yellow">
 - [x] FEATURE / Criar uma api de usuários com um ENDPOINT de nome usuarios, com os campos [id:string,nome:string,nomeUser:string,email:string,avatar:string]. utilize o json-server para isso. / Bosak, Ferrete, Brisola 
 - [x] FEATURE / Atualizar o cabeçalho com um campo de pesquisa sobre produtos eletrônicos-coloque o resultado na home/HenriqueM,HenriqueC,PedroS,Kauan
 ```
@@ -22,3 +42,9 @@ TAREFAS DO GIT FLOW - Front End Design Engineering
 - FEATURE / Gerar um sistema de validação com localStorage e sessionStoarge + Token /Bosak, Ferrete, Brisola
 
 - BUGFIX / Adicionar tratamento de erro a barra de pesquisa no cabeçalho / HenriqueM,HenriqueC,PedroS,Kauan
+</ul>
+
+### TIMES
+- LIBERADOS
+[ Zezinho, Luizinho, Huguinho ]
+[Ferrete, Brisola]
