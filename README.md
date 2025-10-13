@@ -32,7 +32,7 @@ TAREFAS DO GIT FLOW - Front End Design Engineering
 
 - FEATURE / Mesclar cópia de card de notícias na na HOME / Enzo, Pietro, Lucas <span style="color=red">DEADLINE: 9h42</span>
 
-- FEATURE / Melhorar a estilização do Formulário, dando ênfase na reponsividade / João-C, Furlaneto,Ryan, Raul
+- FEATURE/Melhorar a estilização da Tabela e aplicar um campo de filtro, onde se possa pesquisar direto nela o produto/LucasR,Clayton,Sola,PedroP<span style="color:red">DEADLINE [09:40]</span>
 
 - FEATURE / Melhorar o rodapé, com informações dinâmicas sobre o tempo e a bolsa de valores / Guilherme, Pedro, Gabriel
 
