@@ -46,8 +46,11 @@ TAREFAS DO GIT FLOW - Front End Design Engineering
 
 - FEATURE / Atualizar textos da página para itens de farmácia (exemplo: trocar produtos tech por remédios na página produtos) / Guilherme Sola, Clayton <span style="color=red">DEADLINE: 9h37</span>
 
-- FEATURE / Atualizar página Produtos para exibir botão de compra que adiciona o produto em uma lista de carrinho de compras no db json<span style="color=red">DEADLINE: 9h47</span>
+- FEATURE / Atualizar página Produtos para exibir botão de comprar que adiciona o produto em uma lista de carrinho de compras no db json relacionada ao usuario logado/ Nikolas Brisola <span style="color=red">DEADLINE: próxima aula</span>
 
+- FEATURE / Adicionar página de carrinho de compras que resgata quais produtos o usuário logado clicou em comprar <span style="color=red">DEADLINE: próxima aula</span>
+
+- FEATURE / Limpar consultar CEP, remover rotaLimitada de dentro do createBrowserRouter em main.tsx e outras coisas desnecessárias do código/ Clayton,Sola <span style="color=red">DEADLINE: 9h42</span>
 </ul>
 
 ### TIMES
