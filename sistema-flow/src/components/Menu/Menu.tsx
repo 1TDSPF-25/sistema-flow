@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 
-<<<<<<< HEAD
 export default function Menu() {
   return (
     <nav className="bg-blue-900 w-full">
@@ -30,15 +29,3 @@ export default function Menu() {
     </nav>
   );
 }
-=======
-export default function Menu(){
-
-    return(
-        <nav>
-            <Link to="/">Home </Link>| 
-            <Link to="/produtos"> Produtos</Link>
-            <Link to="/consulta-cep"> consultar cep</Link>
-        </nav>
-    );
-}
->>>>>>> feature/adicionando-api-bolsa

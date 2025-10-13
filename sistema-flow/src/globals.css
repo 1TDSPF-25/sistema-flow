@@ -8,40 +8,23 @@
     @apply w-[100vw] h-[100vh] flex flex-col justify-between;
 
     & header{
-<<<<<<< HEAD
         @apply  text-white h-[10p] w-[100vw];
 
         & a:hover{
             @apply bg-blue-400 p-2 rounded;
-=======
-        @apply bg-[#322e2e] text-white h-[20vh] w-[100vw];
-
-        & a:hover{
-            @apply bg-amber-300;
->>>>>>> feature/adicionando-api-bolsa
         }
     }
 
     & main{
-<<<<<<< HEAD
         @apply bg-[#e7e4e4] text-white h-[100vh] w-[100vw] overflow-auto;
     }
 
     & footer{
         @apply  text-white h-[5p] w-[100vw];
-=======
-        @apply bg-[#732828] text-white h-[60vh] w-[100vw] overflow-auto;
-    }
-
-    & footer{
-        @apply bg-[#322e2e] text-white h-[20vh] w-[100vw];
->>>>>>> feature/adicionando-api-bolsa
     }
 
 }
 
-<<<<<<< HEAD
-=======
 .tblProduto{
     @apply bg-blue-900 border-2 w-[80%] mx-auto border-collapse;
 
@@ -50,5 +33,4 @@
     }
 
 
-} n
->>>>>>> feature/adicionando-api-bolsa
+}

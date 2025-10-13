@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { useState } from "react";
 import Menu from "../Menu/Menu";
 import { CiSearch } from "react-icons/ci";
@@ -59,16 +58,3 @@ export default function Cabecalho() {
     </header>
   );
 }
-=======
-import Menu from "../Menu/Menu";
-
-export default function Cabecalho(){
-
-    return(
-        <header>
-            <h1>Cabeçalho</h1>
-            <Menu/>
-        </header>   
-    );
-}
->>>>>>> feature/adicionando-api-bolsa

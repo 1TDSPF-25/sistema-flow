@@ -1,23 +1,13 @@
-<<<<<<< HEAD
-=======
 // vite.config.ts
->>>>>>> feature/adicionando-api-bolsa
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
-<<<<<<< HEAD
-// https://vite.dev/config/
-=======
->>>>>>> feature/adicionando-api-bolsa
 export default defineConfig({
   plugins: [
     react(),
     tailwindcss()
   ],
-<<<<<<< HEAD
-})
-=======
   server: {
     proxy: {
       
@@ -35,4 +25,3 @@ export default defineConfig({
     }
   }
 })
->>>>>>> feature/adicionando-api-bolsa
