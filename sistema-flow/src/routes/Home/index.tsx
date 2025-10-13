@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import type { TipoProduto } from "../../types/tipoProduto";
+import CardNoticia from "../../components/CardNoticia/CardNoticia";
 
 export default function Home() {
   const [produtos, setProdutos] = useState<TipoProduto[]>([]);
@@ -58,6 +59,7 @@ export default function Home() {
           Nenhum resultado encontrado.
         </p>
       )}
+      <CardNoticia/>
     </main>
   );
 }
