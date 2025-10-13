@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useEffect, useState } from "react";
 import type { TipoProduto } from "../../types/tipoProduto";
 import CardNoticia from "../../components/CardNoticia/CardNoticia";
@@ -84,3 +85,18 @@ export default function Home() {
     </main>
   );
 }
+=======
+import { useEffect } from "react";
+
+export default function Home(){
+        useEffect(() => {
+            document.title = "Home";
+        }, []);
+
+    return(
+        <main>
+            <h1>Home</h1>
+        </main>
+    );
+}
+>>>>>>> feature/adicionando-api-bolsa
