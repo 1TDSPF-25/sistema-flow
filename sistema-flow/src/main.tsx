@@ -16,8 +16,8 @@ export function rotaLimitada(elemento:React.ReactElement) {
 const router = createBrowserRouter([
     {path:"/", element: <App/>, errorElement:<Error/>, children:[
     {path:"/", element: <Home/>},
-    {path:"/produtos", element:rotaLimitada( <Produtos/>)},
-    {path:"/editar/produtos/:id", element: rotaLimitada(<EditarProdutos/>)},
+    {path:"/produtos", element:( <Produtos/>)},
+    {path:"/editar/produtos/:id", element: (<EditarProdutos/>)},
   ]}
 ]); 
 
