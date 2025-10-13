@@ -18,7 +18,9 @@ TAREFAS DO GIT FLOW - Front End Design Engineering
 - [x] FEATURE / Criar um componente de Login completo, incluindo rotas e registro destas.
 - [x] FEATURE / Remodelagem da página de erro404, com redirect, utilizando o rook useNavigate 
 - [x] FEATURE/ Melhorar a estilização da Tabela e aplicar um campo de filtro, onde se possa pesquisar direto nela o produto
-- FEATURE / Limpar consultar CEP, remover rotaLimitada de dentro do createBrowserRouter em main.tsx e outras coisas desnecessárias do código
+- [x] FEATURE / Limpar consultar CEP, remover rotaLimitada de dentro do createBrowserRouter em main.tsx e outras coisas desnecessárias do código
+- [x] FEATURE / Atualizar textos da página para itens de farmácia (exemplo: trocar produtos tech por remédios na página produtos)
+- [x] BUGFIX / Adicionar tratamento de erro a barra de pesquisa no cabeçalho
 </ul>
 <ul style="color:red">
   <li> ... </li>
@@ -35,11 +37,7 @@ TAREFAS DO GIT FLOW - Front End Design Engineering
 <ul style="color:yellow">
 
 
-- FEATURE / Melhorar o rodapé, com informações dinâmicas sobre o tempo e a bolsa de valores / Guilherme, Pedro, Gabriel
-
-- BUGFIX / Adicionar tratamento de erro a barra de pesquisa no cabeçalho / HenriqueM,HenriqueC,PedroS,Kauan 
-
-- FEATURE / Atualizar textos da página para itens de farmácia (exemplo: trocar produtos tech por remédios na página produtos) / LucasR,Clayton,Sola,PedroP <span style="color=red">DEADLINE: 9h37</span>
+- FEATURE / Melhorar o rodapé, com informações dinâmicas sobre o tempo e a bolsa de valores / Guilherme, Pedro, Gabriel 
 
 - FEATURE / Atualizar página Produtos para exibir botão de comprar que adiciona o produto em uma lista de carrinho de compras no db json relacionada ao usuario logado/ Nikolas Brisola <span style="color=red">DEADLINE: próxima aula</span>
 
@@ -49,13 +47,13 @@ TAREFAS DO GIT FLOW - Front End Design Engineering
 
 - FEATURE / Adicionar componente para exibir resultados da barra de pesquisa / Raul, Ryan <span style="color=red">DEADLINE: próxima aula</span>
 
+- FEATURE / Atualizar exibição de produtos, de vez tabela fazer em forma de card / Nicolly, Cléo, Samyr <span style="color=red">DEADLINE: próxima aula</span>
 
+- FEATURE / 
 </ul>
 
 ### TIMES
 - LIBERADOS
-[Enzo, Pietro, Lucas]
-[ Felipe Ferrete]
-[Nicolly - Cléo - Samyr]
-[ Clayton,Sola ]
-[ LucasR,Clayton,Sola,PedroP ]
+[ Enzo, Pietro, Lucas ]
+[ João C, João B ]
+[ HenriqueM,HenriqueC,PedroS,Kauan  ]
