@@ -1,6 +1,5 @@
-// src/components/Rodape/Rodape.tsx
-import { useState, useEffect } from 'react';
 
+import { useState, useEffect } from 'react';
 
 interface Currency { name: string; buy: number; }
 interface Stock { name: string; location: string; points?: number; }
@@ -10,17 +9,12 @@ export default function Rodape() {
 
   const [currencies, setCurrencies] = useState<{ [key: string]: Currency }>({});
   const [stocks, setStocks] = useState<{ [key: string]: Stock }>({});
-  
- 
   const [weather, setWeather] = useState<WeatherData | null>(null);
-
- 
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
- 
+
   useEffect(() => {
     const API_KEY = import.meta.env.VITE_API_KEY_HGBRASIL; 
-    
     
     const financeApiUrl = `/api-hgbrasil/finance?key=${API_KEY}`;
     const weatherApiUrl = `/api-hgbrasil/weather?key=${API_KEY}`;
@@ -29,7 +23,6 @@ export default function Rodape() {
       setLoading(true);
       setError(null);
       try {
-        
         const [financeResponse, weatherResponse] = await Promise.all([
           fetch(financeApiUrl),
           fetch(weatherApiUrl)
@@ -41,13 +34,19 @@ export default function Rodape() {
         const financeData = await financeResponse.json();
         const weatherData = await weatherResponse.json();
 
-        
         setCurrencies(financeData.results.currencies);
         setStocks(financeData.results.stocks);
         setWeather(weatherData.results);
 
       } catch (err) {
-        setError(err.message);
+        
+        if (err instanceof Error) {
+          
+          setError(err.message);
+        } else {
+          
+          setError(String(err));
+        }
         console.error("Erro ao buscar dados da API:", err);
       } finally {
         setLoading(false);
@@ -56,7 +55,8 @@ export default function Rodape() {
 
     fetchData();
   }, []);
-  
+ 
+  // O restante do código permanece o mesmo...
   if (loading) return <footer>Carregando dados...</footer>;
   if (error) return <footer style={{ color: 'red' }}>Erro ao carregar dados: {error}</footer>;
 
