@@ -5,6 +5,30 @@ import CardNoticia from "../../components/CardNoticia/CardNoticia";
 export default function Home() {
   const [produtos, setProdutos] = useState<TipoProduto[]>([]);
   const [resultado, setResultado] = useState<TipoProduto[]>([]);
+  const [erroApi, setErroApi] = useState<string | null>(null);
+
+
+  
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch("http://localhost:3001/produtos");
+        if (!response.ok) {
+          throw new Error("A resposta da API não foi bem-sucedida.");
+        }
+
+        const data: TipoProduto[] = await response.json();
+        setProdutos(data);
+        setErroApi(null); 
+      
+      } catch (error) {
+        console.error("Falha ao conectar com a API:", error);
+        setErroApi("API offline. Por favor, execute 'npm run api' e recarregue a página.");
+      }
+    };
+
+    fetchData();
+  }, []);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -29,19 +53,6 @@ export default function Home() {
     return () => window.removeEventListener("storage", atualizarPesquisa);
   }, [produtos]);
 
-  useEffect(() => {
-    const fetchPesquisa = async () => {
-      try {
-        const response = await fetch(`http://localhost:3001/produtos`);
-                if(!response.ok){
-                    throw new Error("Erro ao buscar o produto");
-                }
-      } catch (error) {
-        console.error(error);
-      }
-    }
-    fetchPesquisa();
-  });
 
   return (
     <main>
