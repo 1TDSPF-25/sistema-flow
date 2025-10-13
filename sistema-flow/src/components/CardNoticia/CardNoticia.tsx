@@ -1,8 +1,7 @@
 export default function CardNoticia(){
     return(
-        <div className="flex justify-center w-screen">
-
-            <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 text-wrap text-sm md:text-base lg:text-base">
+        <div className="flex justify-center w-screen bg-gray-100 py-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-5">
 
                 <div className="border-2 p-5 m-3 justify-center">
                     <h1 className="font-bold">Corinthians Desafia Gigante Europeu e Conquista o Tricampeonato Mundial em Jogo Épico Contra o Real Madrid</h1>
