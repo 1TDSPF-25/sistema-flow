@@ -37,7 +37,7 @@ TAREFAS DO GIT FLOW - Front End Design Engineering
 
 - FEATURE/Melhorar a estilização da Tabela e aplicar um campo de filtro, onde se possa pesquisar direto nela o produto/LucasR,Clayton,Sola,PedroP
 
-- FEATURE / Criar um componente de Login completo, incluindo rotas e registro destas. / João Bueno - Furlaneto - João Caetano
+- FEATURE / Criar um componente de Login completo, incluindo rotas e registro destas. / Felipe Ferrete <span style="color=red">DEADLINE: 9h40</span>
 
 - FEATURE / Remodelagem da página de erro404, com redirect, utilizando o rook useNavigate  / Nicolly - Cléo - Samyr
 
@@ -49,5 +49,4 @@ TAREFAS DO GIT FLOW - Front End Design Engineering
 
 ### TIMES
 - LIBERADOS
-[ Zezinho, Luizinho, Huguinho ]
-[Ferrete, Brisola]
+[ Guilherme Sola, Clayton ]
