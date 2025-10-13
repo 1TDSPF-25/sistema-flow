@@ -29,6 +29,20 @@ export default function Home() {
     return () => window.removeEventListener("storage", atualizarPesquisa);
   }, [produtos]);
 
+  useEffect(() => {
+    const fetchPesquisa = async () => {
+      try {
+        const response = await fetch(`http://localhost:3001/produtos`);
+                if(!response.ok){
+                    throw new Error("Erro ao buscar o produto");
+                }
+      } catch (error) {
+        console.error(error);
+      }
+    }
+    fetchPesquisa();
+  });
+
   return (
     <main>
       
