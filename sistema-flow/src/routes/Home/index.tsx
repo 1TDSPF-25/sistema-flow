@@ -30,9 +30,6 @@ export default function Home() {
   }, [produtos]);
 
   return (
-    <main>
-      
-      <h2>Resultado da pesquisa</h2>
     <main className="flex flex-col bg-gray-50 items-center justify-center">
       <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">
         Resultado da pesquisa
