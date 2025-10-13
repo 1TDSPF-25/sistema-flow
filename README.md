@@ -37,7 +37,7 @@ TAREFAS DO GIT FLOW - Front End Design Engineering
 <ul style="color:yellow">
 
 
-- FEATURE / Melhorar o rodapé, com informações dinâmicas sobre o tempo e a bolsa de valores / Guilherme, Pedro, Gabriel 
+- FEATURE / Melhorar o rodapé, com informações dinâmicas sobre o tempo e a bolsa de valores / Guilherme, Pedro, Gabriel <span style="color=red">DEADLINE: próxima aula</span>
 
 - FEATURE / Atualizar página Produtos para exibir botão de comprar que adiciona o produto em uma lista de carrinho de compras no db json relacionada ao usuario logado/ Nikolas Brisola <span style="color=red">DEADLINE: próxima aula</span>
 
@@ -49,11 +49,13 @@ TAREFAS DO GIT FLOW - Front End Design Engineering
 
 - FEATURE / Atualizar exibição de produtos, de vez tabela fazer em forma de card / Nicolly, Cléo, Samyr <span style="color=red">DEADLINE: próxima aula</span>
 
-- FEATURE / 
+- FEATURE / Remodelação estilização de card noticias na home / João C, João B <span style="color=red">DEADLINE: próxima aula</span>
+
+- FEATURE / Adição de opção para remover produto na página editar produtos / Enzo, Pietro, Lucas <span style="color=red">DEADLINE: próxima aula</span>
+
+- FEATURE / Adicionar página de finalizar compra, com opção de adicionar dados de pagamento / HenriqueM,HenriqueC,PedroS,Kauan <span style="color=red">DEADLINE: próxima aula</span>
+
 </ul>
 
 ### TIMES
 - LIBERADOS
-[ Enzo, Pietro, Lucas ]
-[ João C, João B ]
-[ HenriqueM,HenriqueC,PedroS,Kauan  ]
