@@ -55,6 +55,9 @@ TAREFAS DO GIT FLOW - Front End Design Engineering
 
 - FEATURE / Adicionar página de finalizar compra, com opção de adicionar dados de pagamento / HenriqueM,HenriqueC,PedroS,Kauan <span style="color=red">DEADLINE: próxima aula</span>
 
+- BUGFIX / Corrigir tipagem de erro no rodapé, corrigir useEffect na home e outros erros caso encontrar / Guilherme, Pedro, Gabriel <span style="color=red">DEADLINE: próxima aula</span>
+
+- FEATURE / Remodelar estilização do rodapé / PedroP, Sola, Clayton, LucasR <span style="color=red">DEADLINE: próxima aula</span>
 </ul>
 
 ### TIMES
