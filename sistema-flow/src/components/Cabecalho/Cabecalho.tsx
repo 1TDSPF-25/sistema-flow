@@ -1,7 +1,10 @@
-import Menu from "../Menu/Menu";
 import { useState } from "react";
+import Menu from "../Menu/Menu";
+import { CiSearch } from "react-icons/ci";
+
 export default function Cabecalho() {
   const [termo, setTermo] = useState("");
+  const [menuAberto, setMenuAberto] = useState(false);
 
   const handleSearch = () => {
     localStorage.setItem("termoPesquisa", termo);
@@ -9,17 +12,49 @@ export default function Cabecalho() {
   };
 
   return (
-    <header>
-      <h1>Cabeçalho</h1>
-      
-  <input type="text" placeholder="Pesquisar Produtos" value={termo} 
-  onChange={(e) => setTermo(e.target.value)} 
-  className="p-2 border border-gray-300 rounded-md focus:outline-none focus:border-yellow-500"/>
+    <header className="bg-blue-900 text-gray-100 shadow-md border border-blue-900">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 px-6 py-4 relative">
+        <h1 className="text-2xl font-bold tracking-tight">Minha Loja</h1>
 
-  <button onClick={handleSearch} className="p-2 bg-yellow-500 text-white rounded-md hover:bg-yellow-600">
-    Buscar
-  </button>
-      <Menu />
+        <div className="w-full md:w-1/2 bg-neutral-200 rounded-full overflow-hidden grid grid-cols-[1fr_auto]">
+          <input
+            type="text"
+            placeholder="Pesquisar produtos eletrônicos..."
+            value={termo}
+            onChange={(e) => setTermo(e.target.value)}
+            className="px-4 py-2 text-neutral-800 placeholder-gray-500 outline-none bg-transparent w-full"
+          />
+
+          <button
+            onClick={handleSearch}
+            className="bg-blue-500 text-neutral-800 px-4 py-2 hover:bg-blue-300 transition font-medium flex items-center gap-2"
+          >
+            <CiSearch size={20} />
+            <span className="hidden sm:inline">Buscar</span>
+          </button>
+        </div>
+
+        <button
+          className="md:hidden bg-blue-800 px-3 py-2 rounded-md hover:bg-blue-700 transition"
+          onClick={() => setMenuAberto(!menuAberto)}
+        >
+          Menu
+        </button>
+
+        <div className="hidden md:flex md:gap-6">
+          <Menu />
+        </div>
+      </div>
+
+      <div
+        className={`md:hidden bg-blue-900 w-full absolute left-0 transition-max-h duration-300 overflow-hidden ${
+          menuAberto ? "max-h-screen" : "max-h-0"
+        }`}
+      >
+        <div className="flex flex-col px-6 py-4 gap-4">
+          <Menu />
+        </div>
+      </div>
     </header>
   );
 }

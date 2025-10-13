@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import type { TipoProduto } from "../../types/tipoProduto";
 import { Link } from "react-router-dom";
 import { CiEdit } from "react-icons/ci";
-
+ 
 export default function Produtos() {
       useEffect(() => {
         document.title = "Produtos";
