@@ -79,14 +79,42 @@ export default function CardNoticia(){
                 </div>
                 </div>
 
-                <div className="bg-white border rounded-lg shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300">
-                   <h1 className="font-bold text-lg mb-3 text-gray-800">Guerra e Conflito: Tensão Aumenta no Mar da China Meridional Após Incidente com Drones de Patrulha Autônomos</h1>
-                   <p className="text-gray-600 text-sm md:text-base">A tensão militar aumentou no Mar da China Meridional após drones de patrulha autônomos chineses realizarem manobras agressivas contra um navio das Filipinas. O incidente gerou um debate global sobre o uso de armas autônomas em conflitos.</p>
+                {/* CARD 5 */}
+                <div className="bg-white border rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                <div className="overflow-hidden">
+                    <img
+                    src="https://tse2.mm.bing.net/th/id/OIP.MQnuhGRWPcqpWTY-tX1e5wHaEQ?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    alt="Conflito no Mar da China"
+                    className="w-full h-35 object-cover hover:scale-105 transition-transform duration-300"
+                    />
+                </div>
+                <div className="p-3">
+                    <h1 className="font-bold text-lg mb-3 text-gray-800">
+                    Tensão Aumenta no Mar da China Meridional Após Incidente com Drones
+                    </h1>
+                    <p className="text-gray-600 text-sm md:text-base">
+                    Drones autônomos chineses realizaram manobras agressivas contra navios filipinos, aumentando a tensão na região.
+                    </p>
+                </div>
                 </div>
 
-                <div className="bg-white border rounded-lg shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300">
-                   <h1 className="font-bold text-lg mb-3 text-gray-800">Tecnologia: Lançado o "Aether", o Primeiro Satélite Comercial de Limpeza de Lixo Espacial</h1>
-                   <p className="text-gray-600 text-sm md:text-base">Foi lançado com sucesso o "Aether-1", o primeiro satélite comercial projetado especificamente para a limpeza de lixo espacial. Sua missão é capturar e remover mais de 100 detritos de grande porte que estão na órbita da Terra.</p>
+                {/* CARD 6 */}
+                <div className="bg-white border rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                <div className="overflow-hidden">
+                    <img
+                    src="https://th.bing.com/th/id/OIP.jiBJ9UiglTEsHBCrQ5sdRQHaEK?w=312&h=180&c=7&r=0&o=7&cb=12&pid=1.7&rm=3"
+                    alt="Satélite Aether"
+                    className="w-full h-35 object-cover hover:scale-105 transition-transform duration-300"
+                    />
+                </div>
+                <div className="p-3">
+                    <h1 className="font-bold text-lg mb-3 text-gray-800">
+                    Tecnologia: Lançado o “Aether”, o Satélite que Limpa Lixo Espacial
+                    </h1>
+                    <p className="text-gray-600 text-sm md:text-base">
+                    O “Aether-1” é o primeiro satélite comercial de limpeza espacial, projetado para capturar e remover grandes detritos orbitais.
+                    </p>
+                </div>
                 </div>
             </div>
         </div>
