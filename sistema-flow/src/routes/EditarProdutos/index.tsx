@@ -66,6 +66,25 @@ export default function EditarProdutos(){
         }
     };
 
+    const handleDelete = async () => {
+    if (!window.confirm("Tem certeza que deseja apagar este produto?")) {
+        return;
+    }
+
+    try {
+        await fetch(`${URL_API_PRODUTOS}/${id}`, {
+            method: "DELETE",
+        });
+
+        alert("Produto apagado com sucesso!");
+        navigate("/produtos");
+
+    } catch (error) {
+        console.error("Erro ao apagar o produto:", error);
+        alert("Ocorreu um erro ao tentar apagar o produto.");
+    }
+};
+
     return(
         <main>
             <h1>Editar os produtos</h1>
@@ -108,7 +127,7 @@ export default function EditarProdutos(){
                   </div>
 
                   <div className="flex justify-end gap-2 pt-2">
-                  <button type="button" className="rounded-lg bg-red-600 px-4 py-2 text-sm font-medium text-white hover:bg-red-700 focus:ring-2 focus:ring-red-300">
+                  <button type="button" onClick={handleDelete} className="rounded-lg bg-red-600 px-4 py-2 text-sm font-medium text-white hover:bg-red-700 focus:ring-2 focus:ring-red-300">
                       Apagar Produto
                     </button>
                     <button type="submit" className="rounded-lg bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700 focus:ring-2 focus:ring-blue-300">
