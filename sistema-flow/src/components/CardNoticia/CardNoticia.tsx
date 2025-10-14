@@ -2,7 +2,8 @@ export default function CardNoticia(){
     return(
         <div className="flex justify-center w-screen bg-gray-100 py-10">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-5">
-            {/* Card Notícia 1 */}
+
+            {/* Card 1 */}
             <div className="bg-white border rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
                 <div className="overflow-hidden">
                     <img
@@ -21,8 +22,7 @@ export default function CardNoticia(){
                 </div>
                 </div>
 
-            {/* Card Notícia 2 */}
-
+            {/* Card 2 */}
                 <div className="bg-white border rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
                     <div className="overflow-hidden">
                         <img
@@ -41,8 +41,7 @@ export default function CardNoticia(){
                     </div>
                     </div>
 
-                {/* Card Notícia 3 */}
-
+            {/* Card 3 */}
                 <div className="bg-white border rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
                     <div className="overflow-hidden">
                         <img
