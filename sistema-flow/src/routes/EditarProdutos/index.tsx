@@ -108,6 +108,9 @@ export default function EditarProdutos(){
                   </div>
 
                   <div className="flex justify-end gap-2 pt-2">
+                  <button type="button" className="rounded-lg bg-red-600 px-4 py-2 text-sm font-medium text-white hover:bg-red-700 focus:ring-2 focus:ring-red-300">
+                      Apagar Produto
+                    </button>
                     <button type="submit" className="rounded-lg bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700 focus:ring-2 focus:ring-blue-300">
                       Salvar Alterações
                     </button>
