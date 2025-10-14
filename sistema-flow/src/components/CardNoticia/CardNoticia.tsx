@@ -7,17 +7,17 @@ export default function CardNoticia(){
             <div className="bg-white border rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 ">
                 <div className="overflow-hidden">
                     <img
-                    src="https://lncimg.lance.com.br/cdn-cgi/image/width=950,quality=75,fit=pad,format=webp/uploads/2023/08/2-imagens-44.jpg"
-                    alt="Corinthians Campeão Mundial"
+                    src="https://th.bing.com/th/id/OIP.YWd5_j96_muHBaH7Icj-4wHaFS?w=285&h=204&c=7&r=0&o=7&cb=12&pid=1.7&rm=3"
+                    alt="Mouse Gamer"
                     className="w-full h-35 object-cover hover:scale-105 transition-transform duration-300"
                     />
                 </div>
                 <div className="p-3">
                     <h1 className="font-bold text-lg mb-3 text-gray-800">
-                    Corinthians Desafia Gigante Europeu e Conquista o Tricampeonato Mundial
+                    HyperX dá dicas para usuários escolherem os mouses gamer perfeitos
                     </h1>
                     <p className="text-gray-600 text-sm md:text-base">
-                    Em uma final épica em Wembley, o Corinthians venceu o Real Madrid por 1 a 0 com um gol no final da partida e conquistou o tricampeonato mundial.
+                    Família Pulsefire tem modelos com e sem fio, ultraleves e mais robustos, com mais ou menos botões, além de iluminação RGB e macros personalizáveis
                     </p>
                 </div>
                 </div>
@@ -26,17 +26,17 @@ export default function CardNoticia(){
                 <div className="bg-white border rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
                     <div className="overflow-hidden">
                         <img
-                        src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2023/10/REBECA-e1698183867468.png?w=419&h=283&crop=0"
-                        alt="Rebeca Andrade Ouro Mundial"
+                        src="https://promaqtecnologia.com.br/wp-content/uploads/2023/05/Impressoras-multifuncionais-vantagens-e-desvantagens-para-as-empresas.jpg"
+                        alt="Impressora Multifuncional"
                         className="w-full h-35 object-cover hover:scale-105 transition-transform duration-300"
                         />
                     </div>
                     <div className="p-3">
                         <h1 className="font-bold text-lg mb-3 text-gray-800">
-                        Rebeca Andrade Conquista Ouro Inédito no Mundial
+                        6 impressoras e multifuncionais até R$ 900 que vão facilitar sua rotina
                         </h1>
                         <p className="text-gray-600 text-sm md:text-base">
-                        Rebeca Andrade conquistou o ouro inédito no individual geral e executou um novo salto que será oficialmente batizado como “Andrade II”.
+                        Marcas como HP, Canon, Xerox, Brother e Epson oferecem dispositivos a laser ou cartuchos de tinta com recursos que permitem imprimir direto do celular; confira a lista
                         </p>
                     </div>
                     </div>
@@ -45,17 +45,17 @@ export default function CardNoticia(){
                 <div className="bg-white border rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 ">
                     <div className="overflow-hidden">
                         <img
-                        src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/03/3.jpeg?w=849&h=477&crop=0"
-                        alt="Projeto Currículo Flexível"
+                        src="https://www.adrenaline.com.br/wp-content/uploads/2025/10/jbl-quantum-250-002-1200x801.jpg"
+                        alt="Headset gamer"
                         className="w-full h-35 object-cover hover:scale-105 transition-transform duration-300"
                         />
                     </div>
                     <div className="p-3">
                         <h1 className="font-bold text-lg mb-3 text-gray-800">
-                        Brasil Inicia Projeto-Piloto de “Currículo Flexível Invertido”
+                        Headset JBL Quantum 250 chega ao Brasil com som imersivo e foco em precisão para gamers
                         </h1>
                         <p className="text-gray-600 text-sm md:text-base">
-                        O MEC iniciou um projeto-piloto em 50 escolas com um novo modelo onde alunos estudam teoria online e aplicam a prática em sala.
+                        Novo headset JBL Quantum 250 é focado no público gamer que busca um acessório com boa relação custo-benefício.
                         </p>
                     </div>
                     </div>
@@ -64,17 +64,17 @@ export default function CardNoticia(){
                 <div className="bg-white border rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
                 <div className="overflow-hidden">
                     <img
-                    src="https://tm.ibxk.com.br/2023/02/03/03114948110520.jpg?img=1920x780"
-                    alt="Lente de Contato Inteligente"
+                    src="https://tse2.mm.bing.net/th/id/OIP.MmjY7zyu1iGhvD_4jQOBDgHaE8?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    alt="Notebook 15.6 polegadas"
                     className="w-full h-35 object-cover hover:scale-105 transition-transform duration-300"
                     />
                 </div>
                 <div className="p-3">
                     <h1 className="font-bold text-lg mb-3 text-gray-800">
-                    FDA Aprova Lente de Contato Inteligente que Mede Glicose
+                    Notebook com 15 polegadas: um desses 6 modelos é perfeito para você
                     </h1>
                     <p className="text-gray-600 text-sm md:text-base">
-                    A FDA aprovou a “GlucoLens”, lente que mede glicose na lágrima e libera insulina automaticamente — um marco para diabéticos.
+                    Com uma tela de 15'' esses notebooks podem ser grandes aliados no trabalho ou no estudo, mas sem perder a versatilidade; confira uma lista com marcas como Lenovo e Acer
                     </p>
                 </div>
                 </div>
@@ -83,17 +83,17 @@ export default function CardNoticia(){
                 <div className="bg-white border rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
                 <div className="overflow-hidden">
                     <img
-                    src="https://tse2.mm.bing.net/th/id/OIP.MQnuhGRWPcqpWTY-tX1e5wHaEQ?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
-                    alt="Conflito no Mar da China"
+                    src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2020/10/webcam-full-hd-2090719.jpg?tf=2048x"
+                    alt="Webcam Full HD"
                     className="w-full h-35 object-cover hover:scale-105 transition-transform duration-300"
                     />
                 </div>
                 <div className="p-3">
                     <h1 className="font-bold text-lg mb-3 text-gray-800">
-                    Tensão Aumenta no Mar da China Meridional Após Incidente com Drones
+                    Webcams Full HD: as 10 melhores câmeras com resolução ideal em 2025
                     </h1>
                     <p className="text-gray-600 text-sm md:text-base">
-                    Drones autônomos chineses realizaram manobras agressivas contra navios filipinos, aumentando a tensão na região.
+                    webcam full HD tornou-se um item essencial na rotina de quem trabalha, estuda ou se comunica à distância.
                     </p>
                 </div>
                 </div>
@@ -102,17 +102,17 @@ export default function CardNoticia(){
                 <div className="bg-white border rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
                 <div className="overflow-hidden">
                     <img
-                    src="https://th.bing.com/th/id/OIP.jiBJ9UiglTEsHBCrQ5sdRQHaEK?w=312&h=180&c=7&r=0&o=7&cb=12&pid=1.7&rm=3"
-                    alt="Satélite Aether"
+                    src="https://s2.glbimg.com/xS44BRJMda7AtPhSCXO09sJqa_M=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2021/G/4/RTBoVxTgOBpVJSjbHiAQ/capa-pen-drive.jpg"
+                    alt="Pen drive 64GB"
                     className="w-full h-35 object-cover hover:scale-105 transition-transform duration-300"
                     />
                 </div>
                 <div className="p-3">
                     <h1 className="font-bold text-lg mb-3 text-gray-800">
-                    Tecnologia: Lançado o “Aether”, o Satélite que Limpa Lixo Espacial
+                    Memória expansível e portátil: pen drives e cartões SD para ter seus arquivos sempre com você
                     </h1>
                     <p className="text-gray-600 text-sm md:text-base">
-                    O “Aether-1” é o primeiro satélite comercial de limpeza espacial, projetado para capturar e remover grandes detritos orbitais.
+                    Tenha seus arquivos importantes em qualquer lugar e em qualquer dispositivo: confira pen drives e cartões SD
                     </p>
                 </div>
                 </div>
