@@ -10,9 +10,15 @@
     & header{
         @apply  text-white h-[10p] w-[100vw];
 
-        & a:hover{
-            @apply bg-blue-400 p-2 rounded;
+        & a{
+
+            @apply  p-2 rounded block w-30 text-center; 
+
+            &:hover{
+                @apply bg-blue-400;
+            }
         }
+
     }
 
     & main{

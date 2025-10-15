@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function Menu() {
   return (
     <nav className="bg-blue-900 w-full">
-      <ul className="flex flex-col md:flex-row gap-2 md:gap-6 text-white font-medium items-center">
+      <ul className="w-full flex gap-2 md:gap-6 justify-center text-white font-medium items-center">
         <li>
           <Link
             to="/"
@@ -15,7 +15,7 @@ export default function Menu() {
           <Link
             to="/produtos"
           >
-            Produtos
+            Produtos 
           </Link>
         </li>
         <li>
