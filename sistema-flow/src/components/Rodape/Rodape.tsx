@@ -61,8 +61,8 @@ export default function Rodape() {
   if (error) return <footer style={{ color: 'red' }}>Erro ao carregar dados: {error}</footer>;
 
   return (
-    <footer>
-      <div style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center', height: '100%' }}>
+    <footer className="bg-gray-800 text-white p-4 w-full mt-auto">
+     <div className="flex justify-around items-center">
         
         {/* Seção de Clima */}
         {weather && (
