@@ -19,9 +19,9 @@ TAREFAS DO GIT FLOW - Front End Design Engineering
   <li>[x] FEATURE / Remodelagem da página de erro404, com redirect, utilizando o rook useNavigate </li>
   <li>[x] FEATURE/ Melhorar a estilização da Tabela e aplicar um campo de filtro, onde se possa pesquisar direto nela o produto</li>
   <li>[x] FEATURE / Limpar consultar CEP, remover rotaLimitada de dentro do createBrowserRouter em main.tsx e outras coisas desnecessárias do código</li>
-  <li>[x] FEATURE / Atualizar textos da página para itens de farmácia (exemplo: trocar produtos tech por remédios na página produtos)</li>
   <li>[x] BUGFIX / Adicionar tratamento de erro a barra de pesquisa no cabeçalho</li>
   <li>[x] FEATURE / Melhorar o rodapé, com informações dinâmicas sobre o tempo e a bolsa de valores</li>
+  <li>[x]FEATURE / Adição de opção para remover produto na página editar produtos</li>
 </ul>
 
 <ul style="color:red">
@@ -37,13 +37,14 @@ TAREFAS DO GIT FLOW - Front End Design Engineering
 ---
 ## EM DESENVOLVIMENTO:
 <ul style="color:yellow">
+  <li>BUGFIX / Limpar consultar CEP, remover rotaLimitada de dentro do createBrowserRouter em main.tsx e outras coisas desnecessárias do código Pedro Pequini, Guilherme Sola, Clayton, Lucas Rafael <span style="color=red">DEADLINE: até essa aula</span> </li>
+  <li>FEATURE / Atualizar textos da página para itens de farmácia (exemplo: trocar produtos tech por remédios na página produtos) Pedro Pequini, Guilherme Sola, Clayton, Lucas Rafael <span style="color=red">DEADLINE: até essa aula</span></li>
   <li>FEATURE / Atualizar página Produtos para exibir botão de comprar que adiciona o produto em uma lista de carrinho de compras no db json relacionada ao usuario logado/ Nikolas Brisola <span style="color=red">DEADLINE: próxima aula</span></li>
   <li>FEATURE / Adicionar página de carrinho de compras que resgata quais produtos o usuário logado clicou em comprar / Nikolas Brisola <span style="color=red">DEADLINE: próxima aula</span></li>
   <li>FEATURE / Atualizar e consumir validação de login / Felipe Ferrete <span style="color=red">DEADLINE: proxima aula</span></li>
   <li>FEATURE / Adicionar componente para exibir resultados da barra de pesquisa / Raul, Ryan <span style="color=red">DEADLINE: próxima aula</span></li>
   <li>FEATURE / Adicionar página de contao / Nicolly, Cléo, Samyr <span style="color=red">DEADLINE: próxima aula</span></li>
   <li>FEATURE / Remodelação estilização de card noticias na home / João Caetano, João Bueno <span style="color=red">DEADLINE: próxima aula</span></li>
-  <li>FEATURE / Adição de opção para remover produto na página editar produtos / Enzo, Pietro, Lucas Ryuji<span style="color=red">DEADLINE: próxima aula</span></li>
   <li>FEATURE / Adicionar página de finalizar compra, com opção de adicionar dados de pagamento / Henrique Martins,Henrique Cesar, Pedro Sakai, Kauan <span style="color=red">DEADLINE: próxima aula</span></li>
   <li>BUGFIX / Corrigir tipagem de erro no rodapé, corrigir useEffect na home e outros erros caso encontrar / Guilherme Macedo, Pedro Henrique, Gabriel Hayashi <span style="color=red">DEADLINE: próxima aula</span></li>
   <li>FEATURE / Remodelar estilização do rodapé / Pedro Pequini, Guilherme Sola, Clayton, Lucas Rafael <span style="color=red">DEADLINE: próxima aula</span></li>
@@ -52,3 +53,4 @@ TAREFAS DO GIT FLOW - Front End Design Engineering
 
 ### TIMES
 - LIBERADOS
+[Enzo, Pietro, Lucas Ryuji]
