@@ -10,6 +10,7 @@ import EditarProdutos from './routes/EditarProdutos/index.tsx';
 import Error from './routes/Error/index.tsx';
 import CadastroFarmacia from './routes/Cadastro/index.tsx';
 import LoginFarmacia from './routes/Login/index.tsx';
+import TipoCompra from './routes/FinalizarCompra/index.tsx';
 
 export function rotaLimitada(elemento: React.ReactElement) {
   return localStorage.getItem('token') ? elemento : <Home />
@@ -24,6 +25,7 @@ const router = createBrowserRouter([
       { path: "/produtos", element: <Produtos /> },
       { path: "/produto/:id", element: <Produtos /> },
       { path: "/editar/produtos/:id", element: <EditarProdutos /> },
+      { path: "/finalizar-compra", element: <TipoCompra /> }
     ]
   }
 ]);
