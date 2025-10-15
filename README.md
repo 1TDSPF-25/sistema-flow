@@ -21,7 +21,11 @@ TAREFAS DO GIT FLOW - Front End Design Engineering
   <li>[x] BUGFIX / Adicionar tratamento de erro a barra de pesquisa no cabeçalho</li>
   <li>[x] FEATURE / Melhorar o rodapé, com informações dinâmicas sobre o tempo e a bolsa de valores</li>
   <li>[x]FEATURE / Adição de opção para remover produto na página editar produtos</li>
+<<<<<<< HEAD
   <li>[x]FEATURE / Atualizar textos da página para itens de farmácia (exemplo: trocar produtos tech por remédios na página produtos)</li>
+=======
+  <li>[x] BUGFIX / Limpar consultar CEP, remover rotaLimitada de dentro do createBrowserRouter em main.tsx e outras coisas desnecessárias do código</li>
+>>>>>>> 82b0db4227aba501dfd7e5a8993b901b1fe7a604
 </ul>
 
 <ul style="color:red">
@@ -49,7 +53,11 @@ TAREFAS DO GIT FLOW - Front End Design Engineering
   <li>FEATURE / Remodelar estilização do rodapé / Pedro Pequini, Guilherme Sola, Clayton, Lucas Rafael <span style="color=red">DEADLINE: próxima aula</span></li>
   <li>FEATURE / Atualizar exibição de produtos, de vez tabela (tr, td etc) fazer em forma de card, sem id nem total de produtos / Enzo, Pietro, Lucas Ryuji / <span style="color=red">DEADLINE: 09:44</span></li>
   <li>BUGFIX / Corrigir estilização do menu na barra de navegação, o hover aplica movimentação em todo os elementos laterais presentes. / prof.Alexandre <span style="color=red">DEADLINE: 09:30</span></li>
+<<<<<<< HEAD
   <li>FEATURE / Adicionar página de notícias que aparece quando clicar na notícia / </li>
+=======
+  <li>FEATURE / Adicionar página de notícias que aparece quando clicar na notícia / Pedro Pequini, Guilherme Sola, Clayton, Lucas Rafael <span style="color=red">DEADLINE: próxima aula</span></li>
+>>>>>>> 82b0db4227aba501dfd7e5a8993b901b1fe7a604
 </ul>
 
 ### TIMES
