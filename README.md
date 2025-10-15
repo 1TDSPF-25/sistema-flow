@@ -47,11 +47,11 @@ TAREFAS DO GIT FLOW - Front End Design Engineering
   <li>FEATURE / Adicionar página de finalizar compra, com opção de adicionar dados de pagamento / Henrique Martins,Henrique Cesar, Pedro Sakai, Kauan <span style="color=red">DEADLINE: próxima aula</span></li>
   <li>BUGFIX / Corrigir tipagem de erro no rodapé, corrigir useEffect na home e outros erros caso encontrar / Guilherme Macedo, Pedro Henrique, Gabriel Hayashi <span style="color=red">DEADLINE: próxima aula</span></li>
   <li>FEATURE / Remodelar estilização do rodapé / Pedro Pequini, Guilherme Sola, Clayton, Lucas Rafael <span style="color=red">DEADLINE: próxima aula</span></li>
-  <li>FEATURE / Atualizar exibição de produtos, de vez tabela (tr, td etc) fazer em forma de card / Enzo, Pietro, Lucas Ryuji / <span style="color=red">DEADLINE: 09:44</span></li>
+  <li>FEATURE / Atualizar exibição de produtos, de vez tabela (tr, td etc) fazer em forma de card, sem id nem total de produtos / Enzo, Pietro, Lucas Ryuji / <span style="color=red">DEADLINE: 09:44</span></li>
   <li>BUGFIX / Corrigir estilização do menu na barra de navegação, o hover aplica movimentação em todo os elementos laterais presentes. / prof.Alexandre <span style="color=red">DEADLINE: 09:30</span></li>
-  <li>[x] BUGFIX / Limpar consultar CEP, remover rotaLimitada de dentro do createBrowserRouter em main.tsx e outras coisas desnecessárias do código</li>
+  <li>BUGFIX / Limpar consultar CEP, remover rotaLimitada de dentro do createBrowserRouter em main.tsx e outras coisas desnecessárias do código</li>
+  <li>FEATURE / Adicionar página de notícias que aparece quando clicar na notícia / </li>
 </ul>
 
 ### TIMES
 - LIBERADOS
-[Enzo, Pietro, Lucas Ryuji]
