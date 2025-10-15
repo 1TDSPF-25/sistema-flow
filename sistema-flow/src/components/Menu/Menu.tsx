@@ -18,13 +18,6 @@ export default function Menu() {
             Produtos 
           </Link>
         </li>
-        <li>
-          <Link
-            to="/consulta-cep"
-          >
-            Consultar CEP
-          </Link>
-        </li>
       </ul>
     </nav>
   );
