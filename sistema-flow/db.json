@@ -2,63 +2,63 @@
   "produtos": [
     {
       "id": "1",
-      "nome": "Mouse Gamer Turbo",
-      "preco": 255.78
+      "nome": "Vitamina C",
+      "preco": 22.67
     },
     {
       "id": "2",
-      "nome": "Teclado Mecânico Red",
-      "preco": 178.69
+      "nome": "Desloratadina 5mg",
+      "preco": 25.30
     },
     {
       "id": "3",
-      "nome": "Teclado Mecânico",
-      "preco": 234.9
+      "nome": "Paracetamol 500mg",
+      "preco": 12.40
     },
     {
       "id": "4",
-      "nome": "Mouse TÓxico",
-      "preco": 110.87
+      "nome": "Dipirona 500mg",
+      "preco": 10.00
     },
     {
       "id": "5",
-      "nome": "Monitor 24'",
-      "preco": 899
+      "nome": "Ibuprofeno 600mg'",
+      "preco": 9.40
     },
     {
       "id": "6",
-      "nome": "Headset Gamer",
-      "preco": 320.5
+      "nome": "Paracetamol 500mg",
+      "preco": 13.60
     },
     {
       "id": "7",
-      "nome": "Webcam Full HD",
-      "preco": 210.75
+      "nome": "Cetoprofeno 100mg",
+      "preco": 18.50
     },
     {
       "id": "8",
-      "nome": "Notebook 15.6''",
-      "preco": 3499.9
+      "nome": "Nimesulida 100mg",
+      "preco": 7.20
     },
     {
       "id": "9",
-      "nome": "Impressora Multifuncional",
-      "preco": 670.3
+      "nome": "Água Micelar",
+      "preco": 20.80
     },
     {
       "id": "10",
-      "nome": "HD Externo 1TB",
-      "preco": 450
+      "nome": "Hidratante Facial",
+      "preco": 24.60
     },
     {
       "id": "11",
-      "nome": "Pen Drive 64GB",
-      "preco": 90
+      "nome": "Shampoo Anticaspa",
+      "preco": 26.90
     },
     {
       "id": "12",
-      "nome": "Cadeira Gamer",
-      "preco": 1250
+      "nome": "Escova Dental 2 Unidades",
+      "preco": 13.99
     }
   ],
   "usuarios": [
