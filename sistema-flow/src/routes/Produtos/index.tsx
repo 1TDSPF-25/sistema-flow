@@ -35,38 +35,19 @@ export default function Produtos() {
   }, [searchTerm]);
 
   return (
-    <main>
-      <h1>Produtos</h1>
-
-      <table className="tblProduto">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>NOME</th>
-            <th>PREÇO</th>
-            <th>AÇÕES</th>
-          </tr>
-        </thead>
-        <tbody>
-          {produtos.map((produto, indice) => (
-            <tr key={indice}>
-              <td>{produto.id}</td>
-              <td>{produto.nome}</td>
-              <td>{produto.preco}</td>
-              <td>
-                <Link to={`/editar/produtos/${produto.id}`}>
-                  <CiEdit />
-                </Link>
-              </td>
-            </tr>
-          ))}
-        </tbody>
-        <tfoot>
-          <tr>
-            <td colSpan={4}>Total de Produtos : {produtos.length}</td>
-          </tr>
-        </tfoot>
-      </table>
+    <main className="p-4 sm:p-6 md:p-8">
+      <h1 className="text-2xl font-bold text-gray-800 mb-6">Produtos</h1>
+      <div>
+        {produtos.map((produto) => (
+          <div key={produto.id} style={{ border: '1px solid #eee', marginBottom: '1rem', padding: '1rem' }}>
+            <h2>{produto.nome}</h2>
+            <p>R$ {produto.preco}</p>
+            <Link to={`/editar/produtos/${produto.id}`}>
+              <CiEdit size={20} />
+            </Link>
+          </div>
+        ))}
+      </div>
     </main>
   );
 }
