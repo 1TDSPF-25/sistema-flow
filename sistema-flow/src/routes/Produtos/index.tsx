@@ -38,12 +38,9 @@ export default function Produtos() {
   return (
     <main className="p-4 sm:p-6 md:p-8">
       <h1 className="text-2xl font-bold text-gray-800 mb-6">Produtos</h1>
-      
-      <div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {produtos.map((produto) => (
-          
-          <div key={produto.id} className="bg-white border border-gray-200 rounded-lg shadow-md flex flex-col mb-6">
-            
+          <div key={produto.id} className="bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
             
             <div className="p-5 flex-grow">
               <h2 className="text-lg font-semibold text-gray-900 mb-2 truncate" title={produto.nome}>
