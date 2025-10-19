@@ -4,6 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 import { CiEdit } from "react-icons/ci";
 
 export default function Produtos() {
+  
   const [produtos, setProdutos] = useState<TipoProduto[]>([]);
   const location = useLocation();
 
@@ -37,14 +38,32 @@ export default function Produtos() {
   return (
     <main className="p-4 sm:p-6 md:p-8">
       <h1 className="text-2xl font-bold text-gray-800 mb-6">Produtos</h1>
+      
       <div>
         {produtos.map((produto) => (
-          <div key={produto.id} style={{ border: '1px solid #eee', marginBottom: '1rem', padding: '1rem' }}>
-            <h2>{produto.nome}</h2>
-            <p>R$ {produto.preco}</p>
-            <Link to={`/editar/produtos/${produto.id}`}>
-              <CiEdit size={20} />
-            </Link>
+          
+          <div key={produto.id} className="bg-white border border-gray-200 rounded-lg shadow-md flex flex-col mb-6">
+            
+            
+            <div className="p-5 flex-grow">
+              <h2 className="text-lg font-semibold text-gray-900 mb-2 truncate" title={produto.nome}>
+                {produto.nome}
+              </h2>
+              <p className="text-xl font-bold text-blue-600 mb-4">
+                R$ {produto.preco}
+              </p>
+            </div>
+            
+            
+            <div className="px-5 py-3 bg-gray-50 border-t border-gray-200 flex justify-end">
+              <Link
+                to={`/editar/produtos/${produto.id}`}
+                className="inline-flex items-center gap-2 text-sm font-medium text-blue-600 hover:text-blue-800"
+                title="Editar Produto">
+                <CiEdit size={20} />
+                <span>Editar</span>
+              </Link>
+            </div>
           </div>
         ))}
       </div>
