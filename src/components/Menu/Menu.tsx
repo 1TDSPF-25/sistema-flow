@@ -18,6 +18,7 @@ export default function Menu() {
             Produtos 
           </Link>
         </li>
+        <li><Link to="/faq">Faq</Link></li>
       </ul>
     </nav>
   );
