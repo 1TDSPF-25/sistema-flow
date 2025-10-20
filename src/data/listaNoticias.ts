@@ -28,17 +28,18 @@ export const listaDeNoticias: TipoNoticia[] = [
   {
     id: 4,
     titulo: "Amazon vai vender medicamentos controlados em máquinas eletrônicas nos EUA",
-    resumo: "Serviço será oferecido para moradores de Los Angeles, na Califórnia, que se consultarem pela rede de atendimento One Medical, adquirida pela Amazon em 2023.",
+    resumo: "Serviço será oferecido para moradores de Los Angeles, na Califórnia, que se consultarem pela rede de atendimento One Medical, adquirida pela Amazon em 2023",
     conteudoCompleto: "A Amazon anunciou que, a partir de dezembro de 2025, implementará máquinas de autoatendimento para a venda de medicamentos controlados aos pacientes do One Medical, sua rede de atendimento primário à saúde nos Estados Unidos. Com isso, os clientes não precisarão enfrentar filas nas farmácias físicas e poderão retirar seus medicamentos logo após a consulta",
     imagemUrl: "https://classic.exame.com/wp-content/uploads/2025/10/Amazon-medicamentos-autoatendimento.png?ims=750x/filters:quality(85):format(webp)",
     urlExterna: "https://exame.com/invest/mercados/amazon-vai-vender-medicamentos-controlados-em-maquinas-eletronicas-nos-eua/"
   },
   {
     id: 5,
-    titulo: "Tensão Aumenta no Mar da China Meridional Após Incidente com Drones",
-    resumo: "A tensão militar aumentou após drones chineses realizarem manobras agressivas contra um navio das Filipinas.",
-    conteudoCompleto: "Analistas internacionais expressaram preocupação com a escalada. O incidente envolveu uma nova classe de drones de patrulha com capacidade de decisão autônoma, o que levanta questões éticas e legais sobre o futuro da guerra. Diplomatas de ambos os países foram chamados para negociações de emergência.",
-    urlExterna: "https://www.terra.com.br/noticias/mundo/filipinas-e-china-trocam-acusacoes-sobre-colisao-de-navios-no-mar-do-sul-da-china,ba5322bebc4cf2a17b51e72489944098vmhesxfs.html"
+    titulo: "Mercado Livre entra na venda de remédios e setor reage; entenda a polêmica",
+    resumo: "Plataforma defende modelo de intermediação com rigor sanitário e transparência de preços, enquanto Abrafarma alerta para riscos de segurança ao consumidor",
+    conteudoCompleto: "O passo mais recente do Mercado Livre — a compra de uma pequena farmácia na zona sul de São Paulo — acendeu um debate que vai muito além do e-commerce: o futuro do varejo farmacêutico no Brasil. A operação, que abriu caminho para a empresa testar a venda de medicamentos online, foi interpretada pelo setor como o início de uma ofensiva do gigante do marketplace sobre um dos segmentos mais regulados da economia brasileira.",
+    imagemUrl: "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/10/farmacia-mercado-livre.png?w=1200&h=900&crop=0",
+    urlExterna: "https://www.cnnbrasil.com.br/blogs/debora-oliveira/economia/negocios/mercado-livre-entra-na-venda-de-remedios-e-setor-reage-entenda-a-polemica/"
   },
   {
     id: 6,
