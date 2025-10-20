@@ -9,23 +9,23 @@ import Produtos from './routes/Produtos/index.tsx';
 import EditarProdutos from './routes/EditarProdutos/index.tsx';
 import Error from './routes/Error/index.tsx';
 import CadastroFarmacia from './routes/Cadastro/index.tsx';
-import LoginFarmacia from './routes/Login/index.tsx';
+import Login from './routes/Login/index.tsx';
 import TipoCompra from './routes/FinalizarCompra/index.tsx';
 
 export function rotaLimitada(elemento: React.ReactElement) {
-  return localStorage.getItem('token') ? elemento : <Home />
+  return localStorage.getItem('token') ? elemento : <Login />
 }
 
 const router = createBrowserRouter([
   {
     path: "/", element: <App />, errorElement: <Error />, children: [
       { path: "/", element: <Home /> },
-      { path: "/login", element: <LoginFarmacia /> },
-      { path: "/cadastro", element: <CadastroFarmacia /> },
-      { path: "/produtos", element: <Produtos /> },
-      { path: "/produto/:id", element: <Produtos /> },
-      { path: "/editar/produtos/:id", element: <EditarProdutos /> },
-      { path: "/finalizar-compra", element: <TipoCompra /> }
+      { path: "/login", element:<Login /> },
+      { path: "/cadastro", element:<CadastroFarmacia /> },
+      { path: "/produtos", element:<Produtos /> },
+      { path: "/produto/:id", element:<Produtos /> },
+      { path: "/editar/produtos/:id", element:rotaLimitada(<EditarProdutos />) },
+      { path: "/finalizar-compra", element:rotaLimitada (<TipoCompra />) }
     ]
   }
 ]);
