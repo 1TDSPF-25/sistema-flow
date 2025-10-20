@@ -1,22 +1,91 @@
 # Sistema Flow
 
-O sistema flow é uma plataforma intuitiva e segura que oferece uma experiência de compra simplificada e confiável. O sistema inclui funcionalidades essenciais como login, vitrine de produtos, carrinho de compras, contato, FAQ e um painel administrativo restrito para gestão de estoque e catálogo. O objetivo é facilitar o acesso a produtos farmacêuticos, melhorar o atendimento ao cliente e otimizar os processos internos da farmácia.
+O sistema flow é uma plataforma intuitiva e segura que oferece uma experiência de compra simplificada. O sistema inclui funcionalidades essenciais como login, vitrine de produtos, carrinho de compras, contato, FAQ e um painel administrativo restrito para gestão de estoque e catálogo. O objetivo é facilitar o acesso a produtos farmacêuticos, melhorar o atendimento ao cliente e otimizar os processos internos da farmácia.
 
-## Estrutura de diretórios
+## 👥 Time
+Esse projeto está sendo construído em aula pela equipe 1TDSPF do curso de Análise e Desenvolvimento de Sistemas da FIAP, para a matéra de Front-end Design Engineering.
 
-````
+### Leaders
+
+- MENTORIA: Prof. Alexandre
+
+- TEC LEADER: Gustavo Bosak
+
+- HOMOLOGAÇÃO: Felipe Furlanetto
+
+### Equipes
+
+| Equipe | Integrantes |
+|--------|--------|
+| Equipe 1 |  |
+| Equipe 2 |  |
+| Equipe 3 |  |
+| Equipe 4 |  |
+| Equipe 5 |  |
+
+## 🚀 Rodando local
+
+1. Faça o clone do projeto
+
+```
+git clone https://github.com/1TDSPF-25/sistema-flow.git
 ```
 
-#Lista de Tarefas FEATURES
-## <span style='color: red;'>DEADLINE destas Tarefas : Próxima aula</span> sentence
-TAREFAS DO GIT FLOW - Front End Design Engineering
-## RESPONSABILIDADE:
-### MENTORIA: PROF.ALEXANDRE
-### TEC LEADER: GUSTAVO BOSAK
-### HOMOLOGAÇÃO: FELIPE FURLANETTO
+2. Instale as dependências
 
----
-## IMPLEMENTADOS:
+```
+npm install
+```
+
+3. Coloque no ar o servidor json-server
+
+```
+npm run api
+```
+
+4. Por fim, execute o programa em modo desenvolvedor
+
+```
+npm run dev
+```
+
+## 📂 Estrutura de diretórios
+
+```
+SISTEMA-FLOW/
+├── src/
+│   ├── App.tsx
+│   ├── globals.css # Arquivo principal do Tailwind CSS
+│   ├── main.tsx
+│   ├── components/
+│   │   ├── Cabecalho/
+│   │   ├── Card/
+│   │   ├── CardNoticia/
+│   │   ├── Menu/
+│   │   ├── Rodape/
+│   │   └── SearchBar/
+│   ├── routes/ # Páginas da aplicação
+│   │   ├── Cadastro/
+│   │   ├── EditarProdutos/
+│   │   ├── Error/
+│   │   ├── Faq/
+│   │   ├── FinalizarCompra/
+│   │   ├── Home/
+│   │   └── Produtos/
+│   ├── services/ # Serviços de autentificação
+│   └── types/
+├── .env # Arquivo de variáveis de ambiente
+└── db.json # Base de dados do servidor json-server
+```
+
+## 🏆 Contribuições:
+
+<a href="https://github.com/1TDSPF-25/sistema-flow/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=1TDSPF-25/sistema-flow" />
+</a>
+
+## 🛠️ Features
+### Implementados:
 <ul style="color:green">
   <li>[x] HOTFIX/Corrigir problema grave de carregamento.</li>
   <li>[x] FEATURE / Criar uma api de usuários com um ENDPOINT de nome usuarios, com os campos [id:string, nome:string, nomeUser:string, email:string, avatar:string]. utilize o json-server para isso.</li>
@@ -46,13 +115,13 @@ TAREFAS DO GIT FLOW - Front End Design Engineering
 </ul>
 
 ---
-## EM HOMOLOGAÇÃO:
+### Em Homologação:
 <ul style="color:orange">
   <li> ... </li>
 </ul>
 
 ---
-## EM DESENVOLVIMENTO:
+### Em Desenvolvimento:
 <ul style="color:yellow">
   <li>FEATURE / Atualizar página Produtos para exibir botão de comprar que adiciona o produto em uma lista de carrinho de compras no db json relacionada ao usuario logado/ Nikolas Brisola <span style="color=red">DEADLINE: próxima aula</span></li>
 
@@ -75,8 +144,6 @@ TAREFAS DO GIT FLOW - Front End Design Engineering
   <li>FEATURE Adicionar notícias relacionadas a saúde / Pedro Pequini, Guilherme Sola, Clayton, Lucas Rafael <span style="color=red">DEADLINE: próxima aula</span></li>
 </ul>
 
-### TIMES
-- LIBERADOS
-    [ João Caetano, João Bueno]
-    [Pedro Pequini, Guilherme Sola, Clayton, Lucas Rafael]
-````
+### Equipes Liberadas
+
+- 
