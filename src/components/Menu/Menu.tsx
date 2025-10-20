@@ -18,6 +18,11 @@ export default function Menu() {
             Produtos 
           </Link>
         </li>
+        <li>
+          <Link to = "/contatos">
+            Contatos 
+          </Link>
+        </li>
       </ul>
     </nav>
   );
