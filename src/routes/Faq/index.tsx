@@ -1,5 +1,3 @@
-import React from 'react';
-
 const faqData = [
     {
         question: "Quais são os horários de funcionamento da farmácia?",
