@@ -4,6 +4,14 @@ const faqData = [
         answer: "A farmácia funciona de segunda a sábado, das 8h às 20h."
     },
     {
+        question: "Preciso de receita médica para comprar medicamentos?",
+        answer: "Sim. É obrigatório apresentar receita médica válida para compra de rmédops controlados.."
+    },
+    {
+        question: "Atendimento 24 horas está disponível?",
+        answer: "Não, nosso horário de atendimento é das 8h às 20h."
+    },
+    {
         question: "Como posso fazer uma reclamação?",
         answer: "Você pode fazer uma reclamação através do nosso formulário de contato ou diretamente na loja."
     },
