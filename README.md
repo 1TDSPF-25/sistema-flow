@@ -70,7 +70,9 @@ TAREFAS DO GIT FLOW - Front End Design Engineering
 
   <li>FEATURE / Adicionar página de FAQ / Ryan e Raul <span style="color=red">DEADLINE: 9h40</span></li>
 
-  <li>FEATURE Atualizar carregamentos com Suspense API / Guilherme Macedo, Pedro Henrique, Gabriel Hayashi<span style="color=red">DEADLINE: próxima aula</span></li>
+  <li>FEATURE / Atualizar carregamentos com Suspense API / Guilherme Macedo, Pedro Henrique, Gabriel Hayashi <span style="color=red">DEADLINE: próxima aula</span></li>
+
+  <li>FEATURE Adicionar notícias relacionadas a saúde / Pedro Pequini, Guilherme Sola, Clayton, Lucas Rafael <span style="color=red">DEADLINE: próxima aula</span></li>
 </ul>
 
 ### TIMES
