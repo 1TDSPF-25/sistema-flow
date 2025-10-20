@@ -5,7 +5,7 @@ const faqData = [
     },
     {
         question: "Preciso de receita médica para comprar medicamentos?",
-        answer: "Sim. É obrigatório apresentar receita médica válida para compra de rmédops controlados.."
+        answer: "Sim. É obrigatório apresentar receita médica válida para compra de remédios controlados."
     },
     {
         question: "Atendimento 24 horas está disponível?",
@@ -13,7 +13,7 @@ const faqData = [
     },
     {
         question: "Como posso fazer uma reclamação?",
-        answer: "Você pode fazer uma reclamação através do nosso formulário de contato ou diretamente na loja."
+        answer: "Você pode fazer uma reclamação diretamente na loja se necessário."
     },
     {
         question: "A farmácia oferece entrega?",
