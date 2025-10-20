@@ -32,13 +32,13 @@ const faqData = [
 export default function Faq (){
 
     return(
-        <main>
-            <h1>FAQ - Perguntas Frequentes</h1>
-            <section>
+        <main className="flex flex-col justify-center items-center">
+            <h1 className="text-blue-900 font-bold text-3xl m-3">FAQ - Perguntas Frequentes</h1>
+            <section className="border-2 rounded w-[50vw] shadow-2xl bg-white p-7 gap-1">
                 {faqData.map((item, index) => (
-                    <div key={index}>
-                        <h2>{item.question}</h2>
-                        <p>{item.answer}</p>
+                    <div key={index} className="flex flex-col">
+                        <h2 className="text-blue-800 font-bold text-[20px]">{item.question}</h2>
+                        <p className="text-neutral-800 text-[20px]">{item.answer}</p>
                     </div>
                 ))}
             </section>
