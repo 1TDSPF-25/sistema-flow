@@ -25,6 +25,7 @@ TAREFAS DO GIT FLOW - Front End Design Engineering
   <li>[x] BUGFIX / Corrigir estilização do menu na barra de navegação, o hover aplica movimentação em todo os elementos laterais presentes.</li>
   <li>[x] FEATURE / Atualizar textos da página para itens de farmácia (exemplo: trocar produtos tech por remédios na página produtos)</li>
   <li>[x] FEATURE / Adicionar componente para exibir resultados da barra de pesquisa</li>
+  <li>[x]FEATURE / Adicionar página de finalizar compra, com opção de adicionar dados de pagamento</li>
 </ul>
 
 <ul style="color:red">
@@ -50,8 +51,6 @@ TAREFAS DO GIT FLOW - Front End Design Engineering
   
   <li>FEATURE / Remodelação estilização de card noticias na home / João Caetano, João Bueno <span style="color=red">DEADLINE: próxima aula</span></li>
   
-  <li>FEATURE / Adicionar página de finalizar compra, com opção de adicionar dados de pagamento / Henrique Martins,Henrique Cesar, Pedro Sakai, Kauan <span style="color=red">DEADLINE: próxima aula</span></li>
-  
   <li>BUGFIX / Corrigir tipagem de erro no rodapé, corrigir useEffect na home e outros erros caso encontrar / Guilherme Macedo, Pedro Henrique, Gabriel Hayashi <span style="color=red">DEADLINE: próxima aula</span></li>
   
   <li>FEATURE / Remodelar estilização do rodapé / Pedro Pequini, Guilherme Sola, Clayton, Lucas Rafael <span style="color=red">DEADLINE: próxima aula</span></li>
@@ -66,3 +65,4 @@ TAREFAS DO GIT FLOW - Front End Design Engineering
 ### TIMES
 - LIBERADOS
     [Ryan e Raul]
+    [Henrique Martins,Henrique Cesar, Pedro Sakai, Kauan ]
