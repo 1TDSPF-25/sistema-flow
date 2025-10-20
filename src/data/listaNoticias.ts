@@ -3,11 +3,11 @@ import type { TipoNoticia } from "../types/tipoNoticia";
 export const listaDeNoticias: TipoNoticia[] = [
   {
     id: 1,
-    titulo: "Corinthians Desafia Gigante Europeu e Conquista o Tricampeonato Mundial",
-    resumo: "Em uma final épica em Wembley, o Corinthians venceu o Real Madrid por 1 a 0 com um gol no final da partida e conquistou o tricampeonato mundial.",
-    conteudoCompleto: "O jogo foi tenso do início ao fim. O Real Madrid pressionou, mas a defesa do Corinthians, liderada por Cássio, foi impecável. O gol da vitória saiu aos 42 minutos do segundo tempo, em um contra-ataque rápido finalizado por Guerrero, levando a torcida à loucura.",
-    imagemUrl: "https://lncimg.lance.com.br/cdn-cgi/image/width=950,quality=75,fit=pad,format=webp/uploads/2023/08/2-imagens-44.jpg",
-    urlExterna: "https://www.lance.com.br/corinthians/noticia-ficticia-titulo.html"
+    titulo: "Pacientes enfrentam longas filas na única farmácia de medicamentos de alto custo de Guarulhos, na Grande SP",
+    resumo: "Bem antes do dia amanhecer e horas da abertura do local, é comum pacientes e parentes começarem a chegar na fila para garantir atendimento.",
+    conteudoCompleto: "Pacientes, incluindo muitos idosos, costumam enfrentar uma fila gigante para pegar medicamentos de alto custo na única farmácia especializada de Guarulhos, na Grande São Paulo, a segunda cidade mais populosa do estado. Nesta segunda-feira (20), a fila dobrava o quarteirão.",
+    imagemUrl: "https://s2-g1.glbimg.com/QtMKxDrPzxgvAAkHBvCI220xbbk=/0x0:1200x670/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2025/c/u/1utv0ORhuWtQdZc2809Q/fila-na-farmacia-de-alto-custo.jpg",
+    urlExterna: "https://g1.globo.com/sp/sao-paulo/noticia/2025/10/20/pacientes-enfrentam-fila-gigante-na-unica-farmacia-de-medicamentos-de-alto-custo-de-guarulhos-na-grande-sp.ghtml"
   },
   {
     id: 2,
