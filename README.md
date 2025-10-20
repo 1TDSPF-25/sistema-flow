@@ -70,13 +70,11 @@ TAREFAS DO GIT FLOW - Front End Design Engineering
   <li>FEATURE / Adicionar página de contato / Henrique Martins,Henrique Cesar, Pedro Sakai, Kauan <span style="color=red">DEADLINE: 9h40</span></li>
 
   <li>FEATURE / Adicionar página de FAQ / Ryan e Raul <span style="color=red">DEADLINE: 9h40</span></li>
+
+  <li>FEATURE Atualizar carregamentos com Suspense API / Guilherme Macedo, Pedro Henrique, Gabriel Hayashi<span style="color=red">DEADLINE: próxima aula</span></li>
 </ul>
 
 ### TIMES
 - LIBERADOS
-    [Ryan e Raul]
-    [Henrique Martins,Henrique Cesar, Pedro Sakai, Kauan ]
-    [ Enzo, Pietro, Lucas Ryuji]
-    [ Guilherme Macedo, Pedro Henrique, Gabriel Hayashi]
     [ João Caetano, João Bueno]
 ````
