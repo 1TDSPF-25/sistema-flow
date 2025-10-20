@@ -28,6 +28,14 @@ export default function Faq (){
     return(
         <main>
             <h1>FAQ - Perguntas Frequentes</h1>
+            <section>
+                {faqData.map((item, index) => (
+                    <div key={index}>
+                        <h2>{item.question}</h2>
+                        <p>{item.answer}</p>
+                    </div>
+                ))}
+            </section>
         </main>
     )
 }
