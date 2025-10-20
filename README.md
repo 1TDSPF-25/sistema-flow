@@ -1,170 +1,68 @@
-#Lista de Tarefas FEATURES
+#Lista de Tarefas FEATURES 
+## <span style='color: red;'>DEADLINE destas Tarefas : Próxima aula</span> sentence
 TAREFAS DO GIT FLOW - Front End Design Engineering
+## RESPONSABILIDADE:
+### MENTORIA: PROF.ALEXANDRE
+### TEC LEADER: GUSTAVO BOSAK
+### HOMOLOGAÇÃO: FELIPE FURLANETTO
 
-- HOTFIX/Corrigir problema grave de carregamento./Bosak, Ferrete, Brisola
-- FEATURE / Criar cards de notícias na HOME / Enzo, Pietro, Lucas
-- FEATURE / Melhorar a estilização do Formulário, dando ênfase na reponsividade / João-C, Furlaneto,Ryan, Raul
-- FEATURE / Melhorar o rodapé, com informações dinâmicas sobre o tempo e a bolsa de valores / Guilherme, Pedro, Gabriel
-- FEATURE / Atualizar o cabeçalho com um campo de pesquisa sobre produtos eletrônicos-coloque o resultado na home/HenriqueM,HenriqueC,PedroS,Kauan
-- FEATURE/Melhorar a estilização da Tabela e aplicar um campo de filtro, onde se possa pesquisar direto nela o produto/LucaR,Clayton,Sola,PedroP
-#Lista de Tarefas FEATURES
+---
+## IMPLEMENTADOS:
+<ul style="color:green">
+  <li>[x] HOTFIX/Corrigir problema grave de carregamento.</li>  
+  <li>[x] FEATURE / Criar uma api de usuários com um ENDPOINT de nome usuarios, com os campos [id:string, nome:string, nomeUser:string, email:string, avatar:string]. utilize o json-server para isso.</li>
+  <li>[x] FEATURE / Atualizar o cabeçalho com um campo de pesquisa sobre produtos eletrônicos-coloque o resultado na home</li>
+  <li>[x] FEATURE / Gerar um sistema de validação com localStorage e sessionStoarge + Token </li>
+  <li>[x] FEATURE / Criar cards de notícias na HOME </li>
+  <li>[x] FEATURE / Mesclar cópia de card de notícias na na HOME</li>
+  <li>[x] FEATURE / Criar um componente de Login completo, incluindo rotas e registro destas.</li>
+  <li>[x] FEATURE / Remodelagem da página de erro404, com redirect, utilizando o rook useNavigate </li>
+  <li>[x] FEATURE/ Melhorar a estilização da Tabela e aplicar um campo de filtro, onde se possa pesquisar direto nela o produto</li>
+  <li>[x] BUGFIX / Adicionar tratamento de erro a barra de pesquisa no cabeçalho</li>
+  <li>[x] FEATURE / Melhorar o rodapé, com informações dinâmicas sobre o tempo e a bolsa de valores</li>
+  <li>[x]FEATURE / Adição de opção para remover produto na página editar produtos</li>
+  <li>[x] BUGFIX / Limpar consultar CEP, remover rotaLimitada de dentro do createBrowserRouter em main.tsx e outras coisas desnecessárias do código</li>
+  <li>[x] BUGFIX / Corrigir estilização do menu na barra de navegação, o hover aplica movimentação em todo os elementos laterais presentes.</li>
+  <li>[x] FEATURE / Atualizar textos da página para itens de farmácia (exemplo: trocar produtos tech por remédios na página produtos)</li>
+  <li>[x] FEATURE / Adicionar componente para exibir resultados da barra de pesquisa</li>
+</ul>
 
+<ul style="color:red">
+  <li> ... </li>
+</ul>
 
+---
+## EM HOMOLOGAÇÃO:
+<ul style="color:orange">
+  <li> ... </li>
+</ul>
 
+---
+## EM DESENVOLVIMENTO:
+<ul style="color:yellow">
+  <li>FEATURE / Atualizar página Produtos para exibir botão de comprar que adiciona o produto em uma lista de carrinho de compras no db json relacionada ao usuario logado/ Nikolas Brisola <span style="color=red">DEADLINE: próxima aula</span></li>
+  
+  <li>FEATURE / Adicionar página de carrinho de compras que resgata quais produtos o usuário logado clicou em comprar / Nikolas Brisola <span style="color=red">DEADLINE: próxima aula</span></li>
+  
+  <li>FEATURE / Atualizar e consumir validação de login / Felipe Ferrete <span style="color=red">DEADLINE: proxima aula</span></li>
+  
+  <li>FEATURE / Adicionar página de contao / Nicolly, Cléo, Samyr <span style="color=red">DEADLINE: próxima aula</span></li>
+  
+  <li>FEATURE / Remodelação estilização de card noticias na home / João Caetano, João Bueno <span style="color=red">DEADLINE: próxima aula</span></li>
+  
+  <li>FEATURE / Adicionar página de finalizar compra, com opção de adicionar dados de pagamento / Henrique Martins,Henrique Cesar, Pedro Sakai, Kauan <span style="color=red">DEADLINE: próxima aula</span></li>
+  
+  <li>BUGFIX / Corrigir tipagem de erro no rodapé, corrigir useEffect na home e outros erros caso encontrar / Guilherme Macedo, Pedro Henrique, Gabriel Hayashi <span style="color=red">DEADLINE: próxima aula</span></li>
+  
+  <li>FEATURE / Remodelar estilização do rodapé / Pedro Pequini, Guilherme Sola, Clayton, Lucas Rafael <span style="color=red">DEADLINE: próxima aula</span></li>
+  
+  <li>FEATURE / Atualizar exibição de produtos, de vez tabela (tr, td etc) fazer em forma de card, sem id nem total de produtos / Enzo, Pietro, Lucas Ryuji / <span style="color=red">DEADLINE: 09:44</span></li>
+  
+  <li>FEATURE / Adicionar página de notícias que aparece quando clicar na notícia / Pedro Pequini, Guilherme Sola, Clayton, Lucas Rafael <span style="color=red">DEADLINE: próxima aula</span></li>
+  
+  <li>FEATURE / Adicionar logo no header e icone no index.hmtl / <span style="color=red">DEADLINE: próxima aula</span></li>
+</ul>
 
-
-
-# -- API REST, Verbos HTTP e Consumo com React
-
-## 1. O que é uma API?
-
--   **API (Application Programming Interface)** é um conjunto de regras
-    e padrões que permite que aplicações diferentes se comuniquem entre
-    si.\
--   No caso do **Front-End**, a API fornece dados (geralmente em
-    **JSON**) que podem ser exibidos e manipulados pelos componentes
-    React.
-
-------------------------------------------------------------------------
-
-## 2. API REST e RESTful
-
--   **REST (Representational State Transfer)** é um estilo de
-    arquitetura que organiza a comunicação entre cliente e servidor.\
--   Uma **API RESTful** segue os princípios REST, utilizando **verbo
-    HTTP + recurso (endpoint)** para acessar/manipular dados.
-
-Exemplo de requisições: - `GET /produtos` → Busca todos os produtos.\
-- `GET /produtos/1` → Busca o produto com `id=1`.\
-- `POST /produtos` → Cria um novo produto.\
-- `PUT /produtos/1` → Atualiza os dados do produto `1`.\
-- `DELETE /produtos/1` → Remove o produto `1`.
-
-------------------------------------------------------------------------
-
-## 3. Quando utilizamos?
-
--   Quando precisamos **comunicar o Front-End com dados externos** (um
-    servidor, banco de dados ou API pública).
--   Exemplo: mostrar lista de produtos em um e-commerce.
-
-------------------------------------------------------------------------
-
-## 4. Exemplo prático com `fetch` e funções `async`
-
-``` ts
-// Buscar lista de produtos
-async function getProdutos() {
-  const response = await fetch("http://localhost:3001/produtos");
-  const data = await response.json();
-  console.log(data);
-}
-
-// Criar novo produto
-async function addProduto() {
-  const novo = { nome: "Teclado", preco: 199.99 };
-
-  const response = await fetch("http://localhost:3001/produtos", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(novo)
-  });
-
-  const data = await response.json();
-  console.log("Produto criado:", data);
-}
-```
-
-### 📌 Tratando os dados
-
--   Sempre verificar se a resposta foi bem-sucedida:
-
-``` ts
-if (!response.ok) {
-  throw new Error("Erro na requisição");
-}
-```
-
-------------------------------------------------------------------------
-
-## 5. Vantagens de usar API REST
-
--   Padronização → todos os métodos seguem a mesma lógica.\
--   Escalabilidade → fácil de manter e evoluir.\
--   Integração → permite comunicação com qualquer linguagem ou
-    tecnologia.\
--   Simplicidade → URLs claras e verbos bem definidos.
-
-------------------------------------------------------------------------
-
-## 6. JSON Server -- Nossa API local
-
-O **JSON Server** simula uma API real utilizando um arquivo `db.json`.
-
-### Instalação
-
-``` bash
-npm install -g json-server
-```
-
-### Execução
-
-``` bash
-json-server --watch db.json --port 3001
-```
-
-### Exemplo de `db.json`
-
-``` json
-{
-  "produtos": [
-    { "id": 1, "nome": "Mouse", "preco": 90 },
-    { "id": 2, "nome": "Teclado", "preco": 200 }
-  ]
-}
-```
-
-### Endpoints criados automaticamente:
-
--   `GET http://localhost:3001/produtos`\
--   `GET http://localhost:3001/produtos/1`\
--   `POST http://localhost:3001/produtos`\
--   `PUT http://localhost:3001/produtos/1`\
--   `DELETE http://localhost:3001/produtos/1`
-
-------------------------------------------------------------------------
-
-## 7. React: useState e useEffect no consumo de APIs
-
-### `useState`
-
--   Usado para **armazenar o estado** (ex.: lista de produtos vinda da
-    API).
-
-``` ts
-const [produtos, setProdutos] = useState<ProdutoType[]>([]);
-```
-
-### `useEffect`
-
--   Usado para **executar efeitos colaterais**, como buscar dados quando
-    o componente é carregado.
-
-``` ts
-useEffect(() => {
-  async function fetchData() {
-    const response = await fetch("http://localhost:3001/produtos");
-    const data = await response.json();
-    setProdutos(data);
-  }
-  fetchData();
-}, []);
-```
-
-------------------------------------------------------------------------
-
-✅ Com isso, já temos a base para: 1. Entender APIs REST.\
-2. Consumir dados com `fetch` e funções `async/await`.\
-3. Utilizar `JSON Server` como backend local.\
-4. Aplicar `useState` e `useEffect` no React para trabalhar com dados da
-API.
+### TIMES
+- LIBERADOS
+    [Ryan e Raul]
