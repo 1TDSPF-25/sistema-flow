@@ -26,6 +26,7 @@ TAREFAS DO GIT FLOW - Front End Design Engineering
   <li>[x] FEATURE / Atualizar textos da página para itens de farmácia (exemplo: trocar produtos tech por remédios na página produtos)</li>
   <li>[x] FEATURE / Adicionar componente para exibir resultados da barra de pesquisa</li>
   <li>[x]FEATURE / Adicionar página de finalizar compra, com opção de adicionar dados de pagamento</li>
+  <li>[x]FEATURE / Atualizar exibição de produtos, de vez tabela (tr, td etc) fazer em forma de card, sem id nem total de produtos</li>
 </ul>
 
 <ul style="color:red">
@@ -55,8 +56,6 @@ TAREFAS DO GIT FLOW - Front End Design Engineering
   
   <li>FEATURE / Remodelar estilização do rodapé / Pedro Pequini, Guilherme Sola, Clayton, Lucas Rafael <span style="color=red">DEADLINE: próxima aula</span></li>
   
-  <li>FEATURE / Atualizar exibição de produtos, de vez tabela (tr, td etc) fazer em forma de card, sem id nem total de produtos / Enzo, Pietro, Lucas Ryuji / <span style="color=red">DEADLINE: 09:44</span></li>
-  
   <li>FEATURE / Adicionar página de notícias que aparece quando clicar na notícia / Pedro Pequini, Guilherme Sola, Clayton, Lucas Rafael <span style="color=red">DEADLINE: próxima aula</span></li>
   
   <li>FEATURE / Adicionar logo no header e icone no index.hmtl / <span style="color=red">DEADLINE: próxima aula</span></li>
@@ -66,3 +65,4 @@ TAREFAS DO GIT FLOW - Front End Design Engineering
 - LIBERADOS
     [Ryan e Raul]
     [Henrique Martins,Henrique Cesar, Pedro Sakai, Kauan ]
+    [ Enzo, Pietro, Lucas Ryuji]
