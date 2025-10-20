@@ -36,6 +36,7 @@ TAREFAS DO GIT FLOW - Front End Design Engineering
   <li>[x] FEATURE / Adicionar componente para exibir resultados da barra de pesquisa</li>
   <li>[x]FEATURE / Adicionar página de finalizar compra, com opção de adicionar dados de pagamento</li>
   <li>[x]FEATURE / Atualizar exibição de produtos, de vez tabela (tr, td etc) fazer em forma de card, sem id nem total de produtos</li>
+  <li>[x]BUGFIX / Corrigir tipagem de erro no rodapé, corrigir useEffect na home e outros erros caso encontrar</li>
 </ul>
 
 <ul style="color:red">
@@ -61,13 +62,11 @@ TAREFAS DO GIT FLOW - Front End Design Engineering
 
   <li>FEATURE / Remodelação estilização de card noticias na home / João Caetano, João Bueno <span style="color=red">DEADLINE: próxima aula</span></li>
 
-  <li>BUGFIX / Corrigir tipagem de erro no rodapé, corrigir useEffect na home e outros erros caso encontrar / Guilherme Macedo, Pedro Henrique, Gabriel Hayashi <span style="color=red">DEADLINE: próxima aula</span></li>
-
   <li>FEATURE / Remodelar estilização do rodapé / Pedro Pequini, Guilherme Sola, Clayton, Lucas Rafael <span style="color=red">DEADLINE: próxima aula</span></li>
 
   <li>FEATURE / Adicionar página de notícias que aparece quando clicar na notícia / Pedro Pequini, Guilherme Sola, Clayton, Lucas Rafael <span style="color=red">DEADLINE: próxima aula</span></li>
 
-  <li>FEATURE / Adicionar logo no header e icone no index.hmtl / <span style="color=red">DEADLINE: próxima aula</span></li>[
+  <li>FEATURE / Adicionar logo no header e icone no index.hmtl / <span style="color=red">DEADLINE: próxima aula</span></li>
   
   <li>FEATURE / Adicionar logo no header e icone no index.hmtl, adicionar também um nome para a página / Enzo, Pietro, Lucas Ryuji <span style="color=red">DEADLINE: 9h20</span></li>
 
@@ -81,4 +80,5 @@ TAREFAS DO GIT FLOW - Front End Design Engineering
     [Ryan e Raul]
     [Henrique Martins,Henrique Cesar, Pedro Sakai, Kauan ]
     [ Enzo, Pietro, Lucas Ryuji]
+    [ Guilherme Macedo, Pedro Henrique, Gabriel Hayashi]
 ````
