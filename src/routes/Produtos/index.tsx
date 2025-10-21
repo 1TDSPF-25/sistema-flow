@@ -31,6 +31,7 @@ export default function Produtos() {
       } else {
         setProdutos(data);
       }
+      document.title = "FarmáciaPlus - Produtos";
     };
  
     fetchData();
