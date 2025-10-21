@@ -1,6 +1,7 @@
+const VITE_API_URL_BASE_USUARIOS = import.meta.env.VITE_API_URL_BASE_USUARIOS
 export async function login ({nomeUser, senha}:{nomeUser:string, senha:string}) {
   try {
-    const response = await fetch(`http://localhost:3001/usuarios?nomeUser=${nomeUser}`);
+    const response = await fetch(`${VITE_API_URL_BASE_USUARIOS}?nomeUser=${nomeUser}`);
     const data = await response.json();
  
     if (data.lenght > 0) {

@@ -23,6 +23,7 @@ export default function Menu() {
             🛒 Carrinho
           </Link>
         </li>
+        <li><Link to="/faq">Faq</Link></li>
       </ul>
     </nav>
   );
