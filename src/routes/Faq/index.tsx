@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 const faqData = [
     {
         question: "Quais são os horários de funcionamento da farmácia?",
@@ -30,6 +32,9 @@ const faqData = [
 ];
 
 export default function Faq (){
+        useEffect(() => {
+            document.title = "FarmáciaPlus - FAQ";
+        }, []);
 
     return(
         <main className="flex flex-col justify-center items-center">
