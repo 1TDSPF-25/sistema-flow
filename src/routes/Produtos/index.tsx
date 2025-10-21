@@ -70,7 +70,7 @@ export default function Produtos() {
               key={produto.id}
               className="bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col"
             >
-              <div className="p-5 flex-grow">
+              <div className="p-5 grow">
                 <h2
                   className="text-lg font-semibold text-gray-900 mb-2 truncate"
                   title={produto.nome}
