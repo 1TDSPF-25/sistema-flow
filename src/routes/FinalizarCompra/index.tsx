@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import type { SubmitHandler } from 'react-hook-form';
 import { useForm } from 'react-hook-form'; 
 import type { TipoCompra } from '../../types/tipoCompra';
@@ -10,7 +11,12 @@ const FinalizarCompra = () => {
     alert('Compra finalizada com sucesso! Verifique os dados no console.');
   };
 
+  useEffect(() => {
+            document.title = "FarmáciaPlus - Finalizar Compra";
+        }, []);
+
   return (
+
     <div>
       <h1>Preencha os dados abaixo para concluir seu pedido.</h1>
 
