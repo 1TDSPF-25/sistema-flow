@@ -1,34 +1,48 @@
 import { useEffect, useState } from "react";
 import type { TipoProduto } from "../../types/tipoProduto";
- 
+
 type ItemCarrinho = {
   id: string;
   usuarioId: string;
   produtoId: string;
   produto?: TipoProduto;
 };
- 
+
 export default function Carrinho() {
   const [itens, setItens] = useState<ItemCarrinho[]>([]);
-  const usuarioId = "012"; // Simula um usuário logado
- 
+  const [usuarioId] = useState<string>("012");
+  const [carregando, setCarregando] = useState<boolean>(true);
+
   useEffect(() => {
     document.title = "Meu Carrinho";
     carregarCarrinho();
   }, []);
- 
+
   const carregarCarrinho = async () => {
     try {
-      const response = await fetch(
-        `http://localhost:3001/carrinho?usuarioId=${usuarioId}&_expand=produto`
+      const carrinhoRes = await fetch(
+        `http://localhost:3001/carrinho?usuarioId=${usuarioId}`
       );
-      const data = await response.json();
-      setItens(data);
+      const carrinhoData: ItemCarrinho[] = await carrinhoRes.json();
+
+      const produtosRes = await fetch("http://localhost:3001/produtos");
+      const produtosData: TipoProduto[] = await produtosRes.json();
+
+      const itensComProduto = carrinhoData.map((item) => {
+        const produto = produtosData.find(
+          (p) => String(p.id) === String(item.produtoId)
+        );
+        return { ...item, produto };
+      });
+
+      setItens(itensComProduto);
     } catch (error) {
       console.error("Erro ao carregar carrinho", error);
+    } finally {
+      setCarregando(false);
     }
   };
- 
+
   const handleRemover = async (id: string) => {
     try {
       await fetch(`http://localhost:3001/carrinho/${id}`, { method: "DELETE" });
@@ -37,17 +51,20 @@ export default function Carrinho() {
       console.error("Erro ao remover item", error);
     }
   };
- 
-  // Calcula o total dos preços
+
   const total = itens.reduce(
     (acc, item) => acc + (item.produto?.preco || 0),
     0
   );
- 
+
+  if (carregando) {
+    return <p className="p-6 text-gray-600">Carregando seu carrinho...</p>;
+  }
+
   return (
     <main className="p-6">
       <h1 className="text-2xl font-bold text-gray-800 mb-6">Meu Carrinho</h1>
- 
+
       {itens.length === 0 ? (
         <p className="text-gray-600">🛒 Seu carrinho está vazio.</p>
       ) : (
@@ -59,23 +76,23 @@ export default function Carrinho() {
                 className="bg-white border rounded-lg shadow p-4 flex justify-between items-center"
               >
                 <div>
-                  <h2 className="text-lg font-semibold text-gray-900">
+                  <h2 className="text-lg text-black font-semibold">
                     {item.produto?.nome || "Produto não encontrado"}
                   </h2>
                   <p className="text-blue-600 font-bold">
-                    R$ {item.produto?.preco.toFixed(2)}
+                    R$ {item.produto?.preco?.toFixed(2) || "0.00"}
                   </p>
                 </div>
                 <button
                   onClick={() => handleRemover(item.id)}
-                  className="px-3 py-1 bg-red-500 text-white rounded hover:bg-red-600 transition"
+                  className="px-3 py-1 bg-red-500 text-white rounded hover:bg-red-600"
                 >
                   Remover
                 </button>
               </li>
             ))}
           </ul>
- 
+
           <div className="mt-6 border-t pt-4 flex justify-between items-center">
             <span className="text-lg text-black font-bold">Total:</span>
             <span className="text-xl font-bold text-green-600">
