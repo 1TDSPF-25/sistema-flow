@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from "react";
 import type { TipoProduto } from "../../types/tipoProduto";
 import CardNoticia from "../../components/CardNoticia/CardNoticia";
@@ -23,6 +24,8 @@ export default function Home() {
         console.error("Falha ao conectar com a API:", error);
         setErroApi("API offline. Por favor, execute 'npm run api' e recarregue a página.");
       }
+
+      document.title = "FarmáciaPlus - Home";
     };
 
     fetchData();
@@ -48,6 +51,7 @@ export default function Home() {
     window.addEventListener("storage", atualizarPesquisa);
     return () => window.removeEventListener("storage", atualizarPesquisa);
   }, [produtos]);
+
 
   return (
     <main className="flex flex-col bg-gray-50 items-center justify-center">
