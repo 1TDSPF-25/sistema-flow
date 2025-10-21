@@ -7,7 +7,7 @@ const URL_API_PRODUTOS = import.meta.env.VITE_API_URL_BASE_PRODUTOS;
 
 export default function EditarProdutos(){
     useEffect(() => {
-        document.title = "Editar Produtos";
+        document.title = "FarmáciaPlus - Editar Produtos";
     }, []);
 
     const navigate = useNavigate();
