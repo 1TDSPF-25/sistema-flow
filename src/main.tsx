@@ -2,10 +2,9 @@ import { StrictMode, lazy } from 'react';
 import { createRoot } from 'react-dom/client';
 import App from './App.tsx';
 import "./globals.css";
- 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
- 
 import Error from './routes/Error/index.tsx';
+import Carrinho from './routes/Carrinho/index.tsx';
 import Login from './routes/Login/index.tsx';
  
 const Home = lazy(() => import('./routes/Home/index.tsx'));
@@ -23,21 +22,19 @@ export function rotaLimitada(elemento: React.ReactElement) {
 const router = createBrowserRouter([
   {
     path: "/", element: <App />, errorElement: <Error />, children: [
-      { path: "/", element: <Home /> },
-     
+      { path: "/", element: <Home /> },      
       { path: "/login", element: <Login /> },
-      { path: "/cadastro", element: <CadastroFarmacia /> },
+      { path: "/cadastro", element: <CadastroFarmacia /> }, 
       { path: "/produtos", element: <Produtos /> },
       { path: "/produto/:id", element: <Produtos /> },
-   
+      { path: "/carrinho", element: <Carrinho /> },
       { path: "/editar/produtos/:id", element: rotaLimitada(<EditarProdutos />) },
       { path: "/finalizar-compra", element: rotaLimitada(<TipoCompra />) },
-     
       { path: "/faq", element: <Faq /> }
     ]
   }
 ]);
- 
+
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <RouterProvider router={router} />
