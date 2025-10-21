@@ -17,11 +17,14 @@ Esse projeto está sendo construído em aula pela equipe 1TDSPF do curso de Aná
 
 | Equipe | Integrantes |
 |--------|--------|
-| Equipe 1 |  |
-| Equipe 2 |  |
-| Equipe 3 |  |
-| Equipe 4 |  |
-| Equipe 5 |  |
+| Equipe 1 | Pedro Pequini, Guilherme Sola, Clayton, Lucas Rafael |
+| Equipe 2 | Guilherme Macedo, Pedro Henrique, Gabriel Hayashi |
+| Equipe 3 | Ryan, Raul |
+| Equipe 4 | Henrique Martins, Henrique Cesar, Pedro Sakai, Kauan |
+| Equipe 5 | Enzo, Pietro, Lucas Ryuji |
+| Equipe 6 | Nicolly, Cléo, Samyr |
+| Equipe 7 | Nikolas Brisola, Felipe Ferrete |
+| Equipe 8 | João Bueno, João Caetano |
 
 ## 🚀 Rodando local
 
@@ -147,28 +150,32 @@ SISTEMA-FLOW/
 
 <ul style="color:yellow">
 
-- [ ] FEATURE / Atualizar página Produtos para exibir botão de comprar que adiciona o produto em uma lista de carrinho de compras no db json relacionada ao usuario logado/ Nikolas Brisola <span style="color=red">DEADLINE: próxima aula</span>
+- [ ] FEATURE / Atualizar página Produtos para exibir botão de comprar que adiciona o produto em uma lista de carrinho de compras no db json relacionada ao usuario logado/ Nikolas Brisola <span style="color:red">**DEADLINE: próxima aula**</span>
 
-- [ ] FEATURE / Adicionar página de carrinho de compras que resgata quais produtos o usuário logado clicou em comprar / Nikolas Brisola <span style="color=red">DEADLINE: próxima aula</span>
+- [ ] FEATURE / Adicionar página de carrinho de compras que resgata quais produtos o usuário logado clicou em comprar / Nikolas Brisola <span style="color:red">**DEADLINE: próxima aula**</span>
 
-- [ ] FEATURE / Atualizar e consumir validação de login / Felipe Ferrete <span style="color=red">DEADLINE: proxima aula</span>
+- [ ] FEATURE / Atualizar e consumir validação de login / Felipe Ferrete <span style="color:red">**DEADLINE: proxima aula**</span>
 
-- [ ] FEATURE / Adicionar página de contao / Nicolly, Cléo, Samyr <span style="color=red">DEADLINE: próxima aula</span>
+- [ ] FEATURE / Adicionar modal para mensagens de erros e sucessos / Equipe 7 <span style="color:red">**DEADLINE: proxima aula**</span>
 
-- [ ] FEATURE / Adicionar página de notícias que aparece quando clicar na notícia / Pedro Pequini, Guilherme Sola, Clayton, Lucas Rafael <span style="color=red">DEADLINE: próxima aula</span>
+- [ ] FEATURE / Adicionar página de contao / Equipe 6 <span style="color:red">**DEADLINE: próxima aula**</span>
 
-- [ ] FEATURE / Adicionar logo no header e icone no index.hmtl, adicionar também um nome para a página / Enzo, Pietro, Lucas Ryuji <span style="color=red">DEADLINE: 9h20</span>
+- [ ] FEATURE / Adicionar página de notícias que aparece quando clicar na notícia / Equipe 1 <span style="color:red">**DEADLINE: próxima aula**</span>
 
-- [ ] FEATURE / Adicionar página de contato / Henrique Martins,Henrique Cesar, Pedro Sakai, Kauan <span style="color=red">DEADLINE: 9h40</span>
+- [ ] FEATURE / Adicionar logo no header e icone no index.hmtl, adicionar também um nome para a página / Equipe 5 <*span style="color:red">**DEADLINE: 9h20</**span>
 
-- [ ] FEATURE / Adicionar página de FAQ / Ryan e Raul <span style="color=red">DEADLINE: 9h40</span>
+- [ ] FEATURE / Adicionar página de contato / Equipe 4 <*span style="color:red">**DEADLINE: 9h40</**span>
 
-- [ ] FEATURE / Atualizar carregamentos com Suspense API / Guilherme Macedo, Pedro Henrique, Gabriel Hayashi <span style="color=red">DEADLINE: próxima aula</span>
+- [ ] FEATURE / Adicionar página de FAQ / Equipe 3 <*span style="color:red">**DEADLINE: 9h40</**span>
 
-- [ ] FEATURE Adicionar notícias relacionadas a saúde / Pedro Pequini, Guilherme Sola, Clayton, Lucas Rafael <span style="color=red">DEADLINE: próxima aula</span>
+- [ ] FEATURE / Atualizar carregamentos com Suspense API / Equipe 2 <span style="color:red">**DEADLINE: próxima aula**</span>
+
+- [ ] FEATURE / Adicionar notícias relacionadas a saúde / Equipe 1 <span style="color:red">**DEADLINE: próxima aula**</span>
+
+- [ ] FEATURE / Adicionar imagens dos produtos aos cards de produto / Equipe 8 <span style="color:red">**DEADLINE: próxima aula**</span>
 
 </ul>
 
 ### Equipes Liberadas
 
-- 
+-
