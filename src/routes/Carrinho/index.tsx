@@ -14,7 +14,7 @@ export default function Carrinho() {
   const [carregando, setCarregando] = useState<boolean>(true);
 
   useEffect(() => {
-    document.title = "Meu Carrinho";
+    document.title = "FarmáciaPlus - Meu Carrinho";
     carregarCarrinho();
   }, []);
 
