@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Menu from "../Menu/Menu";
 import { CiSearch } from "react-icons/ci";
+import logoSite from "../../img/logo branco.png";
 
 interface Produto {
   id: string;
@@ -56,8 +57,8 @@ export default function Cabecalho() {
 
   return (
     <header className="bg-blue-900 text-gray-100 shadow-md border border-blue-900">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 px-6 py-4 relative">
-        <h1 className="text-2xl font-bold tracking-tight">Minha Loja</h1>
+      <div className="max-w-7xl mx-auto flex flex-row md:flex-row items-center justify-between gap-4 px-6 py-4 relative">
+        <img src={logoSite} alt="logo do site " className="w-20" />
 
         {/* Barra de pesquisa */}
         <div className="w-full md:w-1/2 relative">
