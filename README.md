@@ -136,6 +136,8 @@ SISTEMA-FLOW/
 
 - [x] FEATURE / Atualizar e consumir validação de login / Equipe 7
 
+- [x] FEATURE / Adicionar página de FAQ / Equipe 3
+
 </ul>
 
 ---
@@ -166,8 +168,6 @@ SISTEMA-FLOW/
 
 - [ ] FEATURE / Adicionar página de contato / Equipe 4 <span style="color:red">**DEADLINE: 9h40**</span>
 
-- [ ] FEATURE / Adicionar página de FAQ / Equipe 3 <span style="color:red">**DEADLINE: 9h40**</span>
-
 - [ ] FEATURE / Atualizar carregamentos com Suspense API / Equipe 2 <span style="color:red">**DEADLINE: próxima aula**</span>
 
 - [ ] FEATURE / Adicionar notícias relacionadas a saúde / Equipe 1 <span style="color:red">**DEADLINE: próxima aula**</span>
@@ -184,4 +184,4 @@ SISTEMA-FLOW/
 
 ### Equipes Liberadas
 
--
+-[Equipe 3]
