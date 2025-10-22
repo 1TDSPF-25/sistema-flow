@@ -4,6 +4,7 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
+  base: '/sistema-flow/',
   plugins: [
     react(),
     tailwindcss()
@@ -23,6 +24,5 @@ export default defineConfig({
         rewrite: (path) => path.replace(/^\/api-hgbrasil/, ''),
       }
     }
-  },
-  base: '/'
+  }
 })
