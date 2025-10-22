@@ -115,7 +115,61 @@ export default function CardNoticia(){
                         Tenha seus arquivos importantes em qualquer lugar e em qualquer dispositivo: confira pen drives e cartões SD
                         </p>
                     </div>
+                </div>
+            {/* CARD 7 */}
+                <div className="bg-white border rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                    <div className="overflow-hidden">
+                        <img
+                        src="https://s2-g1.glbimg.com/QtMKxDrPzxgvAAkHBvCI220xbbk=/0x0:1200x670/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2025/c/u/1utv0ORhuWtQdZc2809Q/fila-na-farmacia-de-alto-custo.jpg"
+                        alt="Filas em farmácia"
+                        className="w-full h-35 object-cover hover:scale-105 transition-transform duration-300"
+                        />
                     </div>
+                    <div className="p-3">
+                        <h1 className="font-bold text-lg mb-3 text-gray-800">
+                        Pacientes enfrentam longas filas na única farmácia de medicamentos de alto custo de Guarulhos, na Grande SP
+                        </h1>
+                        <p className="text-gray-600 text-sm md:text-base">
+                        Muitos chegam ao local ainda de madrugada para garantir o atendimento, que começa apenas horas depois
+                        </p>
+                    </div>
+                </div>
+            {/* CARD 8 */}
+                <div className="bg-white border rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                    <div className="overflow-hidden">
+                        <img
+                        src="https://forbes.com.br/wp-content/uploads/2025/09/carreira-remedio-saude-mental-768x512.jpg"
+                        alt="Uso de remédios no Brasil"
+                        className="w-full h-35 object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                    </div>
+                    <div className="p-3">
+                        <h1 className="font-bold text-lg mb-3 text-gray-800">
+                        Maioria dos Profissionais no Brasil Usa Remédios para Lidar com Problemas de Saúde Menta
+                        </h1>
+                        <p className="text-gray-600 text-sm md:text-base">
+                        Em 2025, 52% dos líderes e 59% dos colaboradores no Brasil recorreram a psicofármacos para lidar com estresse, ansiedade e burnout no ambiente de trabalho
+                        </p>
+                    </div>
+                </div>
+            {/* CARD 9 */}
+                <div className="bg-white border rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                    <div className="overflow-hidden">
+                        <img
+                        src="https://imagens.ebc.com.br/4QwveMhIplIUanFNoPw6KPM5MFA=/1170x700/smart/https://agenciabrasil.ebc.com.br/sites/default/files/atoms/image/1019008-11052016dsc_0418-.jpg?itok=hJqTK9bR"
+                        alt="Tecidos de laboratorio"
+                        className="w-full h-35 object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                    </div>
+                    <div className="p-3">
+                        <h1 className="font-bold text-lg mb-3 text-gray-800">
+                        Tecidos feitos em laboratório podem aperfeiçoar testes de medicamentos
+                        </h1>
+                        <p className="text-gray-600 text-sm md:text-base">
+                        Desenvolveram tecidos humanos cultivados em laboratório que podem substituir testes em animais e aprimorar os testes toxicológicos e de eficácia de novos medicamentos e cosméticos
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     )
