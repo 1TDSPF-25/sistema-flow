@@ -136,6 +136,10 @@ SISTEMA-FLOW/
 
 - [x] FEATURE / Atualizar e consumir validação de login / Equipe 7
 
+- [x] FEATURE / Adicionar página de FAQ / Equipe 3
+
+- [x] FEATURE / Adicionar logo no header e icone no index.hmtl, adicionar também um nome para a página / Equipe 5
+
 </ul>
 
 ---
@@ -162,11 +166,7 @@ SISTEMA-FLOW/
 
 - [ ] FEATURE / Adicionar página de notícias que aparece quando clicar na notícia / Equipe 1 <span style="color:red">**DEADLINE: próxima aula**</span>
 
-- [ ] FEATURE / Adicionar logo no header e icone no index.hmtl, adicionar também um nome para a página / Equipe 5 <span style="color:red">**DEADLINE: 9h20**</span>
-
 - [ ] FEATURE / Adicionar página de contato / Equipe 4 <span style="color:red">**DEADLINE: 9h40**</span>
-
-- [ ] FEATURE / Adicionar página de FAQ / Equipe 3 <span style="color:red">**DEADLINE: 9h40**</span>
 
 - [ ] FEATURE / Atualizar carregamentos com Suspense API / Equipe 2 <span style="color:red">**DEADLINE: próxima aula**</span>
 
@@ -176,12 +176,12 @@ SISTEMA-FLOW/
 
 - [ ] BUGFIX / Corrigir estilização do formulário de finalizar compra e adicionar validação dos campos nome, cep e outros que estão aceitando dados fora do padrão. (Sugestão: adicionar mais dados de endereço como Rua, Bairro etc em vez de só endereço) / Equipe ? <span style="color:red">**DEADLINE: ?**</span>
 
-- [ ] FEATURE / Adicionar no db.json os dados da pasta data, e remover pasta data e arquivos lista / Equipe ? <span style="color:red">**DEADLINE: ?**</span>
+- [ ] FEATURE / Adicionar no db.json os dados da pasta data, e remover pasta data e arquivos lista / Equipe 3 <span style="color:red">**DEADLINE: ?**</span>
 
-- [ ] BUGFIX / Corrigir exibição da home: resolver notícias cortadas, desfixar o footer ou transformar ele como footer lateral e outros ajustes de visibilidade necessários / Equipe ? <span style="color:red">**DEADLINE: ?**</span>
+- [ ] BUGFIX / Corrigir exibição da home: resolver notícias cortadas, desfixar o footer ou transformar ele como footer lateral e outros ajustes de visibilidade necessários / Equipe 8 <span style="color:red">**DEADLINE: próxima aula**</span>
 
 </ul>
 
 ### Equipes Liberadas
 
--
+- [Equipe 5]
