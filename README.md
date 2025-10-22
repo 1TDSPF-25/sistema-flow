@@ -9,7 +9,7 @@ Esse projeto está sendo construído em aula pela equipe 1TDSPF do curso de Aná
 
 - MENTORIA: Prof. Alexandre
 
-- TEC LEADER: Gustavo Bosak
+- TECH LEADER: Gustavo Bosak
 
 - HOMOLOGAÇÃO: Felipe Furlanetto
 
@@ -138,6 +138,10 @@ SISTEMA-FLOW/
 
 - [x] FEATURE / Adicionar página de FAQ / Equipe 3
 
+- [x] FEATURE / Atualizar página Produtos para exibir botão de comprar que adiciona o produto em uma lista de carrinho de compras no db json relacionada ao usuario logado/ Equipe 7
+
+- [x] FEATURE / Adicionar página de carrinho de compras que resgata quais produtos o usuário logado clicou em comprar / Equipe 7
+
 </ul>
 
 ---
@@ -153,10 +157,6 @@ SISTEMA-FLOW/
 ### Em Desenvolvimento:
 
 <ul style="color:yellow">
-
-- [ ] FEATURE / Atualizar página Produtos para exibir botão de comprar que adiciona o produto em uma lista de carrinho de compras no db json relacionada ao usuario logado/ Equipe 7 <span style="color:red">**DEADLINE: próxima aula**</span>
-
-- [ ] FEATURE / Adicionar página de carrinho de compras que resgata quais produtos o usuário logado clicou em comprar / Equipe 7 <span style="color:red">**DEADLINE: próxima aula**</span>
 
 - [ ] FEATURE / Adicionar modal para mensagens de erros e sucessos / Equipe 7 <span style="color:red">**DEADLINE: proxima aula**</span>
 
@@ -179,6 +179,12 @@ SISTEMA-FLOW/
 - [ ] FEATURE / Adicionar no db.json os dados da pasta data, e remover pasta data e arquivos lista / Equipe 3 <span style="color:red">**DEADLINE: ?**</span>
 
 - [ ] BUGFIX / Corrigir exibição da home: resolver notícias cortadas, desfixar o footer ou transformar ele como footer lateral e outros ajustes de visibilidade necessários / Equipe 8 <span style="color:red">**DEADLINE: próxima aula**</span>
+
+- [ ] FEATURE / Adicionar página de integrantes, com link para o github e linkedin pessoais de cada integrante. Também é interessante ter uma foto de cada integrante, com nome e equipe pertencente / Equipe ? <span style="color:red">**DEADLINE: próxima aula**</span>
+
+- [ ] FEATURE / Adicionar página de integrantes, com link para o github e linkedin pessoais de cada integrante. Também é interessante ter uma foto de cada integrante, com nome e equipe pertencente / Equipe ? <span style="color:red">**DEADLINE: próxima aula**</span>
+
+- [ ] FEATURE / Adicionar na página carrinhos um redirecionamento para a página de finalizar compra após clicar em comprar, também adicionar a opção "tem certeza que quer remover item do carrinho" antes de remover / Equipe ? <span style="color:red">**DEADLINE: próxima aula**</span>
 
 </ul>
 
