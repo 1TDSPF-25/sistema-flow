@@ -138,6 +138,8 @@ SISTEMA-FLOW/
 
 - [x] FEATURE / Adicionar página de FAQ / Equipe 3
 
+- [x] FEATURE / Adicionar logo no header e icone no index.hmtl, adicionar também um nome para a página / Equipe 5
+
 </ul>
 
 ---
@@ -164,8 +166,6 @@ SISTEMA-FLOW/
 
 - [ ] FEATURE / Adicionar página de notícias que aparece quando clicar na notícia / Equipe 1 <span style="color:red">**DEADLINE: próxima aula**</span>
 
-- [ ] FEATURE / Adicionar logo no header e icone no index.hmtl, adicionar também um nome para a página / Equipe 5 <span style="color:red">**DEADLINE: 9h20**</span>
-
 - [ ] FEATURE / Adicionar página de contato / Equipe 4 <span style="color:red">**DEADLINE: 9h40**</span>
 
 - [ ] FEATURE / Atualizar carregamentos com Suspense API / Equipe 2 <span style="color:red">**DEADLINE: próxima aula**</span>
@@ -184,4 +184,4 @@ SISTEMA-FLOW/
 
 ### Equipes Liberadas
 
-- 
+- [Equipe 5]
