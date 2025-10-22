@@ -1,5 +1,5 @@
 import { useForm, type SubmitHandler } from 'react-hook-form'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import type { tipoUsuario } from '../../types/tipoUsuario'
 import { login } from '../../services/authService'
 const VITE_API_URL_BASE_USUARIOS = import.meta.env.VITE_API_URL_BASE_USUARIOS
@@ -10,6 +10,8 @@ const MensagemErro = ({ error }: { error: any }) => {
 }
 
 function CadastroFarmacia() {
+  const navigate = useNavigate();
+
   const {
     register,
     setError,
@@ -30,35 +32,38 @@ function CadastroFarmacia() {
         (p: tipoUsuario) => p.email === data.email
       )
       const usuarioExiste = dataUsuario.some(
-        (p: tipoUsuario) => p.nomeUser === data.nomeUser
+        (p: tipoUsuario) => p.nomeUser === data.nome  
       )
 
       if (emailExiste) {
         setError('email', { type: 'manual', message: 'Email já cadastrado' })
+        return;
       }
 
       if (usuarioExiste) {
-        setError('senha', {
-          type: 'manual',
-          message: 'Nome de usuario ja cadastrado'
-        })
+        setError('nome', { type: 'manual', message: 'Nome de usuario ja cadastrado' })
+        return;
       }
 
-      if (!emailExiste && !usuarioExiste) {
-        
-          await fetch(VITE_API_URL_BASE_USUARIOS, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(data)
-        })
-
-        login(data)
-
+      const postResponse = await fetch(VITE_API_URL_BASE_USUARIOS, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      });
+      if (!postResponse.ok) {
+        alert("Erro ao cadastrar. Tente novamente.");
+        return;
+      }
+      const resultado = await login({ email: data.email, senha: data.senha });
+      if (resultado.autenticado) {
+        navigate('/'); 
+      } else {
+        alert(resultado.erro);
       }
     } catch {
-      alert("ERROR")
+      alert("Erro inesperado. Tente novamente.");
     }
-  }
+  };
 
   return (
     <main className='min-h-screen bg-gray-50 flex items-center justify-center p-4'>
@@ -226,4 +231,4 @@ function CadastroFarmacia() {
   )
 }
 
-export default CadastroFarmacia
+export default CadastroFarmacia;  

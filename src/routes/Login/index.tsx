@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useForm, type SubmitHandler } from "react-hook-form";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import type { tipoUsuario } from "../../types/tipoUsuario";
 import { login } from "../../services/authService";
 
@@ -12,6 +12,8 @@ const MensagemErro = ({ error }: { error: any }) => {
 };
 
 function LoginFarmacia() {
+  const navigate = useNavigate();
+
   const {
     register,
     handleSubmit,
@@ -19,17 +21,17 @@ function LoginFarmacia() {
   } = useForm<tipoUsuario>({ shouldUnregister: true });
 
   const onSubmit: SubmitHandler<tipoUsuario> = async (data) => {
-    const resultado = await login(data);
+    const resultado = await login({ email: data.email, senha: data.senha });  // Corrigido: passa email e senha
     if (resultado.autenticado) {
-      alert("Login realizado com sucesso!");
+      navigate('/');
     } else {
       alert(resultado.erro);
     }
   };
 
   useEffect(() => {
-            document.title = "FarmáciaPlus - Login";
-        }, []);
+    document.title = "FarmáciaPlus - Login";
+  }, []);
 
   return (
     <main className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
@@ -137,4 +139,4 @@ function LoginFarmacia() {
   );
 }
 
-export default LoginFarmacia;
+export default LoginFarmacia; 
