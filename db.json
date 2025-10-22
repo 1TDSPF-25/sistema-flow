@@ -8,42 +8,42 @@
     {
       "id": "2",
       "nome": "Desloratadina 5mg",
-      "preco": 25.30
+      "preco": 25.3
     },
     {
       "id": "3",
       "nome": "Paracetamol 500mg",
-      "preco": 12.40
+      "preco": 12.4
     },
     {
       "id": "4",
       "nome": "Dipirona 500mg",
-      "preco": 10.00
+      "preco": 10
     },
     {
       "id": "5",
       "nome": "Ibuprofeno 600mg'",
-      "preco": 9.40
+      "preco": 9.4
     },
     {
       "id": "6",
       "nome": "Paracetamol 500mg",
-      "preco": 13.60
+      "preco": 13.6
     },
     {
       "id": "7",
       "nome": "Cetoprofeno 100mg",
-      "preco": 18.50
+      "preco": 18.5
     },
     {
       "id": "8",
       "nome": "Nimesulida 100mg",
-      "preco": 7.20
+      "preco": 7.2
     },
     {
       "id": "11",
       "nome": "Shampoo Anticaspa",
-      "preco": 26.90
+      "preco": 26.9
     },
     {
       "id": "12",
@@ -91,6 +91,32 @@
       "email": "fernanda@fiap.com.br",
       "avatar": "/avatar.fe.png",
       "senha": "senhafe1"
+    },
+    {
+      "id": "b062",
+      "nome": "Ferretee",
+      "cpf": "00000000000",
+      "email": "fe@as.com",
+      "confirmarEmail": "fe@as.com",
+      "senha": "senha123",
+      "confirmarSenha": "senha123"
+    }
+  ],
+  "carrinho": [
+    {
+      "id": "da9d",
+      "usuarioId": "012",
+      "produtoId": "3"
+    },
+    {
+      "id": "9a9b",
+      "usuarioId": "012",
+      "produtoId": "3"
+    },
+    {
+      "id": "1bda",
+      "usuarioId": "012",
+      "produtoId": "3"
     }
   ]
 }

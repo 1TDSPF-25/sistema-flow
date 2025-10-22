@@ -6,18 +6,24 @@ export default function Menu() {
       <ul className="w-full flex gap-2 md:gap-6 justify-center text-white font-medium items-center">
         <li>
           <Link
-            to="/"
+            to=""
           >
             Home
           </Link>
         </li>
         <li>
           <Link
-            to="/produtos"
+            to="produtos"
           >
             Produtos 
           </Link>
         </li>
+        <li>
+          <Link to="carrinho">
+            🛒 Carrinho
+          </Link>
+        </li>
+        <li><Link to="faq">Faq</Link></li>
       </ul>
     </nav>
   );

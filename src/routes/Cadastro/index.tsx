@@ -1,15 +1,8 @@
 import { useForm, type SubmitHandler } from 'react-hook-form'
-import { Link } from 'react-router-dom'
-
-//Tipo de dados do formulário
-interface FormCadastroData {
-  nome: string
-  cpf: string
-  email: string
-  confirmarEmail: string
-  senha: string
-  confirmarSenha: string
-}
+import { Link, useNavigate } from 'react-router-dom'
+import type { tipoUsuario } from '../../types/tipoUsuario'
+import { login } from '../../services/authService'
+const VITE_API_URL_BASE_USUARIOS = import.meta.env.VITE_API_URL_BASE_USUARIOS
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const MensagemErro = ({ error }: { error: any }) => {
@@ -17,20 +10,60 @@ const MensagemErro = ({ error }: { error: any }) => {
 }
 
 function CadastroFarmacia() {
+  const navigate = useNavigate();
+
   const {
     register,
+    setError,
     handleSubmit,
     watch,
     formState: { errors },
-  } = useForm<FormCadastroData>({ shouldUnregister: true })
+  } = useForm<tipoUsuario>({ shouldUnregister: true })
 
   const watchEmail = watch('email')
   const watchSenha = watch('senha')
 
-  const onSubmit: SubmitHandler<FormCadastroData> = async (data) => {
-    console.log('Dados do Formulário Validados', data)
-    alert('Formulário enviado com sucesso!')
-  }
+  const onSubmit: SubmitHandler<tipoUsuario> = async data => {
+    try {
+      const response = await fetch(VITE_API_URL_BASE_USUARIOS)
+      const dataUsuario = await response.json()
+
+      const emailExiste = dataUsuario.some(
+        (p: tipoUsuario) => p.email === data.email
+      )
+      const usuarioExiste = dataUsuario.some(
+        (p: tipoUsuario) => p.nomeUser === data.nome  
+      )
+
+      if (emailExiste) {
+        setError('email', { type: 'manual', message: 'Email já cadastrado' })
+        return;
+      }
+
+      if (usuarioExiste) {
+        setError('nome', { type: 'manual', message: 'Nome de usuario ja cadastrado' })
+        return;
+      }
+
+      const postResponse = await fetch(VITE_API_URL_BASE_USUARIOS, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      });
+      if (!postResponse.ok) {
+        alert("Erro ao cadastrar. Tente novamente.");
+        return;
+      }
+      const resultado = await login({ email: data.email, senha: data.senha });
+      if (resultado.autenticado) {
+        navigate('/'); 
+      } else {
+        alert(resultado.erro);
+      }
+    } catch {
+      alert("Erro inesperado. Tente novamente.");
+    }
+  };
 
   return (
     <main className='min-h-screen bg-gray-50 flex items-center justify-center p-4'>
@@ -43,7 +76,7 @@ function CadastroFarmacia() {
         </div>
 
         <form onSubmit={handleSubmit(onSubmit)} className='space-y-6'>
-          <fieldset className='space-y-6'>
+          <fieldset className='space-y-6 [&_input]:text-black'>
             
             {/*Nome e CPF*/}
             <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
@@ -64,6 +97,7 @@ function CadastroFarmacia() {
                     },
                   })}
                 />
+                
                 <MensagemErro error={errors.nome} />
               </div>
 
@@ -197,4 +231,4 @@ function CadastroFarmacia() {
   )
 }
 
-export default CadastroFarmacia
+export default CadastroFarmacia;  
