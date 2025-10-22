@@ -1,6 +1,8 @@
-# Sistema Flow
+# FarmáciaPlus
 
-O sistema flow é uma plataforma intuitiva e segura que oferece uma experiência de compra simplificada. O sistema inclui funcionalidades essenciais como login, vitrine de produtos, carrinho de compras, contato, FAQ e um painel administrativo restrito para gestão de estoque e catálogo. O objetivo é facilitar o acesso a produtos farmacêuticos, melhorar o atendimento ao cliente e otimizar os processos internos da farmácia.
+![demo.png](/public/demo.png)
+
+FarmáciaPlus é uma plataforma intuitiva e segura que oferece uma experiência de compra simplificada. O sistema inclui funcionalidades essenciais como login, vitrine de produtos, carrinho de compras, contato, FAQ e um painel administrativo restrito para gestão de estoque e catálogo. O objetivo é facilitar o acesso a produtos farmacêuticos, melhorar o atendimento ao cliente e otimizar os processos internos da farmácia.
 
 ## 👥 Time
 Esse projeto está sendo construído em aula pela equipe 1TDSPF do curso de Análise e Desenvolvimento de Sistemas da FIAP, para a matéra de Front-end Design Engineering.
@@ -172,7 +174,7 @@ SISTEMA-FLOW/
 
 - [ ] FEATURE / Adicionar notícias relacionadas a saúde / Equipe 1 <span style="color:red">**DEADLINE: próxima aula**</span>
 
-- [ ] FEATURE / Adicionar página de perfil que mostra os dados do usuário e avatar/ Equipe ? <span style="color:red">**DEADLINE: ?**</span>
+- [ ] FEATURE / Adicionar página de perfil que mostra os dados do usuário e avatar / Equipe ? <span style="color:red">**DEADLINE: ?**</span>
 
 - [ ] BUGFIX / Corrigir estilização do formulário de finalizar compra e adicionar validação dos campos nome, cep e outros que estão aceitando dados fora do padrão. (Sugestão: adicionar mais dados de endereço como Rua, Bairro etc em vez de só endereço) / Equipe ? <span style="color:red">**DEADLINE: ?**</span>
 
@@ -182,12 +184,11 @@ SISTEMA-FLOW/
 
 - [ ] FEATURE / Adicionar página de integrantes, com link para o github e linkedin pessoais de cada integrante. Também é interessante ter uma foto de cada integrante, com nome e equipe pertencente / Equipe ? <span style="color:red">**DEADLINE: próxima aula**</span>
 
-- [ ] FEATURE / Adicionar página de integrantes, com link para o github e linkedin pessoais de cada integrante. Também é interessante ter uma foto de cada integrante, com nome e equipe pertencente / Equipe ? <span style="color:red">**DEADLINE: próxima aula**</span>
+- [ ] FEATURE / Adicionar na página carrinhos um redirecionamento para a página de finalizar compra após clicar em comprar, também adicionar a opção "tem certeza que quer remover item do carrinho" antes de remover / Equipe 5 <span style="color:red">**DEADLINE: próxima aula**</span>
 
-- [ ] FEATURE / Adicionar na página carrinhos um redirecionamento para a página de finalizar compra após clicar em comprar, também adicionar a opção "tem certeza que quer remover item do carrinho" antes de remover / Equipe ? <span style="color:red">**DEADLINE: próxima aula**</span>
 
 </ul>
 
 ### Equipes Liberadas
 
-- [Equipe 5]
+- 
