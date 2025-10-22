@@ -91,6 +91,15 @@
       "email": "fernanda@fiap.com.br",
       "avatar": "/avatar.fe.png",
       "senha": "senhafe1"
+    },
+    {
+      "id": "b062",
+      "nome": "Ferretee",
+      "cpf": "00000000000",
+      "email": "fe@as.com",
+      "confirmarEmail": "fe@as.com",
+      "senha": "senha123",
+      "confirmarSenha": "senha123"
     }
   ],
   "carrinho": [
