@@ -176,12 +176,12 @@ SISTEMA-FLOW/
 
 - [ ] BUGFIX / Corrigir estilização do formulário de finalizar compra e adicionar validação dos campos nome, cep e outros que estão aceitando dados fora do padrão. (Sugestão: adicionar mais dados de endereço como Rua, Bairro etc em vez de só endereço) / Equipe ? <span style="color:red">**DEADLINE: ?**</span>
 
-- [ ] FEATURE / Adicionar no db.json os dados da pasta data, e remover pasta data e arquivos lista / Equipe ? <span style="color:red">**DEADLINE: ?**</span>
+- [ ] FEATURE / Adicionar no db.json os dados da pasta data, e remover pasta data e arquivos lista / Equipe 3 <span style="color:red">**DEADLINE: ?**</span>
 
-- [ ] BUGFIX / Corrigir exibição da home: resolver notícias cortadas, desfixar o footer ou transformar ele como footer lateral e outros ajustes de visibilidade necessários / Equipe ? <span style="color:red">**DEADLINE: ?**</span>
+- [ ] BUGFIX / Corrigir exibição da home: resolver notícias cortadas, desfixar o footer ou transformar ele como footer lateral e outros ajustes de visibilidade necessários / Equipe 8 <span style="color:red">**DEADLINE: próxima aula**</span>
 
 </ul>
 
 ### Equipes Liberadas
 
--[Equipe 3]
+- 
