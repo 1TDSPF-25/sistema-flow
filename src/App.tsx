@@ -11,7 +11,7 @@ export default function App(){
       {
        
       }
-      <Suspense fallback={<h2>Carregando...</h2>}>
+      <Suspense fallback={<h2>Carregando.......</h2>}>
         <Outlet/>
       </Suspense>
       <Rodape/>

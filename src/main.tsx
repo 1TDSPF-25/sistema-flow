@@ -16,7 +16,7 @@ const Faq = lazy(() => import('./routes/Faq/index.tsx'));
  
  
 export function rotaLimitada(elemento: React.ReactElement) {
-  return localStorage.getItem('token') ? elemento : <Login />
+  return localStorage.getItem('auth_token') ? elemento : <Login />;
 }
  
 const router = createBrowserRouter([
