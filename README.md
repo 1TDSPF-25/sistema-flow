@@ -1,15 +1,17 @@
-# Sistema Flow
+# FarmáciaPlus
 
-O sistema flow é uma plataforma intuitiva e segura que oferece uma experiência de compra simplificada. O sistema inclui funcionalidades essenciais como login, vitrine de produtos, carrinho de compras, contato, FAQ e um painel administrativo restrito para gestão de estoque e catálogo. O objetivo é facilitar o acesso a produtos farmacêuticos, melhorar o atendimento ao cliente e otimizar os processos internos da farmácia.
+![demo.png](/public/demo.png)
+
+FarmáciaPlus é uma plataforma intuitiva e segura que oferece uma experiência de compra simplificada. O sistema inclui funcionalidades essenciais como login, vitrine de produtos, carrinho de compras, contato, FAQ e um painel administrativo restrito para gestão de estoque e catálogo. O objetivo é facilitar o acesso a produtos farmacêuticos, melhorar o atendimento ao cliente e otimizar os processos internos da farmácia.
 
 ## 👥 Time
-Esse projeto está sendo construído em aula pela equipe 1TDSPF do curso de Análise e Desenvolvimento de Sistemas da FIAP, para a matéra de Front-end Design Engineering.
+Esse projeto está sendo construído em aula pela turma 1TDSPF do curso de Análise e Desenvolvimento de Sistemas da FIAP, para a matéra de Front-end Design Engineering.
 
 ### Leaders
 
 - MENTORIA: Prof. Alexandre
 
-- TEC LEADER: Gustavo Bosak
+- TECH LEADER: Gustavo Bosak
 
 - HOMOLOGAÇÃO: Felipe Furlanetto
 
@@ -140,6 +142,12 @@ SISTEMA-FLOW/
 
 - [x] FEATURE / Adicionar logo no header e icone no index.hmtl, adicionar também um nome para a página / Equipe 5
 
+- [x] FEATURE / Atualizar página Produtos para exibir botão de comprar que adiciona o produto em uma lista de carrinho de compras no db json relacionada ao usuario logado/ Equipe 7
+
+- [x] FEATURE / Adicionar página de carrinho de compras que resgata quais produtos o usuário logado clicou em comprar / Equipe 7
+
+- [x] FEATURE / Adicionar notícias relacionadas a saúde / Equipe 1
+
 </ul>
 
 ---
@@ -156,10 +164,6 @@ SISTEMA-FLOW/
 
 <ul style="color:yellow">
 
-- [ ] FEATURE / Atualizar página Produtos para exibir botão de comprar que adiciona o produto em uma lista de carrinho de compras no db json relacionada ao usuario logado/ Equipe 7 <span style="color:red">**DEADLINE: próxima aula**</span>
-
-- [ ] FEATURE / Adicionar página de carrinho de compras que resgata quais produtos o usuário logado clicou em comprar / Equipe 7 <span style="color:red">**DEADLINE: próxima aula**</span>
-
 - [ ] FEATURE / Adicionar modal para mensagens de erros e sucessos / Equipe 7 <span style="color:red">**DEADLINE: proxima aula**</span>
 
 - [ ] FEATURE / Adicionar página de contao / Equipe 6 <span style="color:red">**DEADLINE: próxima aula**</span>
@@ -170,18 +174,22 @@ SISTEMA-FLOW/
 
 - [ ] FEATURE / Atualizar carregamentos com Suspense API / Equipe 2 <span style="color:red">**DEADLINE: próxima aula**</span>
 
-- [ ] FEATURE / Adicionar notícias relacionadas a saúde / Equipe 1 <span style="color:red">**DEADLINE: próxima aula**</span>
-
-- [ ] FEATURE / Adicionar página de perfil que mostra os dados do usuário e avatar/ Equipe ? <span style="color:red">**DEADLINE: ?**</span>
+- [ ] FEATURE / Adicionar página de perfil que mostra os dados do usuário e avatar / Equipe ? <span style="color:red">**DEADLINE: ?**</span>
 
 - [ ] BUGFIX / Corrigir estilização do formulário de finalizar compra e adicionar validação dos campos nome, cep e outros que estão aceitando dados fora do padrão. (Sugestão: adicionar mais dados de endereço como Rua, Bairro etc em vez de só endereço) / Equipe ? <span style="color:red">**DEADLINE: ?**</span>
 
-- [ ] FEATURE / Adicionar no db.json os dados da pasta data, e remover pasta data e arquivos lista / Equipe 3 <span style="color:red">**DEADLINE: ?**</span>
+- [ ] FEATURE / Adicionar no db.json os dados da pasta data, e remover pasta data e arquivos lista / Equipe 3 <span style="color:red">**DEADLINE: próxima aula**</span>
 
 - [ ] BUGFIX / Corrigir exibição da home: resolver notícias cortadas, desfixar o footer ou transformar ele como footer lateral e outros ajustes de visibilidade necessários / Equipe 8 <span style="color:red">**DEADLINE: próxima aula**</span>
+
+- [ ] FEATURE / Adicionar página de integrantes, com link para o github e linkedin pessoais de cada integrante. Também é interessante ter uma foto de cada integrante, com nome e equipe pertencente / Equipe ? <span style="color:red">**DEADLINE: próxima aula**</span>
+
+- [ ] FEATURE / Adicionar na página carrinhos um redirecionamento para a página de finalizar compra após clicar em comprar, também adicionar a opção "tem certeza que quer remover item do carrinho" antes de remover / Equipe 5 <span style="color:red">**DEADLINE: próxima aula**</span>
+
+- [ ] FEATURE / Atualizar header usando links de estilização dinâmica (NavLink) para mostrar qual página está sendo acessada / Equipe ? <span style="color:red">**DEADLINE: próxima aula**</span>
 
 </ul>
 
 ### Equipes Liberadas
 
-- [Equipe 5]
+- 
