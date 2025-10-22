@@ -18,6 +18,7 @@ export default function SearchBar() {
     if (query.trim() === "") {
       setProdutos([]);
       setActiveIndex(-1);
+      console.log(activeIndex);
       return;
     }
 
