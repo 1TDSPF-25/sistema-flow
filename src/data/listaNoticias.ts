@@ -48,29 +48,5 @@ export const listaDeNoticias: TipoNoticia[] = [
     conteudoCompleto: "Pelo menos uma de cada duas farmácias das Unidades Básicas de Saúde (UBSs) de Sorocaba (SP) estava com quase metade do estoque de medicamentos zerado nesta quarta (15) e quinta-feira (16). Os dados foram obtidos por meio de um levantamento exclusivo do g1, que identificou mais de 230 medicamentos em falta em pelo menos uma UBS. A prefeitura nega a situação.",
     imagemUrl: "https://s2-g1.glbimg.com/HeTNpVlQboDJkOSLZ0wxkFu1EVs=/0x0:3840x2160/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2025/j/L/Rs8nAbTdGfVAemE3UDfw/img-7079-frame-205.jpeg",
     urlExterna: "https://g1.globo.com/sp/sorocaba-jundiai/noticia/2025/10/16/mapa-uma-em-cada-duas-farmacias-municipais-de-sorocaba-esta-com-quase-metade-do-estoque-de-medicamentos-zerado.ghtml"
-  },
-  {
-    id: 7,
-    titulo: "Pacientes enfrentam longas filas na única farmácia de medicamentos de alto custo de Guarulhos, na Grande SP",
-    resumo: "Pacientes de Guarulhos, na Grande São Paulo, enfrentam longas filas na única farmácia pública que distribui medicamentos de alto custo da cidade. Muitos chegam ao local ainda de madrugada para garantir o atendimento, que começa apenas horas depois. A situação afeta principalmente idosos e pessoas com doenças crônicas que dependem desses remédios para manter seus tratamentos em dia.",
-    conteudoCompleto: "A reportagem do G1 mostra que a farmácia de alto custo de Guarulhos, responsável pela entrega de medicamentos fornecidos gratuitamente pelo governo estadual, tem concentrado uma demanda muito superior à sua capacidade de atendimento. As filas começam a se formar antes do amanhecer, com pacientes aguardando por horas sob sol ou chuva. Diversos relatos destacam o cansaço, o desconforto e o risco de agravar o estado de saúde de quem precisa esperar tanto tempo. Especialistas e pacientes apontam a necessidade de descentralizar a distribuição dos remédios ou ampliar o número de funcionários e pontos de retirada. A Secretaria Estadual da Saúde informou que estuda melhorias no sistema, mas ainda não há previsão de novas unidades na cidade.",
-    imagemUrl: "https://s2-g1.glbimg.com/QtMKxDrPzxgvAAkHBvCI220xbbk=/0x0:1200x670/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2025/c/u/1utv0ORhuWtQdZc2809Q/fila-na-farmacia-de-alto-custo.jpg",
-    urlExterna: "https://g1.globo.com/sp/sao-paulo/noticia/2025/10/20/pacientes-enfrentam-fila-gigante-na-unica-farmacia-de-medicamentos-de-alto-custo-de-guarulhos-na-grande-sp.ghtml"
-  },
-  {
-    id: 8,
-    titulo: "Maioria dos Profissionais no Brasil Usa Remédios para Lidar com Problemas de Saúde Menta.",
-    resumo: "Um levantamento da The School of Life em parceria com a consultoria Robert Half revela que, em 2025, 52% dos líderes e 59% dos colaboradores no Brasil recorreram a psicofármacos para lidar com estresse, ansiedade e burnout no ambiente de trabalho.",
-    conteudoCompleto: "Segundo a reportagem publicada na revista Forbes, esse aumento expressivo no uso de medicamentos psiquiátricos está diretamente ligado à crescente sobrecarga no trabalho: 37% dos entrevistados citaram excesso de tarefas, 33% pressão por resultados e 31% conflitos interpessoais como fatores que prejudicam a saúde mental das equipes. O estudo mostra ainda que muitos profissionais usam essas medicações como “bengala” frente ao estresse crônico, sem necessariamente buscar apoio psicológico ou mudanças estruturais no ambiente de trabalho. Especialistas alertam que isso mascara as causas reais do problema — como comunicação deficiente, metas irreais e falta de suporte emocional — e pode agravar o ciclo de sofrimento silencioso nas empresas.",
-    imagemUrl: "https://forbes.com.br/wp-content/uploads/2025/09/carreira-remedio-saude-mental-768x512.jpg",
-    urlExterna: "https://forbes.com.br/carreira/2025/09/maioria-dos-profissionais-no-brasil-usa-remedios-para-lidar-com-problemas-de-saude-mental/?utm_source=chatgpt.com"
-  },
-  {
-    id: 9,
-    titulo: "Tecidos feitos em laboratório podem aperfeiçoar testes de medicamentos.",
-    resumo: "Pesquisadores brasileiros desenvolveram tecidos humanos cultivados em laboratório — por exemplo, um “mini-fígado” tridimensional — que podem substituir testes em animais e aprimorar os testes toxicológicos e de eficácia de novos medicamentos e cosméticos.",
-    conteudoCompleto: "O estudo relata que, após a descoberta de uma nova molécula, os testes normalmente passam por culturas celulares bidimensionais e depois por ensaios em animais, que nem sempre reproduzem com precisão a resposta humana. A startup Gcell, incubada na Universidade Federal do Rio de Janeiro com apoio da Fundação de Amparo à Pesquisa do Estado do Rio de Janeiro (FAPERJ), do Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq) e da Financiadora de Estudos e Projetos (Finep) está produzindo biotecidos hepáticos 3D que mimetizam funções humanas do fígado e ajudam a detectar hepatotoxicidade e metabolismo de compostos de forma mais confiável. Esses modelos permitem ainda simular efeitos crônicos ou acumulados ao longo do tempo — o que é difícil em modelos animais tradicionais — e já há interesse da indústria farmacêutica e de cosméticos nesses tecidos humanos biofabricados como alternativa para testes.",
-    imagemUrl: "https://imagens.ebc.com.br/4QwveMhIplIUanFNoPw6KPM5MFA=/1170x700/smart/https://agenciabrasil.ebc.com.br/sites/default/files/atoms/image/1019008-11052016dsc_0418-.jpg?itok=hJqTK9bR",
-    urlExterna: "https://agenciabrasil.ebc.com.br/saude/noticia/2025-06/tecidos-feitos-em-laboratorio-podem-aperfeicoar-testes-de-medicamentos?utm_source=chatgpt.com"
   }
 ];
