@@ -2,16 +2,15 @@ export default function CardNoticia(){
     return(
         <div className="flex justify-center w-screen bg-gray-100 py-2">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 px-10 w-600 max-w-7xl"> 
-
-            {/* Card 1 */}
-            <div className="bg-white border rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 ">
-                <div className="overflow-hidden">
-                    <img
-                    src="https://th.bing.com/th/id/OIP.YWd5_j96_muHBaH7Icj-4wHaFS?w=285&h=204&c=7&r=0&o=7&cb=12&pid=1.7&rm=3"
-                    alt="Mouse Gamer"
-                    className="w-full h-35 object-cover hover:scale-105 transition-transform duration-300"
-                    />
-                </div>
+              
+            {/* CARD TEMPLATE */}
+        {[
+          {
+            img: "https://th.bing.com/th/id/OIP.YWd5_j96_muHBaH7Icj-4wHaFS?w=285&h=204&c=7&r=0&o=7&cb=12&pid=1.7&rm=3",
+            alt: "Mouse Gamer",
+            title: "HyperX dá dicas para usuários escolherem os mouses gamer perfeitos",
+            desc: "Família Pulsefire tem modelos com e sem fio, ultraleves e mais robustos, com mais ou menos botões, além de iluminação RGB e macros personalizáveis"
+          },
                 <div className="p-3">
                     <h1 className="font-bold text-lg mb-3 text-gray-800">
                     HyperX dá dicas para usuários escolherem os mouses gamer perfeitos
