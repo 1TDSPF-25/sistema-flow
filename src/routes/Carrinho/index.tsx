@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import type { TipoProduto } from "../../types/tipoProduto";
+import { useNavigate } from "react-router-dom";
 
 type ItemCarrinho = {
   id: string;
@@ -17,6 +18,12 @@ export default function Carrinho() {
     document.title = "FarmáciaPlus - Meu Carrinho";
     carregarCarrinho();
   }, []);
+
+  const navigate = useNavigate();
+
+  const irParaFinalizarCompra = () => {
+    navigate('/finalizar-compra');
+  }
 
   const carregarCarrinho = async () => {
     try {
@@ -100,7 +107,7 @@ export default function Carrinho() {
               R$ {total.toFixed(2)}
             </span>
             </div>
-            <button className="px-3 py-1 bg-green-500 text-white rounded hover:bg-green-600">
+            <button onClick={irParaFinalizarCompra} className="px-3 py-1 bg-green-500 text-white rounded hover:bg-green-600">
               <p className="text-black text-xl">Comprar</p>
             </button>
           </div>
