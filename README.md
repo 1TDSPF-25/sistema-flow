@@ -157,7 +157,9 @@ SISTEMA-FLOW/
 ### Em Homologação:
 
 <ul style="color:orange">
-- [ ] ...
+
+- [ ] FEATURE / Adicionar página de contao / Equipe 6 <span style="color:red">**DEADLINE: próxima aula**</span>
+
 </ul>
 
 ---
@@ -168,11 +170,7 @@ SISTEMA-FLOW/
 
 - [ ] FEATURE / Adicionar modal para mensagens de erros e sucessos / Equipe 7 <span style="color:red">**DEADLINE: proxima aula**</span>
 
-- [ ] FEATURE / Adicionar página de contao / Equipe 6 <span style="color:red">**DEADLINE: próxima aula**</span>
-
 - [ ] FEATURE / Adicionar página de notícias que aparece quando clicar na notícia / Equipe 1 <span style="color:red">**DEADLINE: próxima aula**</span>
-
-- [ ] FEATURE / Adicionar página de contato / Equipe 4 <span style="color:red">**DEADLINE: 9h40**</span>
 
 - [ ] FEATURE / Atualizar carregamentos com Suspense API / Equipe 2 <span style="color:red">**DEADLINE: próxima aula**</span>
 
@@ -184,13 +182,13 @@ SISTEMA-FLOW/
 
 - [ ] BUGFIX / Corrigir exibição da home: resolver notícias cortadas, desfixar o footer ou transformar ele como footer lateral e outros ajustes de visibilidade necessários / Equipe 8 <span style="color:red">**DEADLINE: próxima aula**</span>
 
-- [ ] FEATURE / Adicionar página de integrantes, com link para o github e linkedin pessoais de cada integrante. Também é interessante ter uma foto de cada integrante, com nome e equipe pertencente / Equipe ? <span style="color:red">**DEADLINE: próxima aula**</span>
+- [ ] FEATURE / Adicionar página de integrantes, com link para o github e linkedin pessoais de cada integrante. Também é interessante ter uma foto de cada integrante, com nome e equipe pertencente / Equipe 6 <span style="color:red">**DEADLINE: próxima aula**</span>
 
 - [ ] FEATURE / Adicionar na página carrinhos um redirecionamento para a página de finalizar compra após clicar em comprar, também adicionar a opção "tem certeza que quer remover item do carrinho" antes de remover / Equipe 5 <span style="color:red">**DEADLINE: próxima aula**</span>
 
 - [ ] FEATURE / Atualizar header usando links de estilização dinâmica (NavLink) para mostrar qual página está sendo acessada / Equipe 8 <span style="color:red">**DEADLINE: próxima aula**</span>
 
-- [ ] FEATURE / Adicionar modo dark por useContext / Mentoria <span style="color:red">**DEADLINE: próxima aula**</span>
+- [ ] FEATURE / Adicionar modo dark por useContext / Mentoria + Equipe 4 <span style="color:red">**DEADLINE: próxima aula**</span>
 
 </ul>
 
