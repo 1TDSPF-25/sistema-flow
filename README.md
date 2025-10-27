@@ -188,6 +188,8 @@ SISTEMA-FLOW/
 
 - [ ] FEATURE / Atualizar header usando links de estilização dinâmica (NavLink) para mostrar qual página está sendo acessada / Equipe ? <span style="color:red">**DEADLINE: próxima aula**</span>
 
+- [ ] FEATURE / Adicionar modo dark por useContext / Mentoria <span style="color:red">**DEADLINE: próxima aula**</span>
+
 </ul>
 
 ### Equipes Liberadas
