@@ -51,6 +51,9 @@ export default function Carrinho() {
   };
 
   const handleRemover = async (id: string) => {
+    if (!window.confirm("Tem certeza que deseja apagar este produto?")) {
+        return;
+    }
     try {
       await fetch(`http://localhost:3001/carrinho/${id}`, { method: "DELETE" });
       setItens((prev) => prev.filter((item) => item.id !== id));
@@ -91,7 +94,7 @@ export default function Carrinho() {
                   </p>
                 </div>
                 <button
-                  onClick={() => handleRemover(item.id)}
+                  type="button" onClick={() => handleRemover(item.id)}
                   className="px-3 py-1 bg-red-500 text-white rounded hover:bg-red-600"
                 >
                   Remover
