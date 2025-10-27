@@ -3,7 +3,7 @@ import type { ThemeContextType } from "../../types/themeContextType";
 
 
 //Criando o bilhete mágico
-const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
+export const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 //Criando a pessoa que vai entregar o bilhete mágico para todo mundo.
 export const ThemeProvider = ({children} : {children:ReactNode} ) =>{
@@ -23,3 +23,5 @@ export const ThemeProvider = ({children} : {children:ReactNode} ) =>{
     );
 
 };
+
+export default ThemeProvider;
