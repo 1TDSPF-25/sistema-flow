@@ -186,7 +186,7 @@ SISTEMA-FLOW/
 
 - [ ] FEATURE / Adicionar na página carrinhos um redirecionamento para a página de finalizar compra após clicar em comprar, também adicionar a opção "tem certeza que quer remover item do carrinho" antes de remover / Equipe 5 <span style="color:red">**DEADLINE: próxima aula**</span>
 
-- [ ] FEATURE / Atualizar header usando links de estilização dinâmica (NavLink) para mostrar qual página está sendo acessada / Equipe ? <span style="color:red">**DEADLINE: próxima aula**</span>
+- [ ] FEATURE / Atualizar header usando links de estilização dinâmica (NavLink) para mostrar qual página está sendo acessada / Equipe 8 <span style="color:red">**DEADLINE: próxima aula**</span>
 
 - [ ] FEATURE / Adicionar modo dark por useContext / Mentoria <span style="color:red">**DEADLINE: próxima aula**</span>
 
