@@ -59,6 +59,18 @@ export default function Contato() {
       {/* Seção de Informações */}
       <div>
         <h2>Informações de Contato</h2>
+        <div>
+         <strong>📍 Endereço</strong>
+         <p>Av. Paulista, 1106 - Bela Vista<br />São Paulo - SP, 01310-100</p>
+       </div>
+       <div>
+         <strong>📞 Telefone</strong>
+         <p>(11) 4002-8922</p>
+       </div>
+       <div>
+         <strong>✉️ E-mail</strong>
+         <p>contato@fiapfarma.com.br</p>
+       </div>
       </div>
 
       {/* Seção do Mapa */}
