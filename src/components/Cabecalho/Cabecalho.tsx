@@ -23,6 +23,7 @@ export default function Cabecalho() {
     if (query.trim() === "") {
       setProdutos([]);
       setActiveIndex(-1);
+      console.log(activeIndex);
       return;
     }
 

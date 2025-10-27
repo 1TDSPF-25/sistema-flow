@@ -1,4 +1,4 @@
-import { StrictMode, lazy } from 'react';
+import { StrictMode, Suspense, lazy } from 'react';
 import { createRoot } from 'react-dom/client';
 import App from './App.tsx';
 import "./globals.css";
@@ -16,7 +16,7 @@ const Faq = lazy(() => import('./routes/Faq/index.tsx'));
  
  
 export function rotaLimitada(elemento: React.ReactElement) {
-  return localStorage.getItem('token') ? elemento : <Login />
+  return localStorage.getItem('auth_token') ? elemento : <Login />;
 }
  
 const router = createBrowserRouter([
@@ -32,11 +32,14 @@ const router = createBrowserRouter([
       { path: "/finalizar-compra", element: rotaLimitada(<TipoCompra />) },
       { path: "/faq", element: <Faq /> }
     ]
-  }
-]);
+    }
+  ], {basename: '/sistema-flow/'});
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <RouterProvider router={router} />
+   {/* Suspense aqui garante loading pros imports dinâmicos */}
+    <Suspense fallback={<div>Carregando…</div>}>
+      <RouterProvider router={router} />
+    </Suspense>
   </StrictMode>,
 )
