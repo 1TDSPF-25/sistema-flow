@@ -1,10 +1,23 @@
-import type { FormEvent } from 'react';
+import { useState, type FormEvent } from 'react';
 
 export default function Contato() {
+
+    const [nome, setNome] = useState('');
+    const [email, setEmail] = useState('');
+    const [assunto, setAssunto] = useState('');
+    const [mensagem, setMensagem] = useState('');
+
   const handleSubmit = (event: FormEvent) => {
     event.preventDefault();
-    console.log("Formulário enviado!");
-  };
+
+    const formData = { nome, email, assunto, mensagem };
+    console.log('Dados do formulário:', formData);
+    alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
+    setNome('');
+    setEmail('');
+    setAssunto('');
+    setMensagem('');
+   };
 
   return (
     <div>
@@ -24,19 +37,20 @@ export default function Contato() {
         <form onSubmit={handleSubmit}>
           <div>
             <label htmlFor="nome">Nome Completo</label>
-            <input type="text" id="nome" required />
+            <input
+              type="text" id="nome" value={nome} onChange={(e) => setNome(e.target.value)} required/>
           </div>
           <div>
             <label htmlFor="email">E-mail</label>
-            <input type="email" id="email" required />
++            <input type="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
           </div>
           <div>
             <label htmlFor="assunto">Assunto</label>
-            <input type="text" id="assunto" required />
+            <input type="text" id="assunto" value={assunto} onChange={(e) => setAssunto(e.target.value)} required />
           </div>
           <div>
             <label htmlFor="mensagem">Mensagem</label>
-            <textarea id="mensagem" rows={6} required></textarea>
+            <textarea id="mensagem" rows={6} value={mensagem} onChange={(e) => setMensagem(e.target.value)} required ></textarea>
           </div>
           <button type="submit">Enviar Mensagem</button>
         </form>
