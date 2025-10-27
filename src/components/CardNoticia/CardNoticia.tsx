@@ -1,7 +1,7 @@
 export default function CardNoticia() {
   return (
-    <div className="flex justify-center w-screen bg-gray-100 py-4">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-6 w-full max-w-7xl">
+    <div className="flex justify-center w-[100] bg-gray-100 py-7">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-10 w-full max-w-7xl">
         
         {/* Card 1 */}
         <div className="bg-white border rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
