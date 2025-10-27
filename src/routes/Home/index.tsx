@@ -54,7 +54,7 @@ export default function Home() {
 
 
   return (
-    <main className="flex flex-col bg-gray-50 items-center justify-center">
+    <main className="flex flex-col  items-center justify-center">
       <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">
         Resultado da pesquisa
       </h2>
@@ -64,7 +64,7 @@ export default function Home() {
           {resultado.map((p) => (
             <div
               key={p.id}
-              className="bg-white rounded-2xl shadow-lg p-6 flex flex-col justify-between hover:shadow-xl transition-shadow duration-200"
+              className="rounded-2xl shadow-lg p-6 flex flex-col justify-between hover:shadow-xl transition-shadow duration-200"
             >
               
               <h3 className="text-lg font-semibold text-gray-800 mb-2 truncate">
