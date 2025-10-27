@@ -60,7 +60,7 @@ export default function Rodape() {
     );
 
   return (
-    <footer className="bg-[#0d3879] text-white text-sm p-3 w-full mt-auto border-t border-[#143c79]">
+    <footer className="bg-[#0f3875] text-white text-sm p-3 w-full mt-auto border-t border-[#143c79]">
       <div className="flex flex-wrap justify-center gap-8 text-center">
         
         {/* Clima */}
