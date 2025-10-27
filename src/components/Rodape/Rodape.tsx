@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 
 interface Currency { name: string; buy: number; }
@@ -6,7 +5,6 @@ interface Stock { name: string; location: string; points?: number; }
 interface WeatherData { temp: number; city: string; description: string; }
 
 export default function Rodape() {
-
   const [currencies, setCurrencies] = useState<{ [key: string]: Currency }>({});
   const [stocks, setStocks] = useState<{ [key: string]: Stock }>({});
   const [weather, setWeather] = useState<WeatherData | null>(null);
@@ -14,8 +12,7 @@ export default function Rodape() {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    const API_KEY = import.meta.env.VITE_API_KEY_HGBRASIL; 
-    
+    const API_KEY = import.meta.env.VITE_API_KEY_HGBRASIL;
     const financeApiUrl = `/api-hgbrasil/finance?key=${API_KEY}`;
     const weatherApiUrl = `/api-hgbrasil/weather?key=${API_KEY}`;
 
@@ -37,16 +34,8 @@ export default function Rodape() {
         setCurrencies(financeData.results.currencies);
         setStocks(financeData.results.stocks);
         setWeather(weatherData.results);
-
       } catch (err) {
-        
-        if (err instanceof Error) {
-          
-          setError(err.message);
-        } else {
-          
-          setError(String(err));
-        }
+        setError(err instanceof Error ? err.message : String(err));
         console.error("Erro ao buscar dados da API:", err);
       } finally {
         setLoading(false);
@@ -55,45 +44,66 @@ export default function Rodape() {
 
     fetchData();
   }, []);
- 
-  // O restante do código permanece o mesmo...
-  if (loading) return <footer>Carregando dados...</footer>;
-  if (error) return <footer style={{ color: 'red' }}>Erro ao carregar dados: {error}</footer>;
+
+  if (loading)
+    return (
+      <footer className="text-center text-gray-200 p-2 bg-[#123974] text-sm">
+        Carregando dados...
+      </footer>
+    );
+
+  if (error)
+    return (
+      <footer className="text-center text-red-400 p-2 bg-[#134085] text-sm">
+        Erro: {error}
+      </footer>
+    );
 
   return (
-    <footer className="bg-blue-900 text-white p-4 w-full mt-auto">
-     <div className="flex justify-around items-center">
+    <footer className="bg-[#0d3879] text-white text-sm p-3 w-full mt-auto border-t border-[#143c79]">
+      <div className="flex flex-wrap justify-center gap-8 text-center">
         
-        {/* Seção de Clima */}
+        {/* Clima */}
         {weather && (
           <section>
-            <h2>Clima</h2>
-            <p><strong>{weather.city}:</strong> {weather.temp}°C, {weather.description}</p>
+            <h2 className="font-semibold text-xs uppercase mb-1 text-gray-300 tracking-wide">🌥️Clima</h2>
+            <p className="text-gray-200">
+              {weather.city}: {weather.temp}°C, {weather.description}
+            </p>
           </section>
         )}
-        {/* Seção de Moedas */}
+
+        {/* Moedas */}
         <section>
-          <h2>Moedas</h2>
-          <ul style={{ listStyle: 'none', padding: 0 }}>
+          <h2 className="font-semibold text-xs uppercase mb-1 text-gray-300 tracking-wide">💵Moedas</h2>
+          <ul>
             {Object.keys(currencies).slice(0, 2).map(key => {
               const currency = currencies[key];
               if (key === 'source') return null;
-              return <li key={key}><strong>{currency.name}:</strong> R$ {currency.buy.toFixed(2)}</li>;
+              return (
+                <li key={key} className="text-gray-200">
+                  {currency.name}: R$ {currency.buy.toFixed(2)}
+                </li>
+              );
             })}
           </ul>
         </section>
-        
-        {/* Seção de Bolsas */}
+
+        {/* Bolsas */}
         <section>
-          <h2>Bolsas</h2>
-          <ul style={{ listStyle: 'none', padding: 0 }}>
+          <h2 className="font-semibold text-xs uppercase mb-1 text-gray-300 tracking-wide">📈Bolsas</h2>
+          <ul>
             {Object.keys(stocks).slice(0, 2).map(key => {
               const stock = stocks[key];
-              return <li key={key}><strong>{stock.name}:</strong> {stock.points?.toFixed(2)} pts</li>;
+              return (
+                <li key={key} className="text-gray-200">
+                  {stock.name}: {stock.points?.toFixed(2)} pts
+                </li>
+              );
             })}
           </ul>
         </section>
       </div>
     </footer>
   );
-};
+}
