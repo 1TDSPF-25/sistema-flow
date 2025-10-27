@@ -148,6 +148,8 @@ SISTEMA-FLOW/
 
 - [x] FEATURE / Adicionar notícias relacionadas a saúde / Equipe 1
 
+- [x] FEATURE / Adicionar na página carrinhos um redirecionamento para a página de finalizar compra após clicar em comprar, também adicionar a opção  "tem certeza que quer remover item do carrinho" antes de remover / Equipe 5 
+
 </ul>
 
 ---
@@ -194,4 +196,4 @@ SISTEMA-FLOW/
 
 ### Equipes Liberadas
 
-- 
+- [Equipe 5]
