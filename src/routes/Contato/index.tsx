@@ -25,7 +25,7 @@ export default function Contato() {
       <div>
         <h1>Fale Conosco</h1>
         <p>
-          Tem alguma dúvida, sugestão ou precisa falar com um de nossos farmacêuticos?
+          Tem alguma dúvida, sugestão ou precisa falar com a gente?
           <br />
           Preencha o formulário abaixo ou utilize um de nossos canais de atendimento.
         </p>
@@ -42,7 +42,7 @@ export default function Contato() {
           </div>
           <div>
             <label htmlFor="email">E-mail</label>
-+            <input type="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
+            <input type="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
           </div>
           <div>
             <label htmlFor="assunto">Assunto</label>
@@ -76,6 +76,8 @@ export default function Contato() {
       {/* Seção do Mapa */}
       <div>
         <h2>Nossa Localização</h2>
+        <iframe
+         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.197545464525!2d-46.65657158440608!3d-23.56134626747515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c97763!2sFIAP%20-%20Paulista!5e0!3m2!1spt-BR!2sbr!4v1665411783023!5m2!1spt-BR!2sbr"></iframe>
       </div>
     </div>
   );
