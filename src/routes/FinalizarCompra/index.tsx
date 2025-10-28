@@ -30,7 +30,13 @@ const FinalizarCompra = () => {
             <input 
               id="nomeCompleto"
               className='border border-gray-700'
-              {...register("nomeCompleto", { required: "O nome é obrigatório" })}
+              {...register("nomeCompleto", { 
+                required: "O nome é obrigatório",
+                pattern: {
+                  value: /^[A-Za-zÀ-ÿ\s'-]+(\s[A-Za-zÀ-ÿ\s'-]+)+$/,
+                  message: "Digite o nome completo (nome e sobrenome)"
+                }
+              })}
             />
             {errors.nomeCompleto && <p style={{ color: 'red' }}>{errors.nomeCompleto.message}</p>}
           </div>
