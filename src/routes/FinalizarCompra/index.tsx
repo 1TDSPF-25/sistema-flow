@@ -83,6 +83,16 @@ const FinalizarCompra = () => {
           </div>
 
           <div>
+            <label htmlFor="bairro">Bairro</label>
+            <input 
+              id="bairro"
+              className='border border-gray-700'
+              {...register("bairro", { required: "O bairro é obrigatório" })}
+            />
+            {errors.bairro && <p style={{ color: 'red' }}>{errors.bairro.message}</p>}
+          </div>
+
+          <div>
             <label htmlFor="cidade">Cidade</label>
             <input 
               id="cidade"
