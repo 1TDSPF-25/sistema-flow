@@ -1,29 +1,29 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function Menu() {
   return (
     <nav className="bg-blue-900 w-full">
       <ul className="w-full flex gap-2 md:gap-6 justify-center text-white font-medium items-center">
         <li>
-          <Link
-            to=""
+          <NavLink
+            to="/"
           >
             Home
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link
+          <NavLink
             to="produtos"
           >
             Produtos 
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="carrinho">
+          <NavLink to="carrinho">
             🛒 Carrinho
-          </Link>
+          </NavLink>
         </li>
-        <li><Link to="faq">Faq</Link></li>
+        <li><NavLink to="faq">Faq</NavLink></li>
       </ul>
     </nav>
   );
