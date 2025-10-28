@@ -22,17 +22,29 @@ function LoginFarmacia() {
 
   const onSubmit: SubmitHandler<tipoUsuario> = async (data) => {
     const resultado = await login({ email: data.email, senha: data.senha });  // Corrigido: passa email e senha
+    
     if (resultado.autenticado) {
-      navigate('/');
+      // 🔹 Passo 1 — salvar token e dados do usuário
+      const usuarioLogado = {
+        token: resultado.token || "123456789", // usa o da API se tiver
+        nome: resultado.nome || "João Victor",
+        email: data.email,
+      
+      };
+
+      localStorage.setItem("auth_token", usuarioLogado.token);
+      localStorage.setItem("usuario", JSON.stringify(usuarioLogado));
+
+      // Redireciona para o perfil
+      navigate("/perfil");
     } else {
       alert(resultado.erro);
     }
   };
-
   useEffect(() => {
     document.title = "FarmáciaPlus - Login";
   }, []);
-
+  
   return (
     <main className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
       {/* Card do Formulário*/}

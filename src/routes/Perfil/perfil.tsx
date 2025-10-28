@@ -4,10 +4,6 @@ export default function Perfil() {
     nome: "João Victor",
     email: "joaovictor@email.com",
     avatar: "https://i.pravatar.cc/150?img=32",
-    cidade: "São Paulo, SP",
-    cargo: "Desenvolvedor Front-End",
-    sobre:
-      "Apaixonado por tecnologia, esportes e desenvolvimento web. Sempre buscando aprender mais e criar projetos que façam a diferença.",
   };
     return (
     <div className="min-h-screen bg-gray-100 flex flex-col items-center py-10 px-4">
@@ -18,9 +14,17 @@ export default function Perfil() {
           alt="Avatar do usuário"
           className="w-32 h-32 rounded-full mx-auto border-4 border-blue-600 shadow-sm"
         />
+        {/* Nome */}
+        <h1 className="text-2xl font-bold text-gray-800 mt-4">{usuario.nome}</h1>
+        {/* Email */}
+        <p className="text-gray-600 mt-2">{usuario.email}</p>  
 
-        {/* Nome e cargo */}
-        <h2 className="text-2xl font-bold mt-4 text-gray-800">{usuario.nome}</h2>
-        <p className="text-blue-700 font-medium">{usuario.cargo}</p>
-
+        {/* Botão de editar (futuro) */}
+        <button className="mt-8 bg-blue-700 hover:bg-blue-800 text-white px-6 py-2 rounded-xl shadow-sm transition-all">
+          Editar Perfil
+        </button>
+      </div>
+    </div>
+  );
+}
         
