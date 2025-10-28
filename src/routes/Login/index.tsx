@@ -4,6 +4,14 @@ import { Link, useNavigate } from "react-router-dom";
 import type { tipoUsuario } from "../../types/tipoUsuario";
 import { login } from "../../services/authService";
 
+
+// Tipo esperado do retorno da função login()
+type RetornoLogin = {
+  autenticado: boolean;
+  erro?: string;
+  token?: string;
+  nome?: string;
+};
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const MensagemErro = ({ error }: { error: any }) => {
   return error ? (
@@ -21,26 +29,36 @@ function LoginFarmacia() {
   } = useForm<tipoUsuario>({ shouldUnregister: true });
 
   const onSubmit: SubmitHandler<tipoUsuario> = async (data) => {
-    const resultado = await login({ email: data.email, senha: data.senha });  // Corrigido: passa email e senha
-    
-    if (resultado.autenticado) {
-      // 🔹 Passo 1 — salvar token e dados do usuário
-      const usuarioLogado = {
-        token: resultado.token || "123456789", // usa o da API se tiver
-        nome: resultado.nome || "João Victor",
+    try {
+      // 🔹 Forçamos o tipo do retorno
+      const resultado = (await login({
         email: data.email,
-      
-      };
+        senha: data.senha,
+      })) as RetornoLogin;
 
-      localStorage.setItem("auth_token", usuarioLogado.token);
-      localStorage.setItem("usuario", JSON.stringify(usuarioLogado));
+      // 🧠 Garante que o retorno tenha a estrutura esperada
+      if (resultado?.autenticado) {
+        // 🔹 Passo 1 — salvar token e dados do usuário
+        const usuarioLogado = {
+          token: resultado.token || "123456",
+          nome: resultado.nome || "Usuário Padrão",
+          email: data.email,
+        };
 
-      // Redireciona para o perfil
-      navigate("/perfil");
-    } else {
-      alert(resultado.erro);
+        localStorage.setItem("auth_token", usuarioLogado.token);
+        localStorage.setItem("usuario", JSON.stringify(usuarioLogado));
+
+        // 🔀 Redireciona (ajustado para basename do Vite)
+        navigate("/sistema-flow/perfil");
+      } else {
+        alert(resultado?.erro || "Erro ao autenticar usuário.");
+      }
+    } catch (erro) {
+      console.error("Erro ao logar:", erro);
+      alert("Ocorreu um erro inesperado ao tentar fazer login.");
     }
   };
+   
   useEffect(() => {
     document.title = "FarmáciaPlus - Login";
   }, []);
