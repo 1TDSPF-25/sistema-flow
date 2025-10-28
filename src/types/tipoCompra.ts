@@ -2,7 +2,10 @@ export type TipoCompra = {
 // Dados de Entrega
     nomeCompleto: string;
     email: string;
-    endereco: string;
+    rua: string;
+    numero: number;
+    complemento: string;
+    bairro:string;
     cidade: string;
     cep: string;
 
