@@ -14,6 +14,7 @@ const EditarProdutos = lazy(() => import('./routes/EditarProdutos/index.tsx'));
 const CadastroFarmacia = lazy(() => import('./routes/Cadastro/index.tsx'));
 const TipoCompra = lazy(() => import('./routes/FinalizarCompra/index.tsx'));
 const Faq = lazy(() => import('./routes/Faq/index.tsx'));
+const Perfil = lazy(() => import('./routes/Perfil/perfil.tsx'));
 
 export function rotaLimitada(elemento: React.ReactElement) {
   return localStorage.getItem('auth_token') ? elemento : <Login />;
@@ -31,7 +32,8 @@ const router = createBrowserRouter([
       { path: "/editar/produtos/:id", element: rotaLimitada(<EditarProdutos />) },
       { path: "/finalizar-compra", element: rotaLimitada(<TipoCompra />) },
       { path: "/faq", element: <Faq /> },
-      { path: "/contato", element: <Contato />}
+      { path: "/contato", element: <Contato />},
+      { path: "/perfil", element: rotaLimitada(<Perfil />) }
     ]
     }
   ], {basename: '/sistema-flow/'});
