@@ -72,6 +72,16 @@ const FinalizarCompra = () => {
             {errors.numero && <p style={{ color: 'red' }}>{errors.numero.message}</p>}
           </div>
 
+
+          <div>
+            <label htmlFor="complemento">Complemento (Opcional)</label>
+            <input 
+              id="complemento"
+              className='border border-gray-700'
+              {...register("complemento")} 
+            />
+          </div>
+
           <div>
             <label htmlFor="cidade">Cidade</label>
             <input 
