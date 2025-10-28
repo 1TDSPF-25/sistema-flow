@@ -7,6 +7,11 @@ export default function Menu() {
         <li>
           <NavLink
             to="/"
+            className={({ isActive }) =>
+              isActive
+                ? "border-b-2 border-white text-white"
+                : "text-gray-200 hover:text-white"
+            }
           >
             Home
           </NavLink>
@@ -14,16 +19,34 @@ export default function Menu() {
         <li>
           <NavLink
             to="produtos"
+            className={({ isActive }) =>
+              isActive
+                ? "border-b-2 border-white text-white"
+                : "text-gray-200 hover:text-white"
+            }
           >
             Produtos 
           </NavLink>
         </li>
         <li>
-          <NavLink to="carrinho">
+          <NavLink
+          to="/carrinho"
+          className={({ isActive }) =>
+              isActive
+                ? "border-b-2 border-white text-white"
+                : "text-gray-200 hover:text-white"
+            }
+          >
+          
+          
             🛒 Carrinho
           </NavLink>
         </li>
-        <li><NavLink to="faq">Faq</NavLink></li>
+        <li><NavLink 
+        to="faq"
+        >
+          
+        Faq</NavLink></li>
       </ul>
     </nav>
   );
