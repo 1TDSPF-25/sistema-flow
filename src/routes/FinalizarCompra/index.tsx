@@ -57,6 +57,22 @@ const FinalizarCompra = () => {
           </div>
 
           <div>
+            <label htmlFor="numero">Número</label>
+            <input 
+              id="numero"
+              className='border border-gray-700'
+              {...register("numero", { 
+                required: "O número é obrigatório",
+                pattern: {
+                  value: /^[0-9]+$/,
+                  message: "O campo deve conter apenas números"
+                }
+              })}
+            />
+            {errors.numero && <p style={{ color: 'red' }}>{errors.numero.message}</p>}
+          </div>
+
+          <div>
             <label htmlFor="cidade">Cidade</label>
             <input 
               id="cidade"
