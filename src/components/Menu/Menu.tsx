@@ -37,15 +37,17 @@ export default function Menu() {
                 : "text-gray-200 hover:text-white"
             }
           >
-          
-          
             🛒 Carrinho
           </NavLink>
         </li>
         <li><NavLink 
         to="faq"
+        className={({ isActive }) =>
+              isActive
+                ? "border-b-2 border-white text-white"
+                : "text-gray-200 hover:text-white"
+            }
         >
-          
         Faq</NavLink></li>
       </ul>
     </nav>
