@@ -65,7 +65,13 @@ const FinalizarCompra = () => {
             <input 
               id="cep"
               className='border border-gray-700'
-              {...register("cep", { required: "O CEP é obrigatório" })}
+              {...register("cep", { 
+                required: "O CEP é obrigatório",
+                pattern: {
+                  value: /^\d{5}-?\d{3}$/,
+                  message: "CEP inválido (formato: 12345-678)"
+                }
+              })}
             />
             {errors.cep && <p style={{ color: 'red' }}>{errors.cep.message}</p>}
           </div>
