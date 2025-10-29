@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import type { SubmitHandler } from 'react-hook-form';
-import { useForm } from 'react-hook-form'; 
+import { useForm } from 'react-hook-form';
 import type { TipoCompra } from '../../types/tipoCompra';
 
 const FinalizarCompra = () => {
@@ -39,6 +39,7 @@ const FinalizarCompra = () => {
             <input 
               id="nomeCompleto"
               className="p-3 border rounded-md focus:outline-none focus:ring-1"
+              placeholder="Digite o nome completo (nome e sobrenome)"
               {...register("nomeCompleto", { 
                 required: "O nome é obrigatório",
                 pattern: {
@@ -56,6 +57,7 @@ const FinalizarCompra = () => {
               id="email"
               type="email"
               className="p-3 border rounded-md focus:outline-none focus:ring-2"
+              placeholder="Ex: Email@email.com"
               {...register("email", { required: "O email é obrigatório", pattern: { value: /^\S+@\S+$/i, message: "Email inválido" }})}
             />
             {errors.email && <p style={{ color: 'red' }}>{errors.email.message}</p>}
@@ -67,6 +69,7 @@ const FinalizarCompra = () => {
               <input 
                 id="rua"
                 className="p-3 border rounded-md focus:outline-none focus:ring-2"
+                placeholder="Nome completo da rua (Ex: Rua dos bobos)"
                 {...register("rua", { required: "A rua é obrigatória" })}
               />
               {errors.rua && <p style={{ color: 'red' }}>{errors.rua.message}</p>}
@@ -77,6 +80,7 @@ const FinalizarCompra = () => {
               <input 
                 id="numero"
                 className="p-3 border rounded-md focus:outline-none focus:ring-2"
+                placeholder="N° da casa/prédio (Ex: 399)"
                 {...register("numero", { 
                   required: "O número é obrigatório",
                   pattern: {
@@ -93,6 +97,7 @@ const FinalizarCompra = () => {
               <input 
                 id="complemento"
                 className="p-3 border rounded-md focus:outline-none focus:ring-2"
+                placeholder="N° do apartamento/bloco (Ex: Apartamento 403)"
                 {...register("complemento")} 
               />
             </div>
@@ -102,6 +107,7 @@ const FinalizarCompra = () => {
               <input 
                 id="bairro"
                 className="p-3 border rounded-md focus:outline-none focus:ring-2"
+                placeholder="Bairro da casa/prédio (Ex: Jardim Paulistano)"
                 {...register("bairro", { required: "O bairro é obrigatório" })}
               />
               {errors.bairro && <p style={{ color: 'red' }}>{errors.bairro.message}</p>}
@@ -112,6 +118,7 @@ const FinalizarCompra = () => {
               <input 
                 id="cidade"
                 className="p-3 border rounded-md focus:outline-none focus:ring-2"
+                placeholder="Cidade de entrega (Ex: São Paulo)"
                 {...register("cidade", { required: "A cidade é obrigatória" })}
               />
               {errors.cidade && <p style={{ color: 'red' }}>{errors.cidade.message}</p>}
@@ -122,6 +129,7 @@ const FinalizarCompra = () => {
               <input 
                 id="cep"
                 className="p-3 border rounded-md focus:outline-none focus:ring-2"
+                placeholder="N° do CEP (Ex: 01001-000)"
                 {...register("cep", { 
                   required: "O CEP é obrigatório",
                   pattern: {
@@ -146,6 +154,7 @@ const FinalizarCompra = () => {
               <input 
                 id="cartaoNome"
                 className="p-3 border rounded-md focus:outline-none focus:ring-2"
+                placeholder="Nome do titular do cartão"
                 {...register("cartaoNome", { required: "O nome no cartão é obrigatório" })}
               />
               {errors.cartaoNome && <p style={{ color: 'red' }}>{errors.cartaoNome.message}</p>}
@@ -156,6 +165,7 @@ const FinalizarCompra = () => {
               <input
                 id="cartaoNumero"
                 className="p-3 border rounded-md focus:outline-none focus:ring-2"
+                placeholder="N° do cartão (Ex: 0000111122223333)"
                 {...register("cartaoNumero", { required: "O número do cartão é obrigatório", minLength: { value: 16, message: "Deve ter 16 dígitos" }, maxLength: { value: 16, message: "Deve ter 16 dígitos" } })}
               />
               {errors.cartaoNumero && <p style={{ color: 'red' }}>{errors.cartaoNumero.message}</p>}
@@ -166,6 +176,7 @@ const FinalizarCompra = () => {
               <input
                 id="cartaoValidade"
                 className="p-3 border rounded-md focus:outline-none focus:ring-2"
+                placeholder="Validade do cartão (Ex: 01/30)"
                 {...register("cartaoValidade", { required: "A validade é obrigatória", pattern: { value: /^(0[1-9]|1[0-2])\/?([0-9]{2})$/, message: "Formato MM/AA inválido" }})}
               />
               {errors.cartaoValidade && <p style={{ color: 'red' }}>{errors.cartaoValidade.message}</p>}
@@ -176,6 +187,7 @@ const FinalizarCompra = () => {
               <input
                 id="cartaoCVC"
                 className="p-3 border rounded-md focus:outline-none focus:ring-2"
+                placeholder="Os 3 números atrás do cartão (Ex: 101)"
                 {...register("cartaoCVC", { required: "O CVC é obrigatório", minLength: { value: 3, message: "Deve ter 3 dígitos" }, maxLength: { value: 3, message: "Deve ter 3 dígitos" } })}
               />
               {errors.cartaoCVC && <p style={{ color: 'red' }}>{errors.cartaoCVC.message}</p>}
