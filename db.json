@@ -126,6 +126,16 @@
       "id": "1bda",
       "usuarioId": "012",
       "produtoId": "3"
+    },
+    {
+      "id": "e30e",
+      "usuarioId": "012",
+      "produtoId": "2"
+    },
+    {
+      "id": "ac56",
+      "usuarioId": "012",
+      "produtoId": "3"
     }
   ]
 }

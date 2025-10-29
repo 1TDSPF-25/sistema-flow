@@ -11,6 +11,7 @@ export default function Rodape() {
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
 
+<<<<<<< Updated upstream
   useEffect(() => {
     const API_KEY = import.meta.env.VITE_API_KEY_HGBRASIL;
     
@@ -27,6 +28,21 @@ export default function Rodape() {
           fetch(financeApiUrl),
           fetch(weatherApiUrl) 
         ]);
+=======
+  useEffect(() => {
+    const API_KEY = import.meta.env.VITE_API_KEY_HGBRASIL;
+    const financeApiUrl = `/api-hgbrasil/finance?key=${API_KEY}`;
+    const weatherApiUrl = `/api-hgbrasil/weather?key=${API_KEY}&woeid=455827`;
+
+    const fetchData = async () => {
+      setLoading(true);
+      setError(null); 
+      try {
+        const [financeResponse, weatherResponse] = await Promise.all([
+          fetch(financeApiUrl),
+          fetch(weatherApiUrl)
+        ]);
+>>>>>>> Stashed changes
 
         if (!financeResponse.ok) throw new Error('Falha ao buscar dados financeiros.');
         if (!weatherResponse.ok) throw new Error('Falha ao buscar dados do clima.');

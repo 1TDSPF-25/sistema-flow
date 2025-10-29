@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import type { TipoProduto } from "../../types/tipoProduto";
 import { Link, useLocation } from "react-router-dom";
 import { CiEdit } from "react-icons/ci";
+import Spinner from "../../components/Spinner/Spinner";
  
 export default function Produtos() {
   
@@ -18,7 +19,8 @@ export default function Produtos() {
   }, []);
 
   useEffect(() => {
-    const fetchData = async () => {
+    
+    const fetchData = async () => {  
       const response = await fetch("http://localhost:3001/produtos");
       const data: TipoProduto[] = await response.json();
 
@@ -33,8 +35,13 @@ export default function Produtos() {
       }
       document.title = "FarmáciaPlus - Produtos";
     };
- 
-    fetchData();
+
+    const timeOut = setTimeout(() => {    
+      fetchData();
+      }, 10000);
+      
+      return () => clearTimeout(timeOut);
+      
   }, [searchTerm]);
  
   // Função para adicionar produto ao carrinho
@@ -63,7 +70,7 @@ export default function Produtos() {
       <h1 className="text-2xl font-bold text-gray-800 mb-6">Produtos</h1>
  
       {produtos.length === 0 ? (
-        <p className="text-gray-600">Nenhum produto encontrado.</p>
+        <div className="mx-auto w-10 text-center text-blue-950"><Spinner />Carregando...</div>
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {produtos.map((produto) => (

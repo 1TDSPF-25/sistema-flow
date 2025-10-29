@@ -2,6 +2,7 @@ import { Suspense } from "react";
 import { Outlet } from "react-router-dom";
 import Cabecalho from "./components/Cabecalho/Cabecalho";
 import Rodape from "./components/Rodape/Rodape";
+import Spinner from "./components/Spinner/Spinner";
  
 export default function App(){
  
@@ -11,7 +12,7 @@ export default function App(){
       {
        
       }
-      <Suspense fallback={<h2>Carregando.......</h2>}>
+      <Suspense fallback={<Spinner/>}>
         <Outlet/>
       </Suspense>
       <Rodape/>

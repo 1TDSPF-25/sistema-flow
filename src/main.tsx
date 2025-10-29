@@ -40,9 +40,6 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-   {/* Suspense aqui garante loading pros imports dinâmicos */}
-    <Suspense fallback={<div>Carregando…</div>}>
       <RouterProvider router={router} />
-    </Suspense>
   </StrictMode>
 )
