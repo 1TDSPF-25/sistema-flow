@@ -30,7 +30,13 @@ const FinalizarCompra = () => {
             <input 
               id="nomeCompleto"
               className='border border-gray-700'
-              {...register("nomeCompleto", { required: "O nome é obrigatório" })}
+              {...register("nomeCompleto", { 
+                required: "O nome é obrigatório",
+                pattern: {
+                  value: /^[A-Za-zÀ-ÿ\s'-]+(\s[A-Za-zÀ-ÿ\s'-]+)+$/,
+                  message: "Digite o nome completo (nome e sobrenome)"
+                }
+              })}
             />
             {errors.nomeCompleto && <p style={{ color: 'red' }}>{errors.nomeCompleto.message}</p>}
           </div>
@@ -47,13 +53,49 @@ const FinalizarCompra = () => {
           </div>
 
           <div>
-            <label htmlFor="endereco">Endereço</label>
+            <label htmlFor="rua">Rua</label>
             <input 
-              id="endereco"
+              id="rua"
               className='border border-gray-700'
-              {...register("endereco", { required: "O endereço é obrigatório" })}
+              {...register("rua", { required: "A rua é obrigatória" })}
             />
-            {errors.endereco && <p style={{ color: 'red' }}>{errors.endereco.message}</p>}
+            {errors.rua && <p style={{ color: 'red' }}>{errors.rua.message}</p>}
+          </div>
+
+          <div>
+            <label htmlFor="numero">Número</label>
+            <input 
+              id="numero"
+              className='border border-gray-700'
+              {...register("numero", { 
+                required: "O número é obrigatório",
+                pattern: {
+                  value: /^[0-9]+$/,
+                  message: "O campo deve conter apenas números"
+                }
+              })}
+            />
+            {errors.numero && <p style={{ color: 'red' }}>{errors.numero.message}</p>}
+          </div>
+
+
+          <div>
+            <label htmlFor="complemento">Complemento (Opcional)</label>
+            <input 
+              id="complemento"
+              className='border border-gray-700'
+              {...register("complemento")} 
+            />
+          </div>
+
+          <div>
+            <label htmlFor="bairro">Bairro</label>
+            <input 
+              id="bairro"
+              className='border border-gray-700'
+              {...register("bairro", { required: "O bairro é obrigatório" })}
+            />
+            {errors.bairro && <p style={{ color: 'red' }}>{errors.bairro.message}</p>}
           </div>
 
           <div>
@@ -71,7 +113,13 @@ const FinalizarCompra = () => {
             <input 
               id="cep"
               className='border border-gray-700'
-              {...register("cep", { required: "O CEP é obrigatório" })}
+              {...register("cep", { 
+                required: "O CEP é obrigatório",
+                pattern: {
+                  value: /^\d{5}-?\d{3}$/,
+                  message: "CEP inválido (formato: 12345-678)"
+                }
+              })}
             />
             {errors.cep && <p style={{ color: 'red' }}>{errors.cep.message}</p>}
           </div>
