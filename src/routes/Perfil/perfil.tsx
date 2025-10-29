@@ -4,7 +4,7 @@ export default function Perfil() {
   const [usuarioLogado, setUsuarioLogado] = useState({
     nome: "",
     email: "",
-    avatar: "https://cdn-icons-png.flaticon.com/512/14262/14262757.png",
+    avatar: "https://cdn-icons-png.flaticon.com/512/4433/4433850.png",
   });
 
   useEffect(() => {
@@ -22,8 +22,8 @@ export default function Perfil() {
   }, []);
 
      return (
-    <main className="min-h-screen bg-gradient-to-b from-blue-100 to-blue-200 flex items-center justify-center px-4">
-      <section className="bg-white rounded-2xl shadow-xl w-full max-w-md p-8 text-center transform transition hover:scale-[1.02]">
+    <main className=" from-blue-100 to-blue-200 flex items-center justify-center px-4">
+      <section className="bg-white rounded-2xl shadow-xl w-full max-w-md p-9 text-center transform transition hover:scale-[1.02]">
         {/* Avatar */}
         <img
           src={usuarioLogado.avatar}
@@ -40,10 +40,10 @@ export default function Perfil() {
         <p className="text-gray-600 mt-2 text-lg">{usuarioLogado.email}</p>
 
         {/* Divisor */}
-        <div className="w-16 h-[2px] bg-blue-600 mx-auto my-6 rounded-full"></div>
+        <div className="w-16 h-[2px] mx-auto my-6 rounded-full"></div>
 
         {/* Botão de editar */}
-        <button className="bg-blue-700 hover:bg-blue-800 text-white px-8 py-3 rounded-xl font-medium shadow-md transition-all">
+        <button className="bg-blue-700 text-white px-8 py-3 rounded-xl font-medium shadow-md transition-all">
           Editar Perfil
         </button>
       </section>
