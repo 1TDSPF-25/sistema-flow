@@ -17,7 +17,7 @@ export default function Rodape() {
     const financeApiUrl = `/api-hgbrasil/finance?key=${API_KEY}`;
     
     
-    const weatherApiUrl = `/api-hgbrasil/weather?key=${API_KEY}&woeid=45527`;
+    const weatherApiUrl = `/api-hgbrasil/weather?key=${API_KEY}&woeid=455827`;
 
     const fetchData = async () => {
       setLoading(true);
