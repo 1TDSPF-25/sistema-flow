@@ -17,7 +17,7 @@ const FinalizarCompra = () => {
 
   return (
 
-    <div>
+    <main>
       <h1>Preencha os dados abaixo para concluir seu pedido.</h1>
 
       <form onSubmit={handleSubmit(onSubmit)}>
@@ -170,7 +170,7 @@ const FinalizarCompra = () => {
 
         <button type="submit">Finalizar Compra</button>
       </form>
-    </div>
+    </main>
   );
 };
 
