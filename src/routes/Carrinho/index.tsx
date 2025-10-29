@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import type { TipoProduto } from "../../types/tipoProduto";
+import { useNavigate } from "react-router-dom";
 
 type ItemCarrinho = {
   id: string;
@@ -17,6 +18,12 @@ export default function Carrinho() {
     document.title = "FarmáciaPlus - Meu Carrinho";
     carregarCarrinho();
   }, []);
+
+  const navigate = useNavigate();
+
+  const irParaFinalizarCompra = () => {
+    navigate('/finalizar-compra');
+  }
 
   const carregarCarrinho = async () => {
     try {
@@ -44,6 +51,9 @@ export default function Carrinho() {
   };
 
   const handleRemover = async (id: string) => {
+    if (!window.confirm("Tem certeza que deseja apagar este produto?")) {
+        return;
+    }
     try {
       await fetch(`http://localhost:3001/carrinho/${id}`, { method: "DELETE" });
       setItens((prev) => prev.filter((item) => item.id !== id));
@@ -84,7 +94,7 @@ export default function Carrinho() {
                   </p>
                 </div>
                 <button
-                  onClick={() => handleRemover(item.id)}
+                  type="button" onClick={() => handleRemover(item.id)}
                   className="px-3 py-1 bg-red-500 text-white rounded hover:bg-red-600"
                 >
                   Remover
@@ -94,11 +104,18 @@ export default function Carrinho() {
           </ul>
 
           <div className="mt-6 border-t pt-4 flex justify-between items-center">
-            <span className="text-lg text-black font-bold">Total:</span>
+            <div>
+            <span className="text-lg text-black font-bold mr-2">Total:</span>
             <span className="text-xl font-bold text-green-600">
               R$ {total.toFixed(2)}
             </span>
+            </div>
+            <button onClick={irParaFinalizarCompra} className="px-3 py-1 bg-green-500 text-white rounded hover:bg-green-600">
+              <p className="text-black text-xl">Comprar</p>
+            </button>
           </div>
+
+
         </>
       )}
     </main>

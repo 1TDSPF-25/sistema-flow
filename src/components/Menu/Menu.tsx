@@ -1,29 +1,66 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function Menu() {
   return (
     <nav className="bg-blue-900 w-full">
       <ul className="w-full flex gap-2 md:gap-6 justify-center text-white font-medium items-center">
         <li>
-          <Link
-            to=""
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive
+                ? "border-b-2 border-white text-white"
+                : "text-gray-200 hover:text-white"
+            }
           >
             Home
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link
+          <NavLink
             to="produtos"
+            className={({ isActive }) =>
+              isActive
+                ? "border-b-2 border-white text-white"
+                : "text-gray-200 hover:text-white"
+            }
           >
             Produtos 
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="carrinho">
+          <NavLink
+          to="/carrinho"
+          className={({ isActive }) =>
+              isActive
+                ? "border-b-2 border-white text-white"
+                : "text-gray-200 hover:text-white"
+            }
+          >
             🛒 Carrinho
-          </Link>
+          </NavLink>
         </li>
-        <li><Link to="faq">Faq</Link></li>
+        <li><NavLink 
+        to="faq"
+        className={({ isActive }) =>
+              isActive
+                ? "border-b-2 border-white text-white"
+                : "text-gray-200 hover:text-white"
+            }
+        >
+        Faq</NavLink></li>
+        <li>
+          <NavLink
+            to="/perfil"
+            className={({ isActive }) =>
+              isActive
+                ? "border-b-2 border-white text-white"
+                : "text-gray-200 hover:text-white"
+            }
+          >
+            👤 Perfil
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );

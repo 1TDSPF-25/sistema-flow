@@ -100,6 +100,15 @@
       "confirmarEmail": "fe@as.com",
       "senha": "senha123",
       "confirmarSenha": "senha123"
+    },
+    {
+      "id": "1c9d",
+      "nome": "João Caetano",
+      "cpf": "31121523142",
+      "email": "RM564115@fiap.com.br",
+      "confirmarEmail": "RM564115@fiap.com.br",
+      "senha": "123456",
+      "confirmarSenha": "123456"
     }
   ],
   "carrinho": [

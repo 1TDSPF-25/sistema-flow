@@ -4,6 +4,14 @@ import { Link, useNavigate } from "react-router-dom";
 import type { tipoUsuario } from "../../types/tipoUsuario";
 import { login } from "../../services/authService";
 
+
+// Tipo esperado do retorno da função login()
+type RetornoLogin = {
+  autenticado: boolean;
+  erro?: string;
+  token?: string;
+  nome?: string;
+};
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const MensagemErro = ({ error }: { error: any }) => {
   return error ? (
@@ -21,18 +29,40 @@ function LoginFarmacia() {
   } = useForm<tipoUsuario>({ shouldUnregister: true });
 
   const onSubmit: SubmitHandler<tipoUsuario> = async (data) => {
-    const resultado = await login({ email: data.email, senha: data.senha });  // Corrigido: passa email e senha
-    if (resultado.autenticado) {
-      navigate('/');
-    } else {
-      alert(resultado.erro);
+    try {
+      // 🔹 Forçamos o tipo do retorno
+      const resultado = (await login({
+        email: data.email,
+        senha: data.senha,
+      })) as RetornoLogin;
+
+      // 🧠 Garante que o retorno tenha a estrutura esperada
+      if (resultado?.autenticado) {
+        // 🔹 Passo 1 — salvar token e dados do usuário
+        const usuarioLogado = {
+          token: resultado.token || "123456",
+          nome: resultado.nome || "Usuário Padrão",
+          email: data.email,
+        };
+
+        localStorage.setItem("auth_token", usuarioLogado.token);
+        localStorage.setItem("usuario", JSON.stringify(usuarioLogado));
+
+        // 🔀 Redireciona (ajustado para basename do Vite)
+        navigate("/sistema-flow/perfil");
+      } else {
+        alert(resultado?.erro || "Erro ao autenticar usuário.");
+      }
+    } catch (erro) {
+      console.error("Erro ao logar:", erro);
+      alert("Ocorreu um erro inesperado ao tentar fazer login.");
     }
   };
-
+   
   useEffect(() => {
     document.title = "FarmáciaPlus - Login";
   }, []);
-
+  
   return (
     <main className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
       {/* Card do Formulário*/}
