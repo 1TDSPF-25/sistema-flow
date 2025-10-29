@@ -1,30 +1,53 @@
+import { useEffect, useState } from "react";
 
 export default function Perfil() {
-  const usuarioLogado = {
-    nome: "João Victor",
-    email: "joaovictor@email.com",
-    avatar: "https://i.pravatar.cc/150?img=32",
-  };
-    return (
-    <div className="min-h-screen bg-gray-100 flex flex-col items-center py-10 px-4">
-      <div className="bg-white rounded-2xl shadow-md w-full max-w-md p-8 text-center">
+  const [usuarioLogado, setUsuarioLogado] = useState({
+    nome: "",
+    email: "",
+    avatar: "https://cdn-icons-png.flaticon.com/512/14262/14262757.png",
+  });
+
+  useEffect(() => {
+    // Busca o usuário salvo no login
+    const usuarioSalvo = localStorage.getItem("usuario");
+
+    if (usuarioSalvo) {
+      const dados = JSON.parse(usuarioSalvo);
+      setUsuarioLogado((prev) => ({
+        ...prev,
+        nome: dados.nome || "Usuário",
+        email: dados.email || "email@desconhecido.com",
+      }));
+    }
+  }, []);
+
+     return (
+    <main className="min-h-screen bg-gradient-to-b from-blue-100 to-blue-200 flex items-center justify-center px-4">
+      <section className="bg-white rounded-2xl shadow-xl w-full max-w-md p-8 text-center transform transition hover:scale-[1.02]">
         {/* Avatar */}
         <img
           src={usuarioLogado.avatar}
           alt="Avatar do usuário"
-          className="w-32 h-32 rounded-full mx-auto border-4 border-blue-600 shadow-sm"
+          className="w-35 h-35 rounded-full mx-auto border-4 border-blue-600 shadow-md"
         />
-        {/* Nome */}
-        <h1 className="text-2xl font-bold text-gray-800 mt-4">{usuarioLogado.nome}</h1>
-        {/* Email */}
-        <p className="text-gray-600 mt-2">{usuarioLogado.email}</p>  
 
-        {/* Botão de editar (futuro) */}
-        <button className="mt-8 bg-blue-700 hover:bg-blue-800 text-white px-6 py-2 rounded-xl shadow-sm transition-all">
+        {/* Nome */}
+        <h1 className="text-3xl font-bold text-gray-800 mt-6">
+          {usuarioLogado.nome}
+        </h1>
+
+        {/* Email */}
+        <p className="text-gray-600 mt-2 text-lg">{usuarioLogado.email}</p>
+
+        {/* Divisor */}
+        <div className="w-16 h-[2px] bg-blue-600 mx-auto my-6 rounded-full"></div>
+
+        {/* Botão de editar */}
+        <button className="bg-blue-700 hover:bg-blue-800 text-white px-8 py-3 rounded-xl font-medium shadow-md transition-all">
           Editar Perfil
         </button>
-      </div>
-    </div>
+      </section>
+    </main>
   );
 }
         
