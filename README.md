@@ -4,6 +4,10 @@
 
 FarmáciaPlus é uma plataforma intuitiva e segura que oferece uma experiência de compra simplificada. O sistema inclui funcionalidades essenciais como login, vitrine de produtos, carrinho de compras, contato, FAQ e um painel administrativo restrito para gestão de estoque e catálogo. O objetivo é facilitar o acesso a produtos farmacêuticos, melhorar o atendimento ao cliente e otimizar os processos internos da farmácia.
 
+## 🌐 Website
+
+Acesse o site [aqui](https://1tdspf-25.github.io/sistema-flow/).
+
 ## 👥 Time
 Esse projeto está sendo construído em aula pela turma 1TDSPF do curso de Análise e Desenvolvimento de Sistemas da FIAP, para a matéra de Front-end Design Engineering.
 
@@ -162,7 +166,7 @@ SISTEMA-FLOW/
 
 <ul style="color:orange">
 
-- [ ] FEATURE / Adicionar página de contao / Equipe 6 <span style="color:red">**DEADLINE: próxima aula**</span>
+- [ ] FEATURE / Adicionar página de contao / Equipe 6
 
 </ul>
 
@@ -192,4 +196,4 @@ SISTEMA-FLOW/
 
 ### Equipes Liberadas
 
-- [Equipe 5]
+- 
