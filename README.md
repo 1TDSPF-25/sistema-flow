@@ -106,7 +106,7 @@ SISTEMA-FLOW/
 
 - [x] FEATURE / Gerar um sistema de validação com localStorage e sessionStoarge + Token / Equipe 7
 
-- [x] FEATURE / Criar cards de notícias na HOME / Equippe 5
+- [x] FEATURE / Criar cards de notícias na HOME / Equipe 5
 
 - [x] FEATURE / Mesclar cópia de card de notícias na na HOME / Equipe 3
 
@@ -166,7 +166,7 @@ SISTEMA-FLOW/
 
 <ul style="color:orange">
 
-- [ ] FEATURE / Adicionar página de contao / Equipe 6
+- [ ] FEATURE / Adicionar página de contao / Equipe 4
 
 </ul>
 
