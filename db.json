@@ -150,7 +150,7 @@
       "imagemUrl": "https://www.otempo.com.br/content/dam/otempo/editorias/opini%C3%A3o/2025/10/20/opini%C3%A3o-tributa%C3%A7%C3%A3o%20de%20medicamentos-icms-preco_dos_remedios-1760722690.jpg",
       "urlExterna": "https://fenafisco.org.br/20/10/2025/nova-tributacao-de-medicamentos-em-mg-pode-elevar-precos/"
     },
-     {
+    {
       "id": 3,
       "titulo": "Ministério da Saúde e CGU inspecionam farmácias do Programa Farmácia Popular",
       "resumo": "Ação conjunta reforça medidas de fortalecimento do Programa, que ampliou em 90% o orçamento entre 2022 e 2025 e garantiu gratuidade para todos os 41 medicamentos e insumos ofertados",
@@ -168,10 +168,11 @@
     },
     {
       "id": 5,
-      "titulo": "Tensão Aumenta no Mar da China Meridional Após Incidente com Drones",
-      "resumo": "A tensão militar aumentou após drones chineses realizarem manobras agressivas contra um navio das Filipinas.",
-      "conteudoCompleto": "Analistas internacionais expressaram preocupação com a escalada. O incidente envolveu uma nova classe de drones de patrulha com capacidade de decisão autônoma, o que levanta questões éticas e legais sobre o futuro da guerra. Diplomatas de ambos os países foram chamados para negociações de emergência.",
-      "urlExterna": "https://www.terra.com.br/noticias/mundo/filipinas-e-china-trocam-acusacoes-sobre-colisao-de-navios-no-mar-do-sul-da-china,ba5322bebc4cf2a17b51e72489944098vmhesxfs.html"
+      "titulo": "Mercado Livre entra na venda de remédios e setor reage; entenda a polêmica",
+      "resumo": "Plataforma defende modelo de intermediação com rigor sanitário e transparência de preços, enquanto Abrafarma alerta para riscos de segurança ao consumidor",
+      "conteudoCompleto": "O passo mais recente do Mercado Livre — a compra de uma pequena farmácia na zona sul de São Paulo — acendeu um debate que vai muito além do e-commerce: o futuro do varejo farmacêutico no Brasil.",
+      "imagemUrl":"https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/10/farmacia-mercado-livre.png?w=1200&h=900&crop=0",
+      "urlExterna": "hhttps://www.cnnbrasil.com.br/blogs/debora-oliveira/economia/negocios/mercado-livre-entra-na-venda-de-remedios-e-setor-reage-entenda-a-polemica/"
     },
     {
       "id": 6,
