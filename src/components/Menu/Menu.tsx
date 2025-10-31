@@ -48,7 +48,22 @@ export default function Menu() {
                 : "text-gray-200 hover:text-white"
             }
         >
-        Faq</NavLink></li>
+          Faq
+        </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/integrantes"
+            className={({ isActive }) =>
+              isActive
+                ? "border-b-2 border-white text-white"
+                : "text-gray-200 hover:text-white"
+            }
+          >
+            Integrantes
+          </NavLink>
+        </li>
+
         <li>
           <NavLink
             to="/perfil"
