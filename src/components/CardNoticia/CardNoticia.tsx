@@ -83,7 +83,7 @@ export default function CardNoticia() {
         <div className="bg-white border rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-300">
           <div className="overflow-hidden">
             <img
-              src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/10/farmacia-mercado-livre.png?w=1200&h=900&crop=0"
+              src="https://www.acontecenaindustria.com.br/wp-content/uploads/2025/10/download-1-300x162.jpg"
               alt="Venda de remédios"
               className="w-full h-40 object-cover hover:scale-105 transition-transform duration-300"
             />
