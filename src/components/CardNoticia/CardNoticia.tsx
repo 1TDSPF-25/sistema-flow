@@ -7,7 +7,7 @@ export default function CardNoticia() {
         <div className="bg-white border rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-300">
           <div className="overflow-hidden">
             <img
-              src="https://th.bing.com/th/id/OIP.YWd5_j96_muHBaH7Icj-4wHaFS?w=285&h=204&c=7&r=0&o=7&cb=12&pid=1.7&rm=3"
+              src="https://s2-g1.glbimg.com/S6Z0iNfRrLsZ4GIgAciAcEXcvFs=/0x0:1024x768/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2020/n/i/cdBon0QdCjrdb39IxgJw/whatsapp-image-2020-03-24-at-08.11.07.jpeg"
               alt="Fila em farmácia de Guarulhos"
               className="w-full h-40 object-cover hover:scale-105 transition-transform duration-300"
             />
