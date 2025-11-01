@@ -13,10 +13,10 @@ export default function CardNoticia() {
             />
           </div>
           <div className="p-4">
-            <h1 className="font-semibold text-[16px] mb-2 text-gray-800 leading-snug">
+            <h1 className="font-bold text-[15px] mb-2 text-gray-800 leading-snug">
               Pacientes enfrentam longas filas na única farmácia de medicamentos de alto custo de Guarulhos, na Grande SP
             </h1>
-            <p className="text-gray-600 text-[15px] leading-tight">
+            <p className="text-gray-600 text-[14px] leading-tight">
               Antes mesmo da abertura, é comum pacientes chegarem cedo à fila para garantir atendimento.
             </p>
           </div>
@@ -32,10 +32,10 @@ export default function CardNoticia() {
             />
           </div>
           <div className="p-4">
-            <h1 className="font-semibold text-[16px] mb-2 text-gray-800 leading-snug">
+            <h1 className="font-bold text-[15px] mb-2 text-gray-800 leading-snug">
               Nova tributação de medicamentos em MG pode elevar preços
             </h1>
-            <p className="text-gray-600 text-[15px] leading-tight">
+            <p className="text-gray-600 text-[14px] leading-tight">
               Decreto 49.107/2025 altera regras do ICMS-ST e pode encarecer o preço final ao consumidor.
             </p>
           </div>
@@ -51,10 +51,10 @@ export default function CardNoticia() {
             />
           </div>
           <div className="p-4">
-            <h1 className="font-semibold text-[16px] mb-2 text-gray-800 leading-snug">
+            <h1 className="font-bold text-[15px] mb-2 text-gray-800 leading-snug">
               Ministério da Saúde e CGU inspecionam farmácias do Programa Farmácia Popular
             </h1>
-            <p className="text-gray-600 text-[15px] leading-tight">
+            <p className="text-gray-600 text-[14px] leading-tight">
               Ação reforça medidas de fortalecimento e aumento de 90% no orçamento desde 2022.
             </p>
           </div>
@@ -70,10 +70,10 @@ export default function CardNoticia() {
             />
           </div>
           <div className="p-4">
-            <h1 className="font-semibold text-[16px] mb-2 text-gray-800 leading-snug">
+            <h1 className="font-bold text-[15px] mb-2 text-gray-800 leading-snug">
               Amazon vai vender medicamentos controlados em máquinas eletrônicas nos EUA
             </h1>
-            <p className="text-gray-600 text-[15px] leading-tight">
+            <p className="text-gray-600 text-[14px] leading-tight">
               Serviço será oferecido a moradores de Los Angeles pela rede One Medical.
             </p>
           </div>
@@ -89,10 +89,10 @@ export default function CardNoticia() {
             />
           </div>
           <div className="p-4">
-            <h1 className="font-semibold text-[16px] mb-2 text-gray-800 leading-snug">
+            <h1 className="font-bold text-[15px] mb-2 text-gray-800 leading-snug">
               Mercado Livre entra na venda de remédios e setor reage
             </h1>
-            <p className="text-gray-600 text-[15px] leading-tight">
+            <p className="text-gray-600 text-[14px] leading-tight">
               Plataforma promete transparência e segurança; Abrafarma alerta para riscos.
             </p>
           </div>
@@ -108,10 +108,10 @@ export default function CardNoticia() {
             />
           </div>
           <div className="p-4">
-            <h1 className="font-semibold text-[16px] mb-2 text-gray-800 leading-snug">
+            <h1 className="font-bold text-[15px] mb-2 text-gray-800 leading-snug">
               Metade das farmácias municipais de Sorocaba está com estoque zerado
             </h1>
-            <p className="text-gray-600 text-[15px] leading-tight">
+            <p className="text-gray-600 text-[14px] leading-tight">
               UBSs registram falta de medicamentos; prefeitura nega situação.
             </p>
           </div>
