@@ -1,7 +1,7 @@
 import { createContext, useState, type ReactNode } from "react";
 import type { ThemeContextType } from "../../types/themeContextType";
 
-const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
+export const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 export const ThemeProvider = ({children} : {children:ReactNode}) => {
 
@@ -9,7 +9,7 @@ export const ThemeProvider = ({children} : {children:ReactNode}) => {
 
     const toggleTheme = () => {
         setIsDark((prevIsDark) => !prevIsDark);
-    };
+    }
 
     return (
         <ThemeContext.Provider value={{isDark, toggleTheme}}>
@@ -17,3 +17,5 @@ export const ThemeProvider = ({children} : {children:ReactNode}) => {
         </ThemeContext.Provider>
     );
 };
+
+export default ThemeProvider;
