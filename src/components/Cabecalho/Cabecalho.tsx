@@ -3,6 +3,9 @@ import { useNavigate } from "react-router-dom";
 import Menu from "../Menu/Menu";
 import { CiSearch } from "react-icons/ci";
 import logoSite from "../../img/logo branco.png";
+import { useTheme } from "../Context/useTheme";
+import { MdDarkMode as LuaIcon} from "react-icons/md";
+import { MdSunny as SolIcon} from "react-icons/md";
 
 interface Produto {
   id: string;
@@ -17,6 +20,7 @@ export default function Cabecalho() {
   const [activeIndex, setActiveIndex] = useState(-1);
   const [menuAberto, setMenuAberto] = useState(false);
   const navigate = useNavigate();
+  const{isDark, toggleTheme} = useTheme();
 
   // Buscar produtos para sugestões
   useEffect(() => {
@@ -57,7 +61,8 @@ export default function Cabecalho() {
   };
 
   return (
-    <header className="bg-blue-900 text-gray-100 shadow-md border border-blue-900">
+    <header className={`${isDark ? "dark-mode" : "light-mode" } shadow-md border border-blue-900`}>
+        <button onClick={toggleTheme} className="cursor-pointer ">{isDark ? <SolIcon/> : <LuaIcon/> }</button>
       <div className="max-w-7xl mx-auto flex flex-row md:flex-row items-center justify-between gap-4 px-6 py-4 relative">
         <img src={logoSite} alt="logo do site " className="w-20" />
 
