@@ -66,7 +66,7 @@ function CadastroFarmacia() {
   };
 
   return (
-    <main className='min-h-screen bg-gray-50 flex items-center justify-center p-4'>
+    <main className='min-h-screen flex items-center justify-center p-4'>
       <section className='bg-white shadow-xl rounded-lg p-8 w-full max-w-4xl'>
         
         {/* Título e Subtítulo */}

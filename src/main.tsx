@@ -7,6 +7,7 @@ import Error from './routes/Error/index.tsx';
 import Contato from './routes/Contato/index.tsx';
 import Carrinho from './routes/Carrinho/index.tsx';
 import Login from './routes/Login/index.tsx';
+import ThemeProvider from './components/Context/ThemeContext.tsx';
  
 const Home = lazy(() => import('./routes/Home/index.tsx'));
 const Produtos = lazy(() => import('./routes/Produtos/index.tsx'));
@@ -43,9 +44,11 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-   {/* Suspense aqui garante loading pros imports dinâmicos */}
-    <Suspense fallback={<div>Carregando…</div>}>
-      <RouterProvider router={router} />
-    </Suspense>
+    <ThemeProvider>
+      {/* Suspense aqui garante loading pros imports dinâmicos */}
+      <Suspense fallback={<div>Carregando…</div>}>
+        <RouterProvider router={router} />
+      </Suspense>
+    </ThemeProvider>
   </StrictMode>
-)
+);
