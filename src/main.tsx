@@ -15,6 +15,7 @@ const CadastroFarmacia = lazy(() => import('./routes/Cadastro/index.tsx'));
 const TipoCompra = lazy(() => import('./routes/FinalizarCompra/index.tsx'));
 const Faq = lazy(() => import('./routes/Faq/index.tsx'));
 const Perfil = lazy(() => import('./routes/Perfil/perfil.tsx'));
+const DetalheNoticia = lazy(() => import('./routes/DetalheNoticia/index.tsx'));
 
 export function rotaLimitada(elemento: React.ReactElement) {
   return localStorage.getItem('auth_token') ? elemento : <Login />;
@@ -23,7 +24,7 @@ export function rotaLimitada(elemento: React.ReactElement) {
 const router = createBrowserRouter([
   {
     path: "/", element: <App />, errorElement: <Error />, children: [
-      { path: "/", element: <Home /> },      
+      { path: "/", element: <Home /> },        
       { path: "/login", element: <Login /> },
       { path: "/cadastro", element: <CadastroFarmacia /> }, 
       { path: "/produtos", element: <Produtos /> },
@@ -33,15 +34,16 @@ const router = createBrowserRouter([
       { path: "/finalizar-compra", element: rotaLimitada(<TipoCompra />) },
       { path: "/faq", element: <Faq /> },
       { path: "/contato", element: <Contato />},
-      { path: "/perfil", element: rotaLimitada(<Perfil />) }
+      { path: "/perfil", element: rotaLimitada(<Perfil />) },
+
+      { path: "/noticias/:idNoticia", element: <DetalheNoticia /> }
     ]
     }
   ], {basename: '/sistema-flow/'});
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-   {/* Suspense aqui garante loading pros imports dinâmicos */}
-    <Suspense fallback={<div>Carregando…</div>}>
+    <Suspense fallback={<div>Carregando…</div>}> 
       <RouterProvider router={router} />
     </Suspense>
   </StrictMode>
