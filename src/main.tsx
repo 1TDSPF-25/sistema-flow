@@ -36,10 +36,7 @@ const router = createBrowserRouter([
       { path: "/faq", element: <Faq /> },
       { path: "/contato", element: <Contato />},
       { path: "/integrantes", element: <Integrantes /> },
-      { path: "/perfil", element: rotaLimitada(<Perfil />) }
-      
       { path: "/perfil", element: rotaLimitada(<Perfil />) },
-
       { path: "/noticias/:idNoticia", element: <DetalheNoticia /> }
     ]
     }
