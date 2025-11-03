@@ -4,8 +4,20 @@
     scroll-behavior: smooth;
 }
 
+body{
+    @apply w-screen h-screen ;
+}
+
+.dark-mode{
+    @apply bg-gray-900 text-white ;
+}
+
+.light-mode{
+    @apply bg-white text-gray-900 ;
+}
+
 .container{
-    @apply w-[100vw] h-[100vh] flex flex-col justify-between;
+    @apply w-[100vw] h-[100vh] flex flex-col justify-between  ;
 
     & header{
         @apply h-[10p] w-[100vw];
@@ -22,11 +34,11 @@
     }
 
     & main{
-        @apply bg-[#e7e4e4] text-white h-[100vh] w-[100vw] overflow-auto;
+        @apply h-[100vh] w-[100vw] overflow-y-scroll 
     }
 
     & footer{
-        @apply  text-white h-[5p] w-[100vw];
+        @apply h-[5p] w-[100vw];
     }
 
 }

@@ -100,6 +100,15 @@
       "confirmarEmail": "fe@as.com",
       "senha": "senha123",
       "confirmarSenha": "senha123"
+    },
+    {
+      "id": "1c9d",
+      "nome": "João Caetano",
+      "cpf": "31121523142",
+      "email": "RM564115@fiap.com.br",
+      "confirmarEmail": "RM564115@fiap.com.br",
+      "senha": "123456",
+      "confirmarSenha": "123456"
     }
   ],
   "carrinho": [
@@ -117,6 +126,61 @@
       "id": "1bda",
       "usuarioId": "012",
       "produtoId": "3"
+    },
+    {
+      "id": "65fa",
+      "usuarioId": "012",
+      "produtoId": "1"
+    }
+  ],
+  "noticias": [
+    {
+      "id": 1,
+      "titulo": "Pacientes enfrentam longas filas na única farmácia de medicamentos de alto custo de Guarulhos, na Grande SP",
+      "resumo": "Bem antes do dia amanhecer e horas da abertura do local, é comum pacientes e parentes começarem a chegar na fila para garantir atendimento.",
+      "conteudoCompleto": "Pacientes, incluindo muitos idosos, costumam enfrentar uma fila gigante para pegar medicamentos de alto custo na única farmácia especializada de Guarulhos, na Grande São Paulo, a segunda cidade mais populosa do estado. Nesta segunda-feira (20), a fila dobrava o quarteirão. Depois de aguardar por várias horas do lado de fora, ainda é preciso esperar mais tempo dentro da farmácia até chegar a sua vez de receber os remédios.",
+      "imagemUrl": "https://s2-g1.glbimg.com/QtMKxDrPzxgvAAkHBvCI220xbbk=/0x0:1200x670/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2025/c/u/1utv0ORhuWtQdZc2809Q/fila-na-farmacia-de-alto-custo.jpg",
+      "urlExterna": "https://g1.globo.com/sp/sao-paulo/noticia/2025/10/20/pacientes-enfrentam-fila-gigante-na-unica-farmacia-de-medicamentos-de-alto-custo-de-guarulhos-na-grande-sp.ghtml"
+    },
+    {
+      "id": 2,
+      "titulo": "Nova tributação de medicamentos em MG pode elevar preços",
+      "resumo": "Segundo o jornal O Tempo, o artigo assinado por Lucas Rosa, head de marketing do Grupo AMR Saúde, alerta que o Decreto 49.107/2025, publicado pelo governo de Minas Gerais, pode elevar os preços de medicamentos a partir de 2025.",
+      "conteudoCompleto": " A norma altera as regras do ICMS sobre produtos sujeitos à substituição tributária (ICMS-ST) e estabelece o Preço Médio Ponderado ao Consumidor Final (PMPF) como base principal para o cálculo do imposto. Com isso, se o PMPF for superior ao valor real da venda, as farmácias terão aumento da carga tributária e redução das margens de lucro.O texto também destaca que o decreto entrará em vigor de forma escalonada — com as mudanças administrativas em 1º de novembro de 2025 e o novo cálculo do imposto em 1º de dezembro de 2025. Segundo o autor, farmácias menores podem ser as mais afetadas, e será necessário revisar preços, atualizar sistemas fiscais e treinar equipes. Por outro lado, o modelo busca padronizar regras e aumentar a transparência da arrecadação.",
+      "imagemUrl": "https://www.otempo.com.br/content/dam/otempo/editorias/opini%C3%A3o/2025/10/20/opini%C3%A3o-tributa%C3%A7%C3%A3o%20de%20medicamentos-icms-preco_dos_remedios-1760722690.jpg",
+      "urlExterna": "https://fenafisco.org.br/20/10/2025/nova-tributacao-de-medicamentos-em-mg-pode-elevar-precos/"
+    },
+    {
+      "id": 3,
+      "titulo": "Ministério da Saúde e CGU inspecionam farmácias do Programa Farmácia Popular",
+      "resumo": "Ação conjunta reforça medidas de fortalecimento do Programa, que ampliou em 90% o orçamento entre 2022 e 2025 e garantiu gratuidade para todos os 41 medicamentos e insumos ofertados",
+      "conteudoCompleto": "OMinistério da Saúde e a Controladoria-Geral da União (CGU) realizarão, entre os dias 27 e 29 de agosto, uma ação nacional de inspeção em estabelecimentos credenciados ao Programa Farmácia Popular do Brasil, em mais de 20 estados. As cidades foram definidas a partir de interação entre a CGU e o Departamento Nacional de Auditoria do Sistema Único de Saúde (DenaSUS). As visitas integram o esforço conjunto de fiscalização para assegurar o uso adequado dos recursos públicos, o acesso a medicamentos e insumos e a qualidade do atendimento à população.",
+      "imagemUrl": "https://www.gov.br/cgu/pt-br/assuntos/noticias/2025/08/ministerio-da-saude-e-cgu-inspecionam-farmacias-do-programa-farmacia-popular/ministerio-da-saude-e-cgu-inspecionam-farmacias-do-programa-farmacia-popular.jpg/@@images/8f95db52-f938-47e3-915e-64f9a327fd2d.jpeg",
+      "urlExterna": "https://www.gov.br/cgu/pt-br/assuntos/noticias/2025/08/ministerio-da-saude-e-cgu-inspecionam-farmacias-do-programa-farmacia-popular"
+    },
+    {
+      "id": 4,
+      "titulo": "Amazon vai vender medicamentos controlados em máquinas eletrônicas nos EUA",
+      "resumo": "Serviço será oferecido para moradores de Los Angeles, na Califórnia, que se consultarem pela rede de atendimento One Medical, adquirida pela Amazon em 2023",
+      "conteudoCompleto": "A Amazon anunciou que, a partir de dezembro de 2025, implementará máquinas de autoatendimento para a venda de medicamentos controlados aos pacientes do One Medical, sua rede de atendimento primário à saúde nos Estados Unidos. Com isso, os clientes não precisarão enfrentar filas nas farmácias físicas e poderão retirar seus medicamentos logo após a consulta.",
+      "imagemUrl": "https://classic.exame.com/wp-content/uploads/2025/10/Amazon-medicamentos-autoatendimento.png?ims=750x/filters:quality(85):format(webp)",
+      "urlExterna": "https://exame.com/invest/mercados/amazon-vai-vender-medicamentos-controlados-em-maquinas-eletronicas-nos-eua/"
+    },
+    {
+      "id": 5,
+      "titulo": "Mercado Livre entra na venda de remédios e setor reage; entenda a polêmica",
+      "resumo": "Plataforma defende modelo de intermediação com rigor sanitário e transparência de preços, enquanto Abrafarma alerta para riscos de segurança ao consumidor",
+      "conteudoCompleto": "O passo mais recente do Mercado Livre — a compra de uma pequena farmácia na zona sul de São Paulo — acendeu um debate que vai muito além do e-commerce: o futuro do varejo farmacêutico no Brasil.",
+      "imagemUrl":"https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/10/farmacia-mercado-livre.png?w=1200&h=900&crop=0",
+      "urlExterna": "hhttps://www.cnnbrasil.com.br/blogs/debora-oliveira/economia/negocios/mercado-livre-entra-na-venda-de-remedios-e-setor-reage-entenda-a-polemica/"
+    },
+    {
+      "id": 6,
+      "titulo": "Uma em cada duas farmácias municipais de Sorocaba está com quase metade do estoque de medicamentos zerado",
+      "resumo": "Todas as unidades básicas de saúde da cidade estavam com algum medicamento em falta na quarta-feira (15). Prefeitura de Sorocaba nega a situação.",
+      "conteudoCompleto": "Pelo menos uma de cada duas farmácias das Unidades Básicas de Saúde (UBSs) de Sorocaba (SP) estava com quase metade do estoque de medicamentos zerado nesta quarta (15) e quinta-feira (16). Os dados foram obtidos por meio de um levantamento exclusivo do g1, que identificou mais de 230 medicamentos em falta em pelo menos uma UBS. A prefeitura nega a situação.",
+      "imagemUrl":"https://s2-g1.glbimg.com/HeTNpVlQboDJkOSLZ0wxkFu1EVs=/0x0:3840x2160/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2025/j/L/Rs8nAbTdGfVAemE3UDfw/img-7079-frame-205.jpeg",
+      "urlExterna": "https://g1.globo.com/sp/sorocaba-jundiai/noticia/2025/10/16/mapa-uma-em-cada-duas-farmacias-municipais-de-sorocaba-esta-com-quase-metade-do-estoque-de-medicamentos-zerado.ghtml"
     }
   ]
 }
